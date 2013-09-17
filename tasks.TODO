@@ -1,0 +1,18 @@
+
+Views
+
+ ☐ append add date_mod.php to default layout
+ ☐ fix "/javascript"
+ ☐ make 404 view
+--- ✄ ------------------------ ✄ -----------------------
+ ☐ overhaul the views in accordance to Laravel4 docs
+ ☐ redo "article" and "articles" views
+ ☐ add "/kontakt" with swiftmailer contact form
+
+Routes
+
+ ☐ clear the routes, remove "pages" group and replace it with separate pages
+
+DB
+
+ ☐ wipe the unecessary seeded data
