@@ -1,5 +1,11 @@
-@include('_partials/header')
-@include('_partials/navigation')
+@extends('layouts.base')
+@section('head')
+  <link rel="stylesheet" href="{{ asset('assets/css/style.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/css/smoothness/jquery-ui-1.10.3.custom.min.css') }}">
+  <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
+  <script src="{{ asset('assets/js/vendor/modernizr-2.6.2.min.js') }}"></script>
+@stop
+@section('main_content')
 <header>
   <h2>Czary-mary przeglądarkowe.</h2>
 </header>
@@ -47,11 +53,16 @@
       libero vitae lectus hendrerit hendrerit.</p>
   </div>
 </div>
+@stop
 
-<!--jquery+ui footer scripts-->
-<?php echo $this->Html->script('//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'); ?>
+@section('bottom_scripts')
+  <!--[if lt IE 9]>
+  <script src="{{ asset('js/vendor/respond.min.js') }}" type="text/javascript"></script>
+  <![endif]-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script> window.jQuery || document.write('<script src="{{ asset('assets/js/vendor/jquery-1.10.2.min.js') }}">\x3C/script>');
+  </script>
+  <script src="{{ asset('assets/js/vendor/jquery-ui-1.10.3.custom.min.js') }}"></script>
+  <script defer async src="{{ asset('assets/js/script.min.js') }}"></script>
+@stop
 
-<script> window.jQuery || document.write('<script src="<?php echo $this->Html->url("/js/vendor/jquery-1.10.2.min.js"); ?>">\x3C/script>');</script>
-<?php echo $this->Html->script('vendor/jquery-ui-1.10.3.custom.min.js'); ?>
-
-@include('_partials/footer')

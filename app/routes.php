@@ -20,31 +20,34 @@ Route::group(array('prefix' => 'admin', 'before' => 'auth.admin'), function()
 {
     Route::any('/', 'App\Controllers\Admin\PagesController@index');
     Route::resource('articles', 'App\Controllers\Admin\ArticlesController');
-    Route::resource('pages', 'App\Controllers\Admin\PagesController');
+    Route::resource('pages',       'App\Controllers\Admin\PagesController');
 });
 
-// Home page
+// Single pages
 Route::get('/', array('as' => 'home', function()
 {
-return View::make('index');
+return View::make('pages.home');
 }));
 
-// Autor page
-Route::get('autor', array(function()
+Route::get('autor', array('as' => 'autor', function()
 {
-return View::make('autor');
+return View::make('pages.autor');
 }));
 
-// Javascript page
 Route::get('javascript', array('as' => 'javascript', function()
 {
-return View::make('javascript');
+return View::make('pages.javascript');
+}));
+
+Route::get('kontakt', array('as' => 'kontakt', function()
+{
+return View::make('pages.kontakt');
 }));
 
 // Article list
 Route::get('teksty', array('as' => 'article.list', function()
 {
-return View::make('articles')->with('entries', Article::orderBy('created_at', 'desc')->get());
+return View::make('articles.articles')->with('entries', Article::orderBy('created_at', 'desc')->get());
 }));
 
 // Single article
@@ -54,22 +57,11 @@ $article = Article::where('slug', $slug)->first();
 
 if ( ! $article) App::abort(404, 'Article not found');
 
-return View::make('article')->with('entry', $article);
+return View::make('articles.article')->with('entry', $article);
 }));
-
-// Single page
-Route::get('{slug}', array('as' => 'page', function($slug)
-{
-$page = Page::where('slug', $slug)->first();
-
-if ( ! $page) App::abort(404, 'Page not found');
-
-return View::make('site::page')->with('entry', $page);
-
-}))->where('slug', '^((?!admin).)*$');
 
 // 404 Page
 App::missing(function($exception)
 {
-return Response::view('404', array(), 404);
+return Response::view('pages.404', array(), 404);
 });

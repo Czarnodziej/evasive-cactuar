@@ -4,6 +4,7 @@
 /app/config/queue.php
 /bootstrap/compiled.php
 /vendor
+/nbproject
 composer.phar
 composer.lock
 .DS_Store

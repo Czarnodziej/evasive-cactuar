@@ -2,7 +2,7 @@
 
 /*
   Based on http://blog.vokiel.com/php-date-polskie-nazwy-dni-i-miesiecy-funkcje-date-strftime/
-  It corrects semantics of month names displayed in Polish language.
+  It corrects the semantics of month names displayed in Polish language.
  */
 
   date_default_timezone_set('Europe/Warsaw');

@@ -6,76 +6,76 @@ use Input, Notification, Redirect, Sentry, Str;
 
 class PagesController extends \BaseController {
 
-    public function index()
-    {
-        return \View::make('admin.pages.index')->with('pages', Page::all());
-    }
+	public function index()
+	{
+		return \View::make('admin.pages.index')->with('pages', Page::all());
+	}
 
-    public function show($id)
-    {
-        return \View::make('admin.pages.show')->with('page', Page::find($id));
-    }
+	public function show($id)
+	{
+		return \View::make('admin.pages.show')->with('page', Page::find($id));
+	}
 
-    public function create()
-    {
-        return \View::make('admin.pages.create');
-    }
+	public function create()
+	{
+		return \View::make('admin.pages.create');
+	}
 
-    public function store()
-    {
-        $validation = new PageValidator;
+	public function store()
+	{
+		$validation = new PageValidator;
 
-        if ($validation->passes())
-        {
-            $page = new Page;
-            $page->title = Input::get('title');
-            $page->slug = Str::slug(Input::get('title'));
-            $page->body = Input::get('body');
-            $page->user_id = Sentry::getUser()->id;
-            $page->save();
+		if ($validation->passes())
+		{
+			$page = new Page;
+			$page->title = Input::get('title');
+			$page->slug = Str::slug(Input::get('title'));
+			$page->body = Input::get('body');
+			$page->user_id = Sentry::getUser()->id;
+			$page->save();
 
-            Notification::success('Strona została zapisana.');
+			Notification::success('Strona została zapisana.');
 
-            return Redirect::route('admin.pages.edit', $page->id);
-        }
+			return Redirect::route('admin.pages.edit', $page->id);
+		}
 
-        return Redirect::back()->withInput()->withErrors($validation->errors);
-    }
+		return Redirect::back()->withInput()->withErrors($validation->errors);
+	}
 
-    public function edit($id)
-    {
-        return \View::make('admin.pages.edit')->with('page', Page::find($id));
-    }
+	public function edit($id)
+	{
+		return \View::make('admin.pages.edit')->with('page', Page::find($id));
+	}
 
-    public function update($id)
-    {
-        $validation = new PageValidator;
+	public function update($id)
+	{
+		$validation = new PageValidator;
 
-        if ($validation->passes())
-        {
-            $page = Page::find($id);
-            $page->title = Input::get('title');
-            $page->slug = Str::slug(Input::get('title'));
-            $page->body = Input::get('body');
-            $page->user_id = Sentry::getUser()->id;
-            $page->save();
+		if ($validation->passes())
+		{
+			$page = Page::find($id);
+			$page->title = Input::get('title');
+			$page->slug = Str::slug(Input::get('title'));
+			$page->body = Input::get('body');
+			$page->user_id = Sentry::getUser()->id;
+			$page->save();
 
-            Notification::success('Strona została zapisana.');
+			Notification::success('Strona została usunięta.');
 
-            return Redirect::route('admin.pages.edit', $page->id);
-        }
+			return Redirect::route('admin.pages.edit', $page->id);
+		}
 
-        return Redirect::back()->withInput()->withErrors($validation->errors);
-    }
+		return Redirect::back()->withInput()->withErrors($validation->errors);
+	}
 
-    public function destroy($id)
-    {
-        $page = Page::find($id);
+	public function destroy($id)
+	{
+		$page = Page::find($id);
 //$page->delete();
 
-        Notification::success('Strona została usunięta.');
+		Notification::success('Strona została usunięta.');
 
-        return Redirect::route('admin.pages.index');
-    }
+		return Redirect::route('admin.pages.index');
+	}
 
 }

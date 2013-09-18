@@ -1,17 +1,24 @@
 
 Views
 
- ☐ append add date_mod.php to default layout
- ☐ fix "/javascript"
- ☐ make 404 view
+ ✔ add date_mod.php to default layout @done (13-09-18 18:45)
+ ✔ fix "/javascript" @done (13-09-18 18:45)
+ ✔ make 404 view @done (13-09-18 18:45)
 --- ✄ ------------------------ ✄ -----------------------
- ☐ overhaul the views in accordance to Laravel4 docs
- ☐ redo "article" and "articles" views
+ ✔ overhaul the views in accordance to Laravel4 docs @done (13-09-18 18:45)
  ☐ add "/kontakt" with swiftmailer contact form
+ ☐ redo "admin" section
+   ☐ replace "pages" with "articles" logic and remove "pages"
+   ☐ modify the views and get rid of bootstrap
+   ☐ implement TinyMCE
+ ☐ redo "article" and "articles" views
+ ☐ use carbon date format in "articles" view
+ ☐ implement comments system in "article" views
+ ☐ implement a switcher between "html/cakephp/laravel" versions of the website
 
 Routes
 
- ☐ clear the routes, remove "pages" group and replace it with separate pages
+ ✔ clear the routes, remove "pages" group and replace it with separate pages @done (13-09-18 18:45)
 
 DB
 

@@ -34,13 +34,6 @@ class ArticlesController extends \BaseController {
 			$article->user_id = Sentry::getUser()->id;
 			$article->save();
 
-// Now that we have the article ID we need to move the image
-			if (Input::hasFile('image'))
-			{
-				$article->image = Image::upload(Input::file('image'), 'articles/' . $article->id);
-				$article->save();
-			}
-
 			Notification::success('Artykuł został zapisany.');
 
 			return Redirect::route('admin.articles.edit', $article->id);
@@ -51,7 +44,7 @@ class ArticlesController extends \BaseController {
 
 	public function edit($id)
 	{
-		return \View::make('admin.articles.edit')->with('article', Article::find($id));
+		return \View::make('admin.articles.edit')->with('articles.article', Article::find($id));
 	}
 
 	public function update($id)

@@ -1,5 +1,5 @@
-@include('_partials/header')
-@include('_partials/navigation')
+@extends('layouts.base')
+@section('main_content')
 <header>
   <h1>Autorskie motywacje</h1>
 </header>
@@ -102,4 +102,4 @@
               </li>
             </ul>
           </div>
-@include('_partials/footer')
+@stop
