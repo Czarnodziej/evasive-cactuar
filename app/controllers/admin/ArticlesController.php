@@ -1,8 +1,7 @@
 <?php namespace App\Controllers\Admin;
 
 use App\Models\Article;
-use App\Services\Validators\ArticleValidator;
-use Image, Input, Notification, Redirect, Sentry, Str;
+use Input, Notification, Redirect, Sentry, Str;
 
 class ArticlesController extends \BaseController {
 
@@ -23,10 +22,7 @@ class ArticlesController extends \BaseController {
 
 	public function store()
 	{
-		$validation = new ArticleValidator;
 
-		if ($validation->passes())
-		{
 			$article = new Article;
 			$article->title = Input::get('title');
 			$article->slug = Str::slug(Input::get('title'));
@@ -37,9 +33,6 @@ class ArticlesController extends \BaseController {
 			Notification::success('Artykuł został zapisany.');
 
 			return Redirect::route('admin.articles.edit', $article->id);
-		}
-
-		return Redirect::back()->withInput()->withErrors($validation->errors);
 	}
 
 	public function edit($id)
@@ -49,10 +42,7 @@ class ArticlesController extends \BaseController {
 
 	public function update($id)
 	{
-		$validation = new ArticleValidator;
 
-		if ($validation->passes())
-		{
 			$article = Article::find($id);
 			$article->title = Input::get('title');
 			$article->slug = Str::slug(Input::get('title'));
@@ -64,9 +54,6 @@ class ArticlesController extends \BaseController {
 			Notification::success('Artykuł został zapisany.');
 
 			return Redirect::route('admin.articles.edit', $article->id);
-		}
-
-		return Redirect::back()->withInput()->withErrors($validation->errors);
 	}
 
 	public function destroy($id)

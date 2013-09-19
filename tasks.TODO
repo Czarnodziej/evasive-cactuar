@@ -6,14 +6,16 @@ Views
  ✔ make 404 view @done (13-09-18 18:45)
 --- ✄ ------------------------ ✄ -----------------------
  ✔ overhaul the views in accordance to Laravel4 docs @done (13-09-18 18:45)
- ☐ add "/kontakt" with swiftmailer contact form
- ☐ redo "admin" section
-   ☐ replace "pages" with "articles" logic and remove "pages"
+ ☐ add "/kontakt" with swiftmailer contact form - failed horribly - research data requests + forms
+ ☐ redo "admin" section - failed horribly (undefined variable: article), need to rebuild it
+   ✔ replace "pages" with "articles" logic @done (13-09-19 18:03)
+     ✔  and remove "pages" @done (13-09-19 18:03)
    ☐ modify the views and get rid of bootstrap
    ☐ implement TinyMCE
  ☐ redo "article" and "articles" views
  ☐ use carbon date format in "articles" view
  ☐ implement comments system in "article" views
+ ☐ implement tagging of articles
  ☐ implement a switcher between "html/cakephp/laravel" versions of the website
 
 Routes
@@ -22,4 +24,4 @@ Routes
 
 DB
 
- ☐ wipe the unecessary seeded data
+ ☐ wipe the unecessary seeded data wusing migrations

@@ -2,9 +2,9 @@
 
 @section('main')
 
-    <h2>Edit page</h2>
+    <h2>Create new page</h2>
     {{ Notification::showAll() }}
-    {{ Form::model($page, array('method' => 'put', 'route' => array('admin.pages.update', $page->id))) }}
+    {{ Form::open(array('route' => 'admin.articles.store')) }}
 
         <div class="control-group">
             {{ Form::label('title', 'Title') }}
@@ -22,7 +22,7 @@
 
         <div class="form-actions">
             {{ Form::submit('Save', array('class' => 'btn btn-success btn-save btn-large')) }}
-            <a href="{{ URL::route('admin.pages.index') }}" class="btn btn-large">Cancel</a>
+            <a href="{{ URL::route('admin.articles.index') }}" class="btn btn-large">Cancel</a>
         </div>
 
     {{ Form::close() }}

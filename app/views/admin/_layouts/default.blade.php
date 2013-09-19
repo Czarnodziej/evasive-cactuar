@@ -17,13 +17,12 @@
     <div>
         <div>
             <div>
-                <a href="{{ URL::route('admin.pages.index') }}">L4 Site</a>
+                <a href="{{ URL::route('admin.articles.index') }}">Laraveil</a>
 
                 @if (Sentry::check())
                     <ul>
-                        <li><a href="{{ URL::route('admin.pages.index') }}"><i></i> Pages</a></li>
-                        <li><a href="{{ URL::route('admin.articles.index') }}"><i></i> Articles</a></li>
-                        <li><a href="{{ URL::route('admin.logout') }}"><i></i> Logout</a></li>
+                        <li><a href="{{ URL::route('admin.articles.index') }}"><i></i> Artykuły</a></li>
+                        <li><a href="{{ URL::route('admin.logout') }}"><i></i> Wyloguj</a></li>
                     </ul>
                 @endif
             </div>
