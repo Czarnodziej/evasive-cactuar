@@ -1,20 +1,19 @@
-@extends('admin._layouts.default')
-
-@section('main')
-
+@extends('layouts.base')
+@section('main_content')
 <h1>
-    Articles <a href="{{ URL::route('admin.articles.create') }}" class="btn btn-success"><i class="icon-plus-sign"></i> Add new page</a>
+    Teksty
 </h1>
+<p><a href="{{ URL::route('admin.articles.create') }}"> Dodaj nowy tekst</a></p>
 
 <hr>
 
-<table class="table table-striped">
+<table>
     <thead>
         <tr>
             <th>#</th>
-            <th>Title</th>
-            <th>When</th>
-            <th><i class="icon-cog"></i></th>
+            <th>Tytuł</th>
+            <th>Data powstania</th>
+            <th>Ustawienia</th>
         </tr>
     </thead>
     <tbody>
@@ -24,15 +23,15 @@
             <td><a href="{{ URL::route('admin.articles.show', $article->id) }}">{{ $article->title }}</a></td>
             <td>{{ $article->created_at }}</td>
             <td>
-                <a href="{{ URL::route('admin.articles.edit', $article->id) }}" class="btn btn-success btn-mini pull-left">Edit</a>
+                <span><a href="{{ URL::route('admin.articles.edit', $article->id) }}">Edytuj</a>
 
-                {{ Form::open(array('route' => array('admin.articles.destroy', $article->id), 'method' => 'delete', 'data-confirm' => 'Na pewno?')) }}
-                <button type="submit" href="{{ URL::route('admin.articles.destroy', $article->id) }}" class="btn btn-danger btn-mini">Delete</button>
-                    {{ Form::close() }}
+                {{ Form::open(array('route' => array('admin.articles.destroy', $article->id), 'method' => 'delete', 'data-confirm' => 'Na pewno?', 'onsubmit' => 'return confirm(\'Na pewno chcesz usunąć ten artykuł?\')'))}}
+                <button type="submit" href="{{ URL::route('admin.articles.destroy', $article->id) }}">Usuń</button>
+                    {{ Form::close() }}</span>
                 </td>
             </tr>
             @endforeach
         </tbody>
     </table>
 
-    @stop
+@stop

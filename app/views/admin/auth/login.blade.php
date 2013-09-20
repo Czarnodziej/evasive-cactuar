@@ -1,30 +1,28 @@
-@extends('admin._layouts.default')
-
-@section('main')
-
-<div id="login" class="login">
+@extends('layouts.base')
+@section('main_content')
+<div>
 		{{ Form::open() }}
 
 		@if ($errors->has('login'))
-		<div class="alert alert-error">{{ $errors->first('login', ':message') }}</div>
+		<div>{{ $errors->first('login', ':message') }}</div>
 		@endif
 
-		<div class="control-group">
-				{{ Form::label('email', 'Email') }}
-				<div class="controls">
+		<div>
+				{{ Form::label('email', 'Adres e-mail:') }}
+				<div>
 						{{ Form::text('email') }}
 				</div>
 		</div>
 
-		<div class="control-group">
-				{{ Form::label('password', 'Password') }}
-				<div class="controls">
+		<div>
+				{{ Form::label('password', 'Hasło:') }}
+				<div>
 						{{ Form::password('password') }}
 				</div>
 		</div>
 
-		<div class="form-actions">
-				{{ Form::submit('Login', array('class' => 'btn btn-inverse btn-login')) }}
+		<div>
+				{{ Form::submit('Zaloguj')}}
 		</div>
 
 		{{ Form::close() }}

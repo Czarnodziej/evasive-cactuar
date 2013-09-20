@@ -1,7 +1,6 @@
-@extends('admin._layouts.default')
-
-@section('main')
-<h2>Display page</h2>
+@extends('layouts.base')
+@section('main_content')
+<h2>Treść artykułu:</h2>
 
 <hr>
 

@@ -1,30 +1,45 @@
-@extends('admin._layouts.default')
+@extends('layouts.base')
+@section('main_content')
 
-@section('main')
+<h2>Utwórz nowy artykuł:</h2>
+{{ Notification::showAll() }}
+{{ Form::open(array('route' => 'admin.articles.store')) }}
 
-    <h2>Create new page</h2>
-    {{ Notification::showAll() }}
-    {{ Form::open(array('route' => 'admin.articles.store')) }}
-
-        <div class="control-group">
-            {{ Form::label('title', 'Title') }}
-            <div class="controls">
-                {{ Form::text('title') }}
-            </div>
+    <div>
+        {{ Form::label('title', 'Tytuł') }}
+        <div>
+            {{ Form::text('title') }}
         </div>
+    </div>
 
-        <div class="control-group">
-            {{ Form::label('body', 'Content') }}
-            <div class="controls">
-                {{ Form::textarea('body') }}
-            </div>
+    <div>
+        {{ Form::label('body', 'Zawartość:') }}
+        <div>
+            {{ Form::textarea('body') }}
         </div>
+    </div>
 
-        <div class="form-actions">
-            {{ Form::submit('Save', array('class' => 'btn btn-success btn-save btn-large')) }}
-            <a href="{{ URL::route('admin.articles.index') }}" class="btn btn-large">Cancel</a>
-        </div>
+    <div>
+        {{ Form::submit('Zapisz') }}
+        <a href="{{ URL::route('admin.articles.index') }}">Cofnij zmiany</a>
+    </div>
 
-    {{ Form::close() }}
+{{ Form::close() }}
 
+@stop
+
+@section('bottom_scripts')
+  <script src="{{ asset('assets/js/vendor/tinymce/tinymce.min.js') }}">
+  </script>
+<script>
+ tinymce.init({
+    selector: "textarea",
+    plugins: [
+        "advlist autolink lists link image charmap print preview anchor",
+        "searchreplace visualblocks code fullscreen emmet",
+        "insertdatetime media table contextmenu paste"
+    ],
+    toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image"
+});
+</script>
 @stop

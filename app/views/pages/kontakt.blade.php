@@ -18,8 +18,8 @@
 {{ Form::submit('Wyślij') }}
 {{ Form::close() }}
 @if(Session::has('success'))
-    <div class="alert-box success">
-        <h2>{{ Session::get('success') }}</h2>
-    </div>
+<div>
+	<h2>Wiadomość wysłana pomyślnie!</h2>
+</div>
 @endif
 @stop

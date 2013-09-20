@@ -1,4 +1,4 @@
-/app/config/database.php
+/app/database/seeds/SentrySeeder.php
 /app/config/app.php
 /app/config/mail.php
 /app/config/queue.php
@@ -10,3 +10,6 @@ composer.lock
 .DS_Store
 Laraveil.sublime-project
 Laraveil.sublime-workspace
+.phptidy-cache
+_ide_helper.php
+phpunit.xml

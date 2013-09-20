@@ -1,20 +1,21 @@
 
 Views
 
- ✔ add date_mod.php to default layout @done (13-09-18 18:45)
- ✔ fix "/javascript" @done (13-09-18 18:45)
- ✔ make 404 view @done (13-09-18 18:45)
+ ✔ add date_mod.php to default layout @done (13-09-18 18:45) @done (20-09-13 18:29)
+ ✔ fix "/javascript" @done (20-09-13 18:29)
+ ✔ make 404 view @done (20-09-13 18:29)
 --- ✄ ------------------------ ✄ -----------------------
- ✔ overhaul the views in accordance to Laravel4 docs @done (13-09-18 18:45)
- ☐ add "/kontakt" with swiftmailer contact form - failed horribly - research data requests + forms
- ☐ redo "admin" section - failed horribly (undefined variable: article), need to rebuild it
-   ✔ replace "pages" with "articles" logic @done (13-09-19 18:03)
-     ✔  and remove "pages" @done (13-09-19 18:03)
-   ☐ modify the views and get rid of bootstrap
-   ☐ implement TinyMCE
- ☐ redo "article" and "articles" views
- ☐ use carbon date format in "articles" view
+ ✔ overhaul the views in accordance to Laravel4 docs @done (20-09-13 18:29)
+ ✔ add "/kontakt" with swiftmailer contact form - failed horribly - research data requests + forms, DONE! @done (20-09-13 18:29)
+ ✔ redo "admin" section - failed horribly @done (20-09-13 18:29)
+   ✔ replace "pages" with "articles" logic @done (20-09-13 18:29)
+     ✔  and remove "pages" @done (20-09-13 18:29)
+   ✔ modify the views and get rid of bootstrap @done (20-09-13 18:29)
+   ✔ implement tinyMCE @done (20.09.13 18:32)
+ ✔ redo "article" and "articles" views @done (20.09.13 18:32)
  ☐ implement comments system in "article" views
+ ☐ implement form validation
+ ☐ use carbon date format in "articles" view
  ☐ implement tagging of articles
  ☐ implement a switcher between "html/cakephp/laravel" versions of the website
 
@@ -24,4 +25,4 @@ Routes
 
 DB
 
- ☐ wipe the unecessary seeded data wusing migrations
+ ☐ wipe the unecessary seeded data using migrations

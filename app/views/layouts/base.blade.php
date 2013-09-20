@@ -21,6 +21,12 @@
 		<nav id="topbar">
 			<span id="logo">
 				<a href="{{ URL::route('home') }}"><i class="icon-fixed-width icon-home"></i>SuperLogo</a>
+					@if (Sentry::check())
+		                    <span>
+		                        <a href="{{ URL::route('admin.articles.index') }}"><i></i> Artykuły</a>
+		                        <a href="{{ URL::route('admin.logout') }}"><i></i> Wyloguj</a>
+		                    </span>
+          @endif
 			</span>
 				<a href="{{ URL::route('article.list') }}">Teksty</a>
 				<a href="{{ URL::route('javascript') }}">Javascript</a>
