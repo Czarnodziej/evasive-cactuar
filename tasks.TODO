@@ -13,7 +13,7 @@ Views
    ✔ modify the views and get rid of bootstrap @done (20-09-13 18:29)
    ✔ implement tinyMCE @done (20.09.13 18:32)
  ✔ redo "article" and "articles" views @done (20.09.13 18:32)
- ☐ implement comments system in "article" views
+ ☐ implement comments system in "article" views - make controllers n models
  ☐ implement form validation
  ☐ use carbon date format in "articles" view
  ☐ implement tagging of articles
@@ -25,4 +25,4 @@ Routes
 
 DB
 
- ☐ wipe the unecessary seeded data using migrations
+ ✔ wipe the unecessary seeded data using migrations @done (23.09.13 18:09)
