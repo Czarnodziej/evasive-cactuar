@@ -47,11 +47,26 @@ Route::get('teksty', array('as' => 'article.list', function()
 // Single article
 Route::get('teksty/{slug}', array('as' => 'article', function($slug)
 {
-    $article = Article::where('slug', $slug)->first();
+    $article = Article::where('slug', $slug)->with( array('author', 'comments') )->first();;
 
-    if ( ! $article) App::abort(404, 'Article not found');
+    if ( ! $article) App::abort(404, 'Artykuł nie został odnaleziony');
 
     return View::make('articles.article')->with('entry', $article);
+}));
+
+//Post comments
+Route::post('comment', array('as' => 'comment', function()
+{
+   $comment = new Comment();
+   $comment->foreign_id = Input::get('foreign_id');
+   $comment->name    = Input::get('author');
+   $comment->body    = Input::get('body');
+   $comment->save();
+
+   $slug = Input::get('slug');
+
+   Notification::success('Komentarz został zapisany!');
+   return Redirect::route('article', array('slug' => $slug)); // change to current article view
 }));
 
 // 404 Page
@@ -68,18 +83,18 @@ Route::get('kontakt', array('as' => 'kontakt', function()
 
 Route::post('kontakt', function()
 {
- $data = array(
+   $data = array(
     'email_content' => Input::get('email_content'),
     'subject' => Input::get('email_subject'),
     'sender_email' => Input::get('sender_email'),
     'sender_name' => Input::get('sender_name'),
     );
- Mail::send('emails.default', $data, function($message) use ($data)
- {
+   Mail::send('emails.default', $data, function($message) use ($data)
+   {
     $message->to('pagodemc@gmail.com');
     $message->subject('laraveil@czarnodziej.sanfree.eu');
 });
 
- Session::flash('success', true);
- return Redirect::route('kontakt');
+   Session::flash('success', true);
+   return Redirect::route('kontakt');
 });

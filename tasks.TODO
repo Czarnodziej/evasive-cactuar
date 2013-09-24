@@ -13,9 +13,13 @@ Views
    ✔ modify the views and get rid of bootstrap @done (20-09-13 18:29)
    ✔ implement tinyMCE @done (20.09.13 18:32)
  ✔ redo "article" and "articles" views @done (20.09.13 18:32)
- ☐ implement comments system in "article" views - make controllers n models
+ ✔ implement comments system in "article" views - make controllers n models @done (24.09.13 17:48)
+    ✔ fix the comment redirect to point to current article @done (24.09.13 18:21)
+    ☐ redo single article route and sort comments (desc, created_at)
+    ☐ move controller closures from routes to separate controllers / or not, yet to decide
  ☐ implement form validation
- ☐ use carbon date format in "articles" view
+ ☐ use carbon date format in "article" and "articles" view
+   ☐ make a library out of addon/date_mod.php / yet to decide (http://stackoverflow.com/questions/17088917/what-are-the-best-practices-and-best-places-for-laravel-4-helpers-or-basic-funct)
  ☐ implement tagging of articles
  ☐ implement a switcher between "html/cakephp/laravel" versions of the website
 

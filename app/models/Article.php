@@ -1,12 +1,15 @@
 <?php namespace App\Models;
- 
+
 class Article extends \Eloquent {
- 
-    protected $table = 'articles';
- 
-    public function author()
-    {
-        return $this->belongsTo('App\Models\User', 'user_id');
-    }
- 
+
+	public function author()
+	{
+		return $this->belongsTo('App\Models\User', 'user_id');
+	}
+
+	public function comments()
+	{
+		return $this->hasMany('Comment', 'foreign_id');
+	}
+
 }
