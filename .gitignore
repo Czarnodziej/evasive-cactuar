@@ -2,6 +2,7 @@
 /app/config/app.php
 /app/config/mail.php
 /app/config/queue.php
+app/config/database.php
 /bootstrap/compiled.php
 /vendor
 /nbproject
