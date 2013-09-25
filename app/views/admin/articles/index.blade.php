@@ -21,7 +21,7 @@
         <tr>
             <td>{{ $article->id }}</td>
             <td><a href="{{ URL::route('admin.articles.show', $article->id) }}">{{ $article->title }}</a></td>
-            <td>{{ $article->created_at }}</td>
+            <td>{{ Daty::showTimeAgo($article->created_at) }}</td>
             <td>
                 <span><a href="{{ URL::route('admin.articles.edit', $article->id) }}">Edytuj</a>
 

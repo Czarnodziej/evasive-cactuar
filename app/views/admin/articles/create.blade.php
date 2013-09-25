@@ -15,13 +15,13 @@
     <div>
         {{ Form::label('body', 'Zawartość:') }}
         <div>
-            {{ Form::textarea('body') }}
+            {{ HTML::decode(Form::textarea('body')) }}
         </div>
     </div>
 
     <div>
         {{ Form::submit('Zapisz') }}
-        <a href="{{ URL::route('admin.articles.index') }}">Cofnij zmiany</a>
+        <a href="{{ URL::route('admin.articles.index') }}">Anuluj</a>
     </div>
 
 {{ Form::close() }}

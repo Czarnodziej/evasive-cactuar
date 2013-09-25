@@ -5,17 +5,15 @@
 <table>
     <thead>
         <tr>
-            <th>#</th>
-            <th>Tytuł</th>
-            <th>Data powstania</th>
+            <th>Tytuł:</th>
+            <th>Utworzony:</th>
         </tr>
     </thead>
     <tbody>
         @foreach ($entries as $entry)
         <tr>
-            <td>{{ $entry->id }}</td>
             <td><a href="{{ route('article', $entry->slug) }}">{{ $entry->title }}</a></td>
-            <td>{{ $entry->created_at }}</td>
+            <td>{{ Daty::showTimeAgo($entry->created_at) }}</td>
             </tr>
             @endforeach
         </tbody>

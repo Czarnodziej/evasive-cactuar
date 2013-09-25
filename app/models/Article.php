@@ -9,7 +9,7 @@ class Article extends \Eloquent {
 
 	public function comments()
 	{
-		return $this->hasMany('Comment', 'foreign_id');
+		return $this->hasMany('Comment', 'foreign_id')->orderBy('created_at', 'desc');
 	}
 
 }

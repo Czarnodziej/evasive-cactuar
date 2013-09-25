@@ -12,16 +12,18 @@ Views
      ✔  and remove "pages" @done (20-09-13 18:29)
    ✔ modify the views and get rid of bootstrap @done (20-09-13 18:29)
    ✔ implement tinyMCE @done (20.09.13 18:32)
+     ✔ fix source edit and input sanitization @done (25.09.13 16:48)
  ✔ redo "article" and "articles" views @done (20.09.13 18:32)
  ✔ implement comments system in "article" views - make controllers n models @done (24.09.13 17:48)
     ✔ fix the comment redirect to point to current article @done (24.09.13 18:21)
-    ☐ redo single article route and sort comments (desc, created_at)
+    ✔ redo single article route and sort comments (desc, created_at) @done (25.09.13 16:23)
     ☐ move controller closures from routes to separate controllers / or not, yet to decide
  ☐ implement form validation
- ☐ use carbon date format in "article" and "articles" view
-   ☐ make a library out of addon/date_mod.php / yet to decide (http://stackoverflow.com/questions/17088917/what-are-the-best-practices-and-best-places-for-laravel-4-helpers-or-basic-funct)
- ☐ implement tagging of articles
+ ✔ use "showTimeAgo"date format in "article" and "articles" view @done (25.09.13 16:23)
+   ✔ make a library out of addon/date_mod.php / yet to decide (http://stackoverflow.com/questions/17088917/what-are-the-best-practices-and-best-places-for-laravel-4-helpers-or-basic-funct) @done (25.09.13 16:23)
  ☐ implement a switcher between "html/cakephp/laravel" versions of the website
+ ☐ implement tagging of articles
+ ☐ scrolled homepage with streamlined content + ajax articles requests
 
 Routes
 

@@ -2,7 +2,7 @@
 @section('main_content')
 
 <h2>{{ $entry->title }}</h2>
-<h4>Utworzony {{ $entry->created_at }}</h4>
+<h4>Utworzony {{ Daty::showTimeAgo($entry->created_at) }}</h4>
 {{ $entry->body }}
 <hr>
 <p style="margin-top:50px;">Utwórz nowy komentarz:</p>
@@ -37,12 +37,10 @@
 
 @foreach($entry->comments as $comment)
 	<div class="comment">
-		<p>Autor:{{ $comment->name }}<br>
-		Treść:<br>
+		<p>{{ $comment->name }}:<br>
 			{{ $comment->body }}<br>
-		<span style="font-size: 0.7em">Napisane dnia: {{ $comment->created_at }}</span>
+		<span style="font-size: 0.7em">Napisany {{ Daty::showTimeAgo($comment->created_at) }}</span>
 		</p>
-		<br>
 	</div>
 	<hr>
 @endforeach

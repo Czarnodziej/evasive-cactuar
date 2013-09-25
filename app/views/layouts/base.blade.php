@@ -90,7 +90,7 @@
 						</a>
 					</div>
 					<p>©2013. Kopiowanie treści tekstów zawartych na stronie bez zgody autora jest czynem karygodnym.<br>
-						<a href="//github.com/Czarnodziej/evasive-cactuar/commits/master">@include('addons.date_mod')</a></p>
+						<a href="//github.com/Czarnodziej/evasive-cactuar/commits/master">Ostatnia modyfikacja: {{daty::dateMod("l j f Y", daty::get_page_mod_time())}}</a></p>
 				</footer>
 				@show
 		</div>
