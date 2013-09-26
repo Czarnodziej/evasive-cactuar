@@ -40,9 +40,9 @@
               <br>Todo: <a href="http://pl.wikipedia.org/wiki/AJAX">AJAX</a>, <a href="http://angularjs.org/">Angular.js</a>
             </p>
           </li>
-          <li>PHP <span class="two-star"></span>
-            <p>Podstawowe zagadnienia: pętle, tablice, obiekty, klasy. <a href="http://pl.wikipedia.org/wiki/Model-View-Controller">MVC</a> piękne wypieczone w <a href="http://cakephp.org/">CakePHP</a>.
-              <br>Todo: <a href="http://laravel.com/">Laravel</a>, <a href="http://pl.wikipedia.org/wiki/Test-driven_development">Test-driven development</a>
+          <li>PHP <span class="two-star-half"></span>
+            <p>Podstawowe zagadnienia: pętle, tablice, obiekty, klasy. <a href="http://laravel.com/">Laravel </a>, <a href="http://cakephp.org/">CakePHP</a>.
+              <br>Todo: <a href="http://pl.wikipedia.org/wiki/Test-driven_development">Test-driven development</a>
             </p>
           </li>
           <li>Apache <span class="two-star"></span>

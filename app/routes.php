@@ -47,7 +47,7 @@ Route::get('teksty', array('as' => 'article.list', function()
 // Single article
 Route::get('teksty/{slug}', array('as' => 'article', function($slug)
 {
-    $article = Article::where('slug', $slug)->with( array('author', 'comments') )->first();;
+    $article = Article::where('slug', $slug)->with( array('author', 'comments') )->first();
 
     if ( ! $article) App::abort(404, 'Artykuł nie został odnaleziony');
 
@@ -55,19 +55,7 @@ Route::get('teksty/{slug}', array('as' => 'article', function($slug)
 }));
 
 //Post comments
-Route::post('comment', array('as' => 'comment', function()
-{
-   $comment = new Comment();
-   $comment->foreign_id = Input::get('foreign_id');
-   $comment->name    = Input::get('author');
-   $comment->body    = Input::get('body');
-   $comment->save();
-
-   $slug = Input::get('slug');
-
-   Notification::success('Komentarz został zapisany!');
-   return Redirect::route('article', array('slug' => $slug)); // change to current article view
-}));
+Route::post('comment', array('as' => 'comment', 'uses' => 'CommentsController@postComment'));
 
 // 404 Page
 App::missing(function($exception)
@@ -81,20 +69,4 @@ Route::get('kontakt', array('as' => 'kontakt', function()
     return View::make('pages.kontakt');
 }));
 
-Route::post('kontakt', function()
-{
-   $data = array(
-    'email_content' => Input::get('email_content'),
-    'subject' => Input::get('email_subject'),
-    'sender_email' => Input::get('sender_email'),
-    'sender_name' => Input::get('sender_name'),
-    );
-   Mail::send('emails.default', $data, function($message) use ($data)
-   {
-    $message->to('pagodemc@gmail.com');
-    $message->subject('laraveil@czarnodziej.sanfree.eu');
-});
-
-   Session::flash('success', true);
-   return Redirect::route('kontakt');
-});
+Route::post('kontakt', 'KontaktController@sendMail');

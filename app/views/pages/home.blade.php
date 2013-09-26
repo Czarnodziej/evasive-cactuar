@@ -5,7 +5,7 @@
 </header>
 <p>
 	<a href="#">
-		<img class="obrazek" src="{{ asset('assets/img/1min.gif') }}" alt="randomowy obrazek kunsztownie wykonany w paincie">
+		<img class="obrazek" src="{{ asset('assets/img/1min.png') }}" alt="randomowy obrazek kunsztownie wykonany w paincie">
 	</a>
 </p>
 <p>Strona ma charakter rozwojowy. Co oznacza tyle, że jest tu mało zawartości, a docelowo będzie więcej. Dodatkowo znaczy to też, że do świetnego wyświetlania strony niezbędna jest aktualna przeglądarka internetowa.

@@ -33,7 +33,7 @@
 
 {{ Form::close() }}
 
-<p style="margin-top:50px;">Komentarze:</p><br>
+<hr style="margin-top:50px;">
 
 @foreach($entry->comments as $comment)
 	<div class="comment">
