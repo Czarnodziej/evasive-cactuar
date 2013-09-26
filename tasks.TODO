@@ -23,7 +23,7 @@ Views
    ✔ make a library out of addon/date_mod.php / yet to decide (http://stackoverflow.com/questions/17088917/what-are-the-best-practices-and-best-places-for-laravel-4-helpers-or-basic-funct) @done (25.09.13 16:23)
  ✔ implement a switcher/selector between "html/cakephp/laravel" versions of the website @done (26.09.13 00:51)
  ☐ implement tagging of articles
- ☐ scrolled homepage with streamlined content + ajax articles requests
+ ✘ scrolled homepage with streamlined content + ajax articles requests @cancelled (26.09.13 11:20)
 
 Routes
 
