@@ -13,8 +13,27 @@ Views
    ✔ implement tinyMCE @done (20.09.13 18:32)
      ✔ fix source edit and input sanitization @done (25.09.13 16:48)
   ✔ implement a switcher/selector between "html/cakephp/laravel" versions of the website @done (26.09.13 00:51)
- ☐ modify .js scripts to fit pages with/out jquery
- ☐ remove inline styles (admin views/article views)
+ ✔ modify .js scripts to fit pages with/out jquery @done (27.09.13 18:04)
+ ✔ modify date display in comments (capital letters etc.) @done (27.09.13 16:17)
+ ✔ fix date display in article index view @done (27.09.13 18:56)
+ ☐ ensure browser compatibility by using virtual machines
+   ✔ attach google frame @done (27.09.13 16:08)
+   ✔ use google fonts to maintain uniformity @done (27.09.13 16:39)
+   ☐ ie6 looks terrible / separate .css for ie6 just for the sake of being able to do it, ie6 sux anyway!
+   ☐ ie7 sidebar goes over main content
+   ✔ ie8 @done (27.09.13 15:09)
+   ✔ ie9 @done (27.09.13 15:22)
+   ✔ ie10  @done (27.09.13 15:50)
+   ✔ firefox @done (27.09.13 15:50)
+   ✔ chrome @done (27.09.13 16:07)
+   ✔ opera @done (27.09.13 16:41)
+   ☐ safari
+ ✔ remove inline styles (admin views/article views) @done (27.09.13 18:03)
+ ✔ responsive textarea and input fields in article + 'placeholder' jquery plugin to support older browsers  @done (27.09.13 18:08)
+    ☐ and contact form view
+    ☐ change the style of input fields and textareas
+   ☐ use fontawesome for background image
+ ☐ include day/night/weather cycle
  ☐ make js game
 
 Logic
@@ -25,7 +44,7 @@ Logic
     ✔ move controller closures from routes to separate controllers @done (26.09.13 15:23)
  ☐ implement form validation + ajax
  ✔ use "showTimeAgo"date format in "article" and "articles" view @done (25.09.13 16:23)
-   ✔ make a library out of addon/date_mod.php / yet to decide (http://stackoverflow.com/questions/17088917/what-are-the-best-practices-and-best-places-for-laravel-4-helpers-or-basic-funct) @done (25.09.13 16:23)
+   ✔ make a library out of addon/date_mod.php (http://stackoverflow.com/questions/17088917/what-are-the-best-practices-and-best-places-for-laravel-4-helpers-or-basic-funct) @done (25.09.13 16:23)
  ☐ implement tagging of articles using 3 tables 'toxi' solution (http://stackoverflow.com/questions/20856/how-do-you-recommend-implementing-tags-or-tagging?rq=1)
  ✘ scrolled homepage with streamlined content + ajax articles requests - not practical @cancelled (26.09.13 11:20)
 
@@ -37,3 +56,4 @@ DB
 
 Apache
  ✔ modify .htaccess to allow caching @done (26.09.13 18:11)
+   ✔ modify apache + dnsmasq vhosts config to give access to virtual machines @done!!!server_admin_skills_lvl_up! (27.09.13 14:41)

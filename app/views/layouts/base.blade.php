@@ -10,12 +10,19 @@
 	user-scalable=no">
 	<title>Wesoła wycieczka w treść</title>
 	@section('head')
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext' rel='stylesheet'>
 	<link rel="stylesheet" href="{{ asset('assets/css/style.min.css') }}">
 	<link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
 	<script src="{{ asset('assets/js/vendor/modernizr-2.6.2.min.js') }}"></script>
 	@show
 </head>
 <body>
+<!--[if lt IE 8]>
+  <p class="chromeframe">Używasz <strong>prehistorycznej</strong> przeglądarki.
+  Ochoczo zalecam <a href="http://browsehappy.com/">aktualizację</a>
+  lub <a href="http://www.google.com/chromeframe/?redirect=true">aktywację Google Chrome Frame</a>.
+  Aktualna przeglądarka to podstawa prawidłowego wyświetlania stron i bezpiecznego korzystania z internetu.</p>
+<![endif]-->
 	@section('topbar_nav')
 	<div id="gora-kontener">
 		<nav id="topbar">
@@ -63,9 +70,11 @@
 					<a href="https://github.com/Czarnodziej">
 						<span class="gh"></span>
 					</a>
+					<p>
 					<a href="http://laravel.com">
 						<img src="{{ asset('assets/img/laravel.png') }}" alt="laravel logo">
 					</a>
+					</p>
 				</div>
 				</nav>
 				@show
@@ -96,8 +105,12 @@
 		</div>
 	@section('bottom_scripts')
 	<!--[if lt IE 9]>
-	<script src="{{ asset('js/vendor/respond.min.js') }}" type="text/javascript"></script>
+	<script src="{{ asset('assets/js/vendor/respond.min.js') }}"></script>
 	<![endif]-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script> window.jQuery || document.write('<script src="{{ asset('assets/js/vendor/jquery-1.10.2.min.js') }}">\x3C/script>');
+	</script>
+	<script src="{{ asset('assets/js/vendor/jquery-placeholder/jquery.placeholder.min.js') }}"></script>
 	<script defer async src="{{ asset('assets/js/script.min.js') }}"></script>
 	@show
 </body>

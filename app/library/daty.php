@@ -9,10 +9,10 @@
 
 class Daty {
 
-public static function dateMod($format, $timestamp = null) {
+	public static function dateMod($format, $timestamp = null) {
 
   $to_convert = array(// define translated data in an array
-  	'l' => array('dat' => 'N', 'str' => array('Poniedziałek', 'Wtorek', 'Środa', 'Czwartek', 'Piątek', 'Sobota', 'Niedziela')),
+  	'l' => array('dat' => 'N', 'str' => array('poniedziałek', 'wtorek', 'środa', 'czwartek', 'piątek', 'sobota', 'niedziela')),
   	'F' => array('dat' => 'n', 'str' => array('styczeń', 'luty', 'marzec', 'kwiecień', 'maj', 'czerwiec', 'lipiec', 'sierpień', 'wrzesień', 'październik', 'listopad', 'grudzień')),
   	'f' => array('dat' => 'n', 'str' => array('stycznia', 'lutego', 'marca', 'kwietnia', 'maja', 'czerwca', 'lipca', 'sierpnia', 'września', 'października', 'listopada', 'grudnia'))
   	);
@@ -88,32 +88,32 @@ public static function showTimeAgo($data_wejsciowa) {
 		$restMinutes = ($minut-(60*$godzin));
 		$res = self::getMinutes($restMinutes);
 		if ($godzin == 1) {
-                return "Godzinę temu ";//.$res
-            } else {
-            	if ($godzin >1 && $godzin<5)return "$godzin godziny temu ";
-            	if ($godzin >4)return "$godzin godzin temu";
-            }
+	                return "Godzinę temu ";//.$res
+	            } else {
+	            	if ($godzin >1 && $godzin<5)return "$godzin godziny temu ";
+	            	if ($godzin >4)return "$godzin godzin temu";
+	            }
 
-        } else if (date("d.m.Y", $timestamp) == date("d.m.Y", $now)) {//jesli dzisiaj
-        	return "dzisiaj o ".date("H:i", $timestamp);
-        } else if (date("d.m.Y", $timestamp_wczoraj) == date("d.m.Y", $timestamp)) {//jesli wczoraj
-        	return "wczoraj o ".date("H:i", $timestamp);
-        } else if (date("d.m.Y", $timestamp_przedwczoraj) == date("d.m.Y", $timestamp)) {//jesli przedwczoraj
-        	return "przedwczoraj o ".date("H:i", $timestamp);
-        }
+	        } else if (date("d.m.Y", $timestamp) == date("d.m.Y", $now)) {//jesli dzisiaj
+	        	return "dzisiaj o ".date("H:i", $timestamp);
+	        } else if (date("d.m.Y", $timestamp_wczoraj) == date("d.m.Y", $timestamp)) {//jesli wczoraj
+	        	return "wczoraj o ".date("H:i", $timestamp);
+	        } else if (date("d.m.Y", $timestamp_przedwczoraj) == date("d.m.Y", $timestamp)) {//jesli przedwczoraj
+	        	return "przedwczoraj o ".date("H:i", $timestamp);
+	        }
 
-        switch($dni)
-        {
-        	case ($dni < 7): return "$dni dni temu, ".self::dateMod("l j f Y"); break;
-        	case 7: return "Tydzień temu, ".self::dateMod("l j f Y"); break;
-        	case ($dni > 7 && $dni < 14): return "Ponad tydzień temu, ".self::dateMod("l j f Y"); break;
-        	case 14: return "Dwa tygodnie temu, ".self::dateMod("l j f Y"); break;
-        	case ($dni > 14 && $dni < 30): return "Ponad 2 tygodnie temu, ".self::dateMod("l j f Y"); break;
-        	case 30: case 31: return "Miesiąc temu"; break;
-        	case ($dni > 31): return self::dateMod("l j f Y H:i"); break;
-        }
-        return self::dateMod("l j f Y");
-    }
+	        switch($dni)
+	        {
+	        	case ($dni < 7): return "$dni dni temu, ".date("d.m.Y", $timestamp); break;
+	        	case 7: return "Tydzień temu, ".date("d.m.Y", $timestamp); break;
+	        	case ($dni > 7 && $dni < 14): return "Ponad tydzień temu, ".date("d.m.Y", $timestamp); break;
+	        	case 14: return "Dwa tygodnie temu, ".date("d.m.Y", $timestamp); break;
+	        	case ($dni > 14 && $dni < 30): return "Ponad 2 tygodnie temu, ".date("d.m.Y", $timestamp); break;
+	        	case 30: case 31: return "Miesiąc temu".date("d.m.Y", $timestamp); break;
+	        	case ($dni > 31): return date("d.m.Y", $timestamp); break;
+	        }
+	        return self::dateMod("l j f Y");
+	    }
 
 public static function get_page_mod_time() { //checks all website files for modification time
 	$incls = get_included_files();

@@ -5,44 +5,38 @@
 <h4>Utworzony {{ Daty::showTimeAgo($entry->created_at) }}</h4>
 {{ $entry->body }}
 <hr>
-<p style="margin-top:50px;">Utwórz nowy komentarz:</p>
+<div class="komentarze">
+    <p>Komentarze:</p>
 
-
-{{ Form::open(array('route' => 'comment')) }}
+    {{ Form::open(array('route' => 'comment')) }}
 
     <div>
-        {{ Form::label('author', 'Nazwa użytkownika:') }}
-        <div>
-            {{ Form::text('author') }}
-        </div>
+    {{ Form::text('author', null, array('class' => 'textinput', 'placeholder' => 'Nazwa użytkownika')) }}
     </div>
 
     <div>
-        {{ Form::label('body', 'Treść komentarza:') }}
-        <div>
-            {{ Form::textarea('body') }}
-        </div>
+    {{ Form::textarea('body', null, array('class' => 'textinput', 'placeholder' => 'Treść komentarza')) }}
     </div>
 
     <div>
-    {{ Form::hidden('foreign_id', "$entry->id") }}
-    {{ Form::hidden('slug', "$entry->slug") }}
-        {{ Form::submit('Zapisz') }}
+        {{ Form::hidden('foreign_id', "$entry->id") }}
+        {{ Form::hidden('slug', "$entry->slug") }}
+        {{ Form::submit('Zapisz', array('class' => 'submitbutton')) }}
         {{ Notification::showAll() }}
     </div>
 
-{{ Form::close() }}
-
-<hr style="margin-top:50px;">
+    {{ Form::close() }}
+</div>
+<hr>
 
 @foreach($entry->comments as $comment)
-	<div class="comment">
-		<p>{{ $comment->name }}:<br>
-			{{ $comment->body }}<br>
-		<span style="font-size: 0.7em">Napisany {{ Daty::showTimeAgo($comment->created_at) }}</span>
-		</p>
-	</div>
-	<hr>
+<div class="comment">
+  <p>{{ $comment->name }}:<br>
+     {{ $comment->body }}<br>
+     <span>Napisany {{ Daty::showTimeAgo($comment->created_at) }}</span>
+ </p>
+</div>
+<hr>
 @endforeach
 
 

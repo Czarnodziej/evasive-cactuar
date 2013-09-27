@@ -31,6 +31,9 @@
   }
   mobilBGAttachFix();
 
+
+//jQuery functions
+
 $(function() {
   "use strict"; //jslint compatibility
   /* Polish initialisation for the jQuery UI date picker plugin.
@@ -85,8 +88,9 @@ $(function() {
   $('#tabs').css('visibility', 'visible'); //makes jQueryUI tabs visible after script executes to avoid FOUC. FOUC are bad!
 });
 
-$(function() {
+$('input, textarea').placeholder();
 
+$(function() {
 // Confirm deleting resources
 $("form[data-confirm]").submit(function() {
 	if ( ! confirm($(this).attr("data-confirm"))) {
