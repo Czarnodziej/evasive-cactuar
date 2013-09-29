@@ -107,10 +107,10 @@
 	<!--[if lt IE 9]>
 	<script src="{{ asset('assets/js/vendor/respond.min.js') }}"></script>
 	<![endif]-->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script> window.jQuery || document.write('<script src="{{ asset('assets/js/vendor/jquery-1.10.2.min.js') }}">\x3C/script>');
+	<script defer async src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script> window.jQuery || document.write('<script defer async src ="{{ asset('assets/js/vendor/jquery-1.10.2.min.js') }}">\x3C/script>');
 	</script>
-	<script src="{{ asset('assets/js/vendor/jquery-placeholder/jquery.placeholder.min.js') }}"></script>
+	<script defer async src="{{ asset('assets/js/vendor/jquery-placeholder/jquery.placeholder.min.js') }}"></script>
 	<script defer async src="{{ asset('assets/js/script.min.js') }}"></script>
 	@show
 </body>

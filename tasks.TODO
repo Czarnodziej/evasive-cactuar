@@ -3,7 +3,6 @@ Views
  ✔ add date_mod.php to default layout @done (13-09-18 18:45) @done (20-09-13 18:29)
  ✔ fix "/javascript" @done (20-09-13 18:29)
  ✔ make 404 view @done (20-09-13 18:29)
---- ✄ ------------------------ ✄ -----------------------
  ✔ overhaul the views in accordance to Laravel4 docs @done (20-09-13 18:29)
  ✔ add "/kontakt" with swiftmailer contact form - failed horribly - research data requests + forms, DONE! @done (20-09-13 18:29)
  ✔ redo "admin" section @done (20-09-13 18:29)
@@ -13,7 +12,7 @@ Views
    ✔ implement tinyMCE @done (20.09.13 18:32)
      ✔ fix source edit and input sanitization @done (25.09.13 16:48)
   ✔ implement a switcher/selector between "html/cakephp/laravel" versions of the website @done (26.09.13 00:51)
- ✔ modify .js scripts to fit pages with/out jquery @done (27.09.13 18:04)
+ ☐ modify .js scripts to fit pages with/out jquery/needed functions and optimzie its delivery + http://labjs.com
  ✔ modify date display in comments (capital letters etc.) @done (27.09.13 16:17)
  ✔ fix date display in article index view @done (27.09.13 18:56)
  ☐ ensure browser compatibility by using virtual machines
@@ -27,7 +26,7 @@ Views
    ✔ firefox @done (27.09.13 15:50)
    ✔ chrome @done (27.09.13 16:07)
    ✔ opera @done (27.09.13 16:41)
-   ☐ safari
+   ✔ safari - major pain to test, thx apple!/ tested using 5.17 on windows - transitions are messy, rest is acceptable @done (29.09.13 14:42)
  ✔ remove inline styles (admin views/article views) @done (27.09.13 18:03)
  ✔ responsive textarea and input fields in article + 'placeholder' jquery plugin to support older browsers  @done (27.09.13 18:08)
     ☐ and contact form view
@@ -38,6 +37,8 @@ Views
 
 Logic
  ✔ redo "article" and "articles" views @done (20.09.13 18:32)
+ ✔ routes n models small cleanup (and better understanding of them) @done (29.09.13 14:06)
+ ☐ research Eloquent relations
  ✔ implement comments system in "article" views - make controllers n models @done (24.09.13 17:48)
     ✔ fix the comment redirect to point to current article @done (24.09.13 18:21)
     ✔ redo single article route and sort comments (desc, created_at) @done (25.09.13 16:23)

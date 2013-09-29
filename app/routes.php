@@ -47,7 +47,7 @@ Route::get('teksty', array('as' => 'article.list', function()
 // Single article
 Route::get('teksty/{slug}', array('as' => 'article', function($slug)
 {
-    $article = Article::where('slug', $slug)->with( array('author', 'comments') )->first();
+    $article = Article::where('slug', $slug)->with('comments')->first();
 
     if ( ! $article) App::abort(404, 'Artykuł nie został odnaleziony');
 
