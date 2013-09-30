@@ -10,7 +10,6 @@ Using conditional statements to detect DOM features and load them if they are pr
 */
 
 //regular JavaScript
-"use strict"; //jslint compatibility
 var mobilBGAttachFix; //fixes backgroundAttachment=fixed in mobile web browsers (esp. android)
   mobilBGAttachFix = function() {
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|Opera Mini|IEMobile/i.test(navigator.userAgent)) {
@@ -35,7 +34,7 @@ var przycisk;
     };
     };
 przycisk();
-};
+}
 
 if (typeof jQuery != 'undefined') {
 
@@ -94,13 +93,13 @@ $(function() {
         }
       });
   $('#tabs').css('visibility', 'visible'); //makes jQueryUI tabs visible after script executes to avoid FOUC. FOUC is bad!
-})
-};
+});
+}
 
 //placeholder jQuery plugin
 if (typeof placeholder != 'undefined') {
  $('input, textarea').placeholder();
-};
+}
 
 //confirmation of resource deletion
 
@@ -110,7 +109,7 @@ $(function() {
    if ( ! confirm($(this).attr("data-confirm"))) {
     return false;
   }
-})
-})
-};
+});
+});
+}
 }

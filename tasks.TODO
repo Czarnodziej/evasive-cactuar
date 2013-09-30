@@ -32,7 +32,7 @@ Views
  ✔ responsive textarea and input fields in article + 'placeholder' jquery plugin to support older browsers  @done (27.09.13 18:08)
     ✔ and contact form view @done (30.09.13 17:04)
     ☐ change the style of input fields and textareas to be more coherent with current design
-    ☐ use background image in placeholder input fields
+    ☐ use fontawesome for prepending input fields
  ☐ include day/night/weather cycle
  ☐ make js game
 
