@@ -4,6 +4,7 @@ Views
  ✔ fix "/javascript" @done (20-09-13 18:29)
  ✔ make 404 view @done (20-09-13 18:29)
  ✔ overhaul the views in accordance to Laravel4 docs @done (20-09-13 18:29)
+ ✔ redo "article" and "articles" views @done (20.09.13 18:32)
  ✔ add "/kontakt" with swiftmailer contact form - failed horribly - research data requests + forms, DONE! @done (20-09-13 18:29)
  ✔ redo "admin" section @done (20-09-13 18:29)
    ✔ replace "pages" with "articles" logic @done (20-09-13 18:29)
@@ -36,7 +37,6 @@ Views
  ☐ make js game
 
 Logic
- ✔ redo "article" and "articles" views @done (20.09.13 18:32)
  ✔ routes n models small cleanup (and better understanding of them) @done (29.09.13 14:06)
  ☐ research Eloquent relations
  ✔ implement comments system in "article" views - make controllers n models @done (24.09.13 17:48)
@@ -48,6 +48,9 @@ Logic
    ✔ make a library out of addon/date_mod.php (http://stackoverflow.com/questions/17088917/what-are-the-best-practices-and-best-places-for-laravel-4-helpers-or-basic-funct) @done (25.09.13 16:23)
  ☐ implement tagging of articles using 3 tables 'toxi' solution (http://stackoverflow.com/questions/20856/how-do-you-recommend-implementing-tags-or-tagging?rq=1)
  ✘ scrolled homepage with streamlined content + ajax articles requests - not practical @cancelled (26.09.13 11:20)
+ ☐ Research Test-driven development (http://culttt.com/2013/03/11/what-is-test-driven-development + http://culttt.com/2013/03/13/getting-started-with-phpunit/)
+   ☐ make testable models
+   ☐ make testable controllers
 
 Routes
  ✔ clear the routes, remove "pages" group and replace it with separate pages @done (13-09-18 18:45)

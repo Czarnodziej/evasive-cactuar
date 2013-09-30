@@ -4,7 +4,7 @@ evasive-cactuar
 Laravel blog engine
 
 [Demo](http://czarnodziej.sanfre.eu/)
-
+[Current progress](https://github.com/Czarnodziej/evasive-cactuar/blob/master/tasks.TODO)
 
 ## Laravel PHP Framework
 
