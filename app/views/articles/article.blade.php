@@ -38,7 +38,14 @@
 </div>
 <hr>
 @endforeach
-
-
-
+@stop
+@section('bottom_scripts')
+  <!--[if lt IE 9]>
+  <script src="{{ asset('js/vendor/respond.min.js') }}" type="text/javascript"></script>
+  <![endif]-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script> window.jQuery || document.write('<script src ="{{ asset('assets/js/vendor/jquery-1.10.2.min.js') }}">\x3C/script>');
+  </script>
+  <script src="{{ asset('assets/js/vendor/jquery-placeholder/jquery.placeholder.min.js') }}"></script>
+  <script src="{{ asset('assets/js/script.min.js') }}"></script>
 @stop

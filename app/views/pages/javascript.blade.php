@@ -33,7 +33,7 @@
     <p>
       <strong>Możesz zmieniać kolejność zakładek za pomocą "przeciągnij i upuść".</strong>
     </p>
-    <p>Super łacina.Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum
+    <p>Super łacina. Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum
       quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula
       eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin.
       Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
@@ -46,7 +46,7 @@
       felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
   </div>
   <div id="tabs-3">
-    <p>Najbardziej super łacina. Znowu.Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent
+    <p>Najbardziej super łacina. Znowu. Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent
       viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros,
       id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Ehehe. Donec nisi lectus, feugiat porttitor,
       tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a
@@ -63,6 +63,5 @@
   <script> window.jQuery || document.write('<script src="{{ asset('assets/js/vendor/jquery-1.10.2.min.js') }}">\x3C/script>');
   </script>
   <script src="{{ asset('assets/js/vendor/jquery-ui-1.10.3.custom.min.js') }}"></script>
-  <script defer async src="{{ asset('assets/js/script.min.js') }}"></script>
+  <script src="{{ asset('assets/js/script.min.js') }}"></script>
 @stop
-
