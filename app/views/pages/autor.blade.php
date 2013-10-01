@@ -80,7 +80,7 @@
             <li>Technologie mobilne<span class="two-star-half"></span>
               <p>Android: Diagnostyka działania, zaawansowana konfiguracja, najnowsze trendy, kompilacja źródeł.</p>
             </li>
-            <li>Marketing<span class="two-star"></span>
+            <li>Marketing <span class="two-star"></span>
               <p>Tworzenie sloganów i tekstów reklamowych.</p>
             </li>
             <li>Język polski <span class="four-star-half"></span>

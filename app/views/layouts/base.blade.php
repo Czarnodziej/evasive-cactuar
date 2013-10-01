@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -13,19 +13,22 @@
 	<title>Wesoła wycieczka w treść - praktyczny Web Developing.</title>
 	@section('head')
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext' rel='stylesheet'>
-	<link rel="stylesheet" href="{{ asset('assets/css/style.min.css') }}">
-	<!--[if IE 7]>         <link rel="stylesheet" href="{{ asset('assets/css/font-awesome-ie7.min.css') }}"> <![endif]-->
+	<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+	<!--[if lt IE 8]>
+    <link rel="stylesheet" href="{{ asset('assets/css/font-awesome-ie7.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style-ie7.css') }}">
+  <![endif]-->
 	<link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
 	<script src="{{ asset('assets/js/vendor/modernizr-2.6.2.min.js') }}"></script>
 	@show
 </head>
 <body>
 <!--[if lt IE 8]>
-  <p class="chromeframe">Używasz <strong>prehistorycznej</strong> przeglądarki.
+  <p class="chromeframe">Używasz <strong>prehistorycznej</strong> przeglądarki, co hamuje rozwój internetu i stwarza <strong>realne zagrożenie dla Ciebie </strong> i wszystkich informacji jakie zamieszczasz w sieci.
   Ochoczo zalecam <a href="http://browsehappy.com/">aktualizację</a>
   lub <a href="http://www.google.com/chromeframe/?redirect=true">aktywację Google Chrome Frame</a>.
   Aktualna przeglądarka to podstawa prawidłowego wyświetlania stron i bezpiecznego korzystania z internetu.</p>
-  <![endif]-->
+<![endif]-->
   @section('topbar_nav')
   <div id="gora-kontener">
   	<nav id="topbar">
@@ -53,7 +56,7 @@
   			</li>
   			<li id="rozwin">
   				<a href="{{ URL::route('javascript') }}"><i class="icon-fixed-width icon-magic"></i>Javascript</a>
-  				<a href="{{ URL::route('javascript') }}">JavaScript</a>
+  				<a href="{{ URL::route('javascript') }}">Czysty JavaScript</a>
   				<a href="{{ URL::route('javascript') }}">jQuery</a>
   			</li>
   			<li>

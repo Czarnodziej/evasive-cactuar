@@ -2,6 +2,11 @@
 @section('head')
   <link rel="stylesheet" href="{{ asset('assets/css/style.min.css') }}">
   <link rel="stylesheet" href="{{ asset('assets/css/smoothness/jquery-ui-1.10.3.custom.min.css') }}">
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="{{ asset('assets/css/font-awesome-ie7.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style-ie7.css') }}">
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
   <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
   <script src="{{ asset('assets/js/vendor/modernizr-2.6.2.min.js') }}"></script>
 @stop
@@ -57,11 +62,9 @@
 
 @section('bottom_scripts')
   <!--[if lt IE 9]>
-  <script src="{{ asset('js/vendor/respond.min.js') }}" type="text/javascript"></script>
+  <script src="{{ asset('assets/js/vendor/respond.min.js') }}" type="text/javascript"></script>
   <![endif]-->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script> window.jQuery || document.write('<script src="{{ asset('assets/js/vendor/jquery-1.10.2.min.js') }}">\x3C/script>');
-  </script>
+  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
   <script src="{{ asset('assets/js/vendor/jquery-ui-1.10.3.custom.min.js') }}"></script>
   <script src="{{ asset('assets/js/script.min.js') }}"></script>
 @stop

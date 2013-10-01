@@ -11,11 +11,12 @@
     {{ Form::open(array('route' => 'comment')) }}
 
     <div>
+    <span class="add-on"><i class="icon-user"></i></span>
     {{ Form::text('author', null, array('class' => 'textinput', 'placeholder' => 'Nazwa użytkownika')) }}
     </div>
 
     <div>
-    {{ Form::textarea('body', null, array('class' => 'textinput', 'placeholder' => 'Treść komentarza')) }}
+    {{ Form::textarea('body', null, array('class' => 'textinput', 'id' => 'comment_content', 'placeholder' => 'Treść komentarza')) }}
     </div>
 
     <div>
