@@ -11,7 +11,7 @@
     {{ Form::open(array('route' => 'comment')) }}
 
     <div>
-    <span class="add-on"><i class="icon-user"></i></span>
+    <span class="add-on hide-ie8"><i class="icon-user"></i></span>
     {{ Form::text('author', null, array('class' => 'textinput', 'placeholder' => 'Nazwa użytkownika')) }}
     </div>
 

@@ -5,7 +5,7 @@
     <!--[if lt IE 8]>
     <link rel="stylesheet" href="{{ asset('assets/css/font-awesome-ie7.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/style-ie7.css') }}">
-    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <link rel="stylesheet" href="{{ asset('assets/css/style-ie6.css') }}">
   <![endif]-->
   <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
   <script src="{{ asset('assets/js/vendor/modernizr-2.6.2.min.js') }}"></script>
@@ -64,7 +64,7 @@
   <!--[if lt IE 9]>
   <script src="{{ asset('assets/js/vendor/respond.min.js') }}" type="text/javascript"></script>
   <![endif]-->
-  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="{{ asset('assets/js/vendor/jquery-ui-1.10.3.custom.min.js') }}"></script>
   <script src="{{ asset('assets/js/script.min.js') }}"></script>
 @stop

@@ -14,9 +14,15 @@
 	@section('head')
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext' rel='stylesheet'>
 	<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
-	<!--[if lt IE 8]>
+	<!--[if lt IE 9]>
+    <link rel="stylesheet" href="{{ asset('assets/css/style-ie8.css') }}">
+  <![endif]-->
+  <!--[if lt IE 8]>
     <link rel="stylesheet" href="{{ asset('assets/css/font-awesome-ie7.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/style-ie7.css') }}">
+  <![endif]-->
+  <!--[if lt IE 7]>
+    <link rel="stylesheet" href="{{ asset('assets/css/style-ie6.css') }}">
   <![endif]-->
 	<link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
 	<script src="{{ asset('assets/js/vendor/modernizr-2.6.2.min.js') }}"></script>
@@ -24,7 +30,7 @@
 </head>
 <body>
 <!--[if lt IE 8]>
-  <p class="chromeframe">Używasz <strong>prehistorycznej</strong> przeglądarki, co hamuje rozwój internetu i stwarza <strong>realne zagrożenie dla Ciebie </strong> i wszystkich informacji jakie zamieszczasz w sieci.
+  <p class="chromeframe">Używasz <strong>prehistorycznej</strong> przeglądarki, co stwarza <strong>realne zagrożenie dla Ciebie </strong> i wszystkich informacji jakie zamieszczasz w sieci.
   Ochoczo zalecam <a href="http://browsehappy.com/">aktualizację</a>
   lub <a href="http://www.google.com/chromeframe/?redirect=true">aktywację Google Chrome Frame</a>.
   Aktualna przeglądarka to podstawa prawidłowego wyświetlania stron i bezpiecznego korzystania z internetu.</p>

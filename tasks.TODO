@@ -13,13 +13,13 @@ Views
    ✔ implement tinyMCE @done (20.09.13 18:32)
      ✔ fix source edit and input sanitization @done (25.09.13 16:48)
   ✔ implement a switcher/selector between "html/cakephp/laravel" versions of the website @done (26.09.13 00:51)
- ✔ modify .js scripts to fit pages with/out jquery/needed functions and optimize its delivery (avoid IE errors!) @done (01.10.13 18:34)
+ ✔ modify .js scripts to fit pages with/out jquery/needed functions and optimize its delivery (avoid IE errors!) @done (02.10.13 14:48)
  ✔ modify date display in comments (capital letters etc.) @done (27.09.13 16:17)
  ✔ fix date display in article index view @done (27.09.13 18:56)
- ☐ ensure browser compatibility by using virtual machines
+ ✔ ensure browser compatibility by using virtual machines, YEA webdev lvl up! @done (02.10.13 15:41)
    ✔ attach google frame @done (27.09.13 16:08)
    ✔ use google fonts to maintain uniformity @done (27.09.13 16:39)
-   ☐ ie6 - remowe fontawesome
+   ✔ ie6 - replace fontawesome @done (02.10.13 15:40)
    ✔ ie7 - no more sidebar, ie6 n 7 are not worthy of it @done (01.10.13 17:11)
    ✔ ie8 @done (27.09.13 15:09)
    ✔ ie9 @done (27.09.13 15:22)
@@ -33,7 +33,7 @@ Views
     ✔ and contact form view @done (30.09.13 17:04)
     ✔ change the style of input fields and textareas to be more coherent with current design @done (01.10.13 15:10)
     ✔ use fontawesome for prepending input fields @done (01.10.13 15:10)
- ☐ include day/night/weather cycle
+ ☐ include day/night/weather cycle - not sure
  ☐ make js game
 
 Logic

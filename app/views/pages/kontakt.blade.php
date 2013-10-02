@@ -3,15 +3,15 @@
 <p>Formularz kontaktowy</p>
 {{ Form::open(array('url' => 'kontakt'))}}
 <div class="input-prepend">
-<span class="add-on"><i class="icon-user"></i></span>
+<span class="add-on hide-ie8"><i class="icon-user"></i></span>
 {{ Form::text('sender_name', null, array('class' => 'textinput', 'id' => 'sender_name', 'placeholder' => 'Twe imię')) }}
 </div>
 <div class="input-prepend">
-<span class="add-on"><i class="icon-envelope"></i></span>
+<span class="add-on hide-ie8"><i class="icon-envelope"></i></span>
 {{ Form::email('sender_email', null, array('class' => 'textinput', 'id' => 'sender_email', 'placeholder' => 'Twój e-mail')) }}
 </div>
 <div class="input-prepend">
-<span class="add-on"><i class="icon-pencil"></i></span>
+<span class="add-on hide-ie8"><i class="icon-pencil"></i></span>
 {{ Form::text('email_subject', null, array('class' => 'textinput', 'id' => 'email_subject', 'placeholder' => 'Temat wiadomości')) }}
 </div>
 <div>

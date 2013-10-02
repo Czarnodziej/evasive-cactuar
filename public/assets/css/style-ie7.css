@@ -1,3 +1,36 @@
+/* skills display in autor page */
+
+#skills {  /* skillsv = detailed view, skills = hidden details */
+  float: none;
+  padding-left: 0;
+  list-style: none;
+  text-align: left;
+  width: 95%;
+}
+
+#skills li {
+  margin: 2px 0;
+  padding: 3px 3px;
+  border: 2px solid navy;
+  border-radius: 5px;
+}
+
+#skills span {
+  display: block;
+}
+
+#skills p {
+  display: block;
+}
+
+/* hide unecessary segments  */
+
+.hide-ie7 {
+  display: none;
+}
+
+/* styling without sidebar  */
+
 body {
   font-size:1em;
   padding-top: 19px

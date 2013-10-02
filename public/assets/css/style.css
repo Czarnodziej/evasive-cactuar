@@ -721,8 +721,8 @@ article {
   text-align: left;
 }
 
-article {
-  padding: 10px;
+article p {
+  padding: 5px 0;
 }
 
 article label,

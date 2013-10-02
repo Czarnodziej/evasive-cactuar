@@ -10,8 +10,8 @@
   <p>Główne założenia techniczne:</p>
   <ul class="icons-ul">
     <li><i class="icon-li icon-ok icon-large"></i>przejrzystość (to, co dobrze wygląda, jest fajniejsze. Zazwyczaj)</li>
-    <li><i class="icon-li icon-ok icon-large"></i>minimalizm szaty graficznej (nadmiar szat wskazany w zimowej porze roku, a tutaj panuje wiecznie radosne lato
-      <i class="icon-fixed-width icon-spin icon-smile"></i><i class="icon-fixed-width icon-sun"></i>)</li>
+    <li><i class="icon-li icon-ok icon-large"></i>minimalizm szaty graficznej (nadmiar szat wskazany w zimowej porze roku, a tutaj panuje wiecznie radosne lato<span class="hide-ie6">
+      <i class="icon-fixed-width icon-spin icon-smile"></i><i class="icon-fixed-width icon-sun"></i></span>)</li>
       <li><i class="icon-li icon-ok icon-large"></i>czysty kod (ułatwia dalszy rozwój strony)</li>
       <li><i class="icon-li icon-ok icon-large"></i>idea hucznie zwana
         <abbr title="Responsive Web Design">RWD</abbr>, która pozwala na sprawne wyświetlanie strony na wielkich monitorach oraz mniejszych ekranach tabletowo-komórkowo-smartfonowych</li>
@@ -20,9 +20,9 @@
         samo siebie podczas gdy okno przeglądarki zmienia swój rozmiar. Polecam sprawdzić osobiście, bo to wspaniale rozrywkowy przerywnik, w przeciwieństwie do
         czytania wątpliwie interesującego tekstu.
       </p>
-      <p>Autorskie umiejętności, dla wielbiących gwiazdki oraz statystyki bez wyraźnego punktu odniesienia:</p>
+      <p>Autorskie umiejętności<span class="hide-ie7">, dla wielbiących gwiazdki oraz statystyki bez wyraźnego punktu odniesienia</span>:</p>
       <div id="sekcja-gwiazd">
-        <p>
+        <p class="hide-ie7">
           <button id="button" type="button" class="button">Pokaż sensowniejszy opis</button>
         </p>
         <ul id="skills">
