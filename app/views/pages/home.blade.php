@@ -37,7 +37,7 @@ Główne założenia projektów:
 <p>
 	Wersje strony:
 	<ul>
-		<li><a href="//czarnodziej.sanfre.eu/">Laravel 4 (obecna wersja)</a></li>
+		<li><a href="//czarnodziej.sanfre.eu/">Laravel 4 (obecnie rozwijana wersja)</a></li>
 		<li><a href="//www.cake.czarnodziej.sanfre.eu">CakePHP</a></li>
 		<li><a href="//old.czarnodziej.sanfre.eu">HTML</a></li>
 	</ul>

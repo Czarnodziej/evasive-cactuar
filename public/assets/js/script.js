@@ -1,13 +1,13 @@
-/* A baseline for javascript usage across all pages (main layout + separate views: autor, kontakt+article, javascript)
-Plain JS:
-main layout - mobilBGAttachFix, fixes backgroundAttachment=fixed in mobile web browsers (esp. android, not tested in other devices due to lack of hardware)
-autor - button behavior
-jQuery:
-kontakt+article - placeholder plugin for IE
-javascript - JqueryUI
+//  A baseline for javascript usage across all pages (main layout + separate views: autor, kontakt+article, javascript)
+// Plain JS:
+// main layout - mobilBGAttachFix, fixes backgroundAttachment=fixed in mobile web browsers (esp. android, not tested in other devices due to lack of hardware)
+// autor - button behavior
+// jQuery:
+// kontakt+article - placeholder plugin for IE
+// javascript - JqueryUI
 
-Using conditional statements to detect DOM features and load them if they are present.
-*/
+// Using conditional statements to detect DOM features and load them if they are present.
+
 
 //regular JavaScript
 var mobilBGAttachFix; //fixes backgroundAttachment=fixed in mobile web browsers (esp. android)
@@ -43,9 +43,9 @@ if (typeof jQuery != 'undefined') {
     //datepicker and tabs
     if (typeof datepicker != 'undefined') {
         $(function() {
-            /* Polish initialisation for the jQuery UI date picker plugin.
-               Written by Jacek Wysocki (jacek.wysocki@gmail.com).
-               Modified by Marcin Mongiało (pagodemc@gmail.com). */
+             //   Polish initialisation for the jQuery UI date picker plugin.
+             //   Written by Jacek Wysocki (jacek.wysocki@gmail.com).
+             //   Modified by Marcin Mongiało (pagodemc@gmail.com).
 
             $.datepicker.regional.pl = { //dot notation all the way
                 closeText: 'Zamknij',
