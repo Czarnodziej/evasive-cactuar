@@ -744,7 +744,7 @@ article ul, article ol {
 table {
   margin-bottom: 10px;
   width: 100%;
-  border-right:0;
+  border-right: 0;
   color: #333;
 }
 
@@ -1031,6 +1031,23 @@ label {
   -moz-transition: none;
   -o-transition: none;
   transition: none;
+}
+
+
+
+/*---- Game ----*/
+
+
+#game table,
+#game th,
+#game td
+{
+    border: 1px solid black;
+    width: 200px;
+    height: 60px;
+    color: white;
+    background: white;
+    text-align: center;
 }
 
 

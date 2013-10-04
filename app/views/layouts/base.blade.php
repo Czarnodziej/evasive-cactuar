@@ -62,7 +62,7 @@
   			</li>
   			<li id="rozwin">
   				<a href="{{ URL::route('javascript') }}"><i class="icon-fixed-width icon-magic"></i>Javascript</a>
-  				<a href="{{ URL::route('javascript') }}">Czysty JavaScript</a>
+  				<a href="{{ URL::route('game') }}">Czysty JavaScript</a>
   				<a href="{{ URL::route('javascript') }}">jQuery</a>
   			</li>
   			<li>

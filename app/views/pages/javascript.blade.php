@@ -58,6 +58,7 @@
       libero vitae lectus hendrerit hendrerit.</p>
   </div>
 </div>
+<p><a href="{{ URL::route('game') }}">Gra JavaScript</a></p>
 @stop
 
 @section('bottom_scripts')

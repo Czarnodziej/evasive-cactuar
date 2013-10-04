@@ -38,6 +38,11 @@ Route::get('javascript', array('as' => 'javascript', function()
     return View::make('pages.javascript');
 }));
 
+Route::get('game', array('as' => 'game', function()
+{
+    return View::make('pages.game');
+}));
+
 // Article list
 Route::get('teksty', array('as' => 'article.list', function()
 {
