@@ -1037,19 +1037,23 @@ label {
 
 /*---- Game ----*/
 
-
 #game table,
 #game th,
 #game td
 {
-    border: 1px solid black;
-    width: 200px;
-    height: 60px;
-    color: white;
-    background: white;
-    text-align: center;
+  border: 1px solid black;
+  width: 200px;
+  height: 60px;
+  text-align: center;
 }
 
+.gameCellRed {
+  background-color: red;
+}
+
+.gameCellGreen {
+  background-color: green;
+}
 
 /*---- media query ----*/
 
