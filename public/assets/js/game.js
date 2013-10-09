@@ -28,13 +28,11 @@
 // }
 // else
 // {
-//	subtract points from total
+//	subtract points from fail indicator
 // }
 
 // Gameover:
-// if (points below 1) {
-//	game over!
-// else if (fail indicator = 0)
+// if (fail indicator === 0)
 //	game over!
 // }
 
@@ -66,7 +64,12 @@ for (var r = 0; r < 3; r++) {
 }
 container.appendChild(table);
 
-// draw buttons todo: use objects
+// draw buttons todo: use objects createButton
+
+// function createButton(name) {
+
+// }
+
 
 var startBtn = document.createElement("input");
    startBtn.type = "submit";
@@ -81,7 +84,9 @@ container.appendChild(startBtn);
 container.appendChild(cancelBtn);
 
 
-// draw indicators todo: use objects
+// draw indicators todo: use object createIndicatorDiv
+// function createIndicatorDiv(name) {
+// }
 
 var divTotal = document.createElement("div");
 	divTotal.id = "divTotal";
@@ -98,6 +103,10 @@ var divFail = document.createElement("div");
 	divFail.className = "gameIndicatorDiv";
 	divFail.innerHTML = "Szanse: ";
 
+
+// todo: use object createCounterSpan
+// function createCounterSpan(name) {
+// }
 var spanTotal = document.createElement("span");
 	spanTotal.id = "Total";
 	spanTotal.className = "gameSpan";
@@ -134,6 +143,8 @@ var totalCounter = 0;
 var speedCounter = 10;
 var failCounter = 5;
 
+
+// todo: use function: setCounter (use nodeValue)
 spanTotal.innerHTML = totalCounter;
 spanSpeed.innerHTML = speedCounter;
 spanFail.innerHTML = failCounter;
@@ -152,10 +163,32 @@ spanFail.innerHTML = failCounter;
 
 
 // logic
-
+//
+// variables
         var color = Math.floor(Math.random()*2); // one of 2 possible colors
-        var counter = Math.floor(Math.random()*10)+1; // one of 10 possible colors (1-10)
+        var counter = Math.floor(Math.random()*10)+1; // one of 10 possible cells (1-10)
         var d = document.getElementById(counter); // assign table cell to variable
+
+
+// loop:
+// 1) decide a color and cell number
+// 2) display a color in a set time depending on speedCounter function
+// 3) add points for successful onclick event, reduce failCounter on unsuccessful onclick event + update the indicators
+// 4) after every event check all counters: failCounter, speedCounter and totalCounter:
+//		if (failCounter === 0){game over};
+//			if (totalCounter > 19) {
+//				speedCounter += 10
+//			}
+//			else if (totalCounter > 29)
+//			{
+//				speedCounter += 10
+//			}
+//			else if (totalCounter > 39)
+//			{
+//				speedCounter += 10
+//			}
+//
+
 
    startBtn.onclick = function() {
 

@@ -91,6 +91,9 @@
   	</nav>
   	@show
   	<article class="clearfix"><!--żeby float zachowywał wysokość kontenera-->
+    <noscript>
+      <p>Strona wymaga przeglądarki z włączoną obsługą JavaScript.</p>
+    </noscript>
   		<!--content start-->
   		@yield('main_content')
   	</article>
