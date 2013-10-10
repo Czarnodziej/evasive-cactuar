@@ -64,12 +64,7 @@ for (var r = 0; r < 3; r++) {
 }
 container.appendChild(table);
 
-// draw buttons todo: use objects createButton
-
-// function createButton(name) {
-
-// }
-
+// draw buttons
 
 var startBtn = document.createElement("input");
    startBtn.type = "submit";
@@ -87,6 +82,9 @@ container.appendChild(cancelBtn);
 // draw indicators todo: use object createIndicatorDiv
 // function createIndicatorDiv(name) {
 // }
+
+
+
 
 var divTotal = document.createElement("div");
 	divTotal.id = "divTotal";
@@ -167,7 +165,7 @@ spanFail.innerHTML = failCounter;
 // variables
         var color = Math.floor(Math.random()*2); // one of 2 possible colors
         var counter = Math.floor(Math.random()*10)+1; // one of 10 possible cells (1-10)
-        var d = document.getElementById(counter); // assign table cell to variable
+        var c = document.getElementById(counter); // assign table cell to variable
 
 
 // loop:
@@ -196,11 +194,11 @@ spanFail.innerHTML = failCounter;
 
         if (color === 1)
         {
-		d.className += ' gameCellRed';
+		c.className += ' gameCellRed';
 		}
 		else
 		{
-		d.className += ' gameCellGreen';
+		c.className += ' gameCellGreen';
 		}
 
  }, 1500);
