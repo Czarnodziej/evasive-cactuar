@@ -51,10 +51,10 @@
 
 
 // draw a table
-var data = ["1", "2", "3", "4", "5", "6", "7", "8", "9" ];
-var container = document.getElementById('game');
-var table = document.createElement("table");
-var i = 0;
+var data = ["1", "2", "3", "4", "5", "6", "7", "8", "9" ],
+	container = document.getElementById('game'),
+	table = document.createElement("table"),
+	i = 0;
 for (var r = 0; r < 3; r++) {
   var row = table.insertRow(-1);
   for (var c = 0; c < 3; c++) {
@@ -67,12 +67,12 @@ container.appendChild(table);
 // draw buttons
 
 var startBtn = document.createElement("input");
-   startBtn.type = "submit";
-   startBtn.value = "Start";
+	startBtn.type = "submit";
+	startBtn.value = "Start";
 
 var cancelBtn = document.createElement("input");
-   cancelBtn.type = "submit";
-   cancelBtn.value = "Anuluj";
+	cancelBtn.type = "submit";
+	cancelBtn.value = "Anuluj";
 
 
 container.appendChild(startBtn);
@@ -127,19 +127,11 @@ divFail.appendChild(spanFail);
 
 
 
+//default values of indicators, todo: replace innerHTML with textNodes
 
-
-
-
-
-
-
-
-//default values of indicators todo: replace innerHTML with textNodes
-
-var totalCounter = 0;
-var speedCounter = 10;
-var failCounter = 5;
+var totalCounter = 0,
+	speedCounter = 10,
+	failCounter = 5;
 
 
 // todo: use function: setCounter (use nodeValue)
@@ -163,9 +155,9 @@ spanFail.innerHTML = failCounter;
 // logic
 //
 // variables
-        var color = Math.floor(Math.random()*2); // one of 2 possible colors
-        var counter = Math.floor(Math.random()*10)+1; // one of 10 possible cells (1-10)
-        var c = document.getElementById(counter); // assign table cell to variable
+        var color = Math.floor(Math.random()*2), // one of 2 possible colors
+			counter = Math.floor(Math.random()*10)+1, // one of 10 possible cells (1-10)
+			c = document.getElementById(counter); // assign table cell to variable
 
 
 // loop:
@@ -181,7 +173,7 @@ spanFail.innerHTML = failCounter;
 //			{
 //				speedCounter += 10
 //			}
-//			else if (totalCounter > 39)
+//			else (totalCounter > 39)
 //			{
 //				speedCounter += 10
 //			}
