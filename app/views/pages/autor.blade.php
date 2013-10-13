@@ -32,7 +32,7 @@
               <a href="http://en.wikipedia.org/wiki/Sprite_%28computer_graphics%29#Sprites_by_CSS">CSS Sprite</a>,
               <a href="http://caniuse.com/">Kompatybilność z przeglądarkami</a><br>
               <a href="http://developers.google.com/speed/pagespeed/insights/?url=czarnodziej.sanfre.eu%2F">Optymalna prędkość</a>.
-              <br>Todo: <a href="http://yeoman.io">Yeoman</a>, <a href="http://foundation.zurb.com/">Foundation 4</a>
+              <br>Todo: <a href="http://yeoman.io">Yeoman</a>, <a href="http://foundation.zurb.com/">Foundation 4</a>, preprocesory CSS
             </p>
           </li>
           <li>JavaScript <span class="one-star-half"></span>
@@ -40,7 +40,7 @@
               <br>Todo: <a href="http://pl.wikipedia.org/wiki/AJAX">AJAX</a>, <a href="http://angularjs.org/">Angular.js</a>
             </p>
           </li>
-          <li>PHP <span class="two-star-half"></span>
+          <li>PHP <span class="two-star"></span>
             <p>Podstawowe zagadnienia: pętle, tablice, obiekty, klasy. <a href="http://laravel.com/">Laravel </a>, <a href="http://cakephp.org/">CakePHP</a>.
               <br>Todo: <a href="http://pl.wikipedia.org/wiki/Test-driven_development">Test-driven development</a>
             </p>
