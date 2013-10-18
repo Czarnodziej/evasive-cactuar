@@ -15,7 +15,6 @@ class CommentsController extends BaseController {
 		$slug = Input::get('slug');
 
 		Notification::success('Komentarz został zapisany!');
-   return Redirect::route('article', array('slug' => $slug)); // change to current article view
-
-}
+	  	return Redirect::route('article', array('slug' => $slug)); // change to current article view
+	}
 }

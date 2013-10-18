@@ -12,8 +12,8 @@
 </p>
 Plany w kolejności chronologicznej:
 <ul class="icons-ul">
-	<li><i class="icon-li icon-screenshot icon-large"></i>Wielce użyteczne formularze z wykorzystaniem AJAX</li>
 	<li><i class="icon-li icon-screenshot icon-large"></i>Wykorzystanie Javascript do stworzenia prostej gry przeglądarkowej</li>
+	<li><i class="icon-li icon-screenshot icon-large"></i>Wielce użyteczne formularze z wykorzystaniem AJAX</li>
 	<li><i class="icon-li icon-screenshot icon-large"></i>Kilka artykułów nt. technologii internetowo-komputerowych z naciskiem na dostępność dla zwykłych użytkowników</li>
 </ul>
 <p>Wszystkie powyższe założenia będą wdrażane z zachowaniem wysokiej przejrzystości strony i dostępności zawartych tutaj informacji. Idąc rozwojowym torem, powyższych celów będzie więcej, bo apetyt na ów rozwój rośnie wraz z ilością poznawanych technologii<span class="hide-ie6"> (<i class="icon-food icon-large"></i> + <i class="icon-cogs icon-large"></i> = <i class="icon-smile icon-large"></i>)</span>. A tych nie brakuje.</p>
@@ -33,7 +33,6 @@ Główne założenia projektów:
 	<li><i class="icon-li icon-screenshot icon-large"></i>Responsywność</li>
 </ul>
 </p>
-
 <p>
 	Wersje strony:
 	<ul>

@@ -32,7 +32,7 @@
               <a href="http://en.wikipedia.org/wiki/Sprite_%28computer_graphics%29#Sprites_by_CSS">CSS Sprite</a>,
               <a href="http://caniuse.com/">Kompatybilność z przeglądarkami</a><br>
               <a href="http://developers.google.com/speed/pagespeed/insights/?url=czarnodziej.sanfre.eu%2F">Optymalna prędkość</a>.
-              <br>Todo: <a href="http://yeoman.io">Yeoman</a>, <a href="http://foundation.zurb.com/">Foundation 4</a>, preprocesory CSS
+              <br>Todo: <a href="http://yeoman.io">Yeoman</a>, <a href="http://foundation.zurb.com/">Foundation 4</a>, preprocesory CSS.
             </p>
           </li>
           <li>JavaScript <span class="one-star-half"></span>
@@ -40,14 +40,19 @@
               <br>Todo: <a href="http://pl.wikipedia.org/wiki/AJAX">AJAX</a>, <a href="http://angularjs.org/">Angular.js</a>
             </p>
           </li>
-          <li>PHP <span class="two-star"></span>
-            <p>Podstawowe zagadnienia: pętle, tablice, obiekty, klasy. <a href="http://laravel.com/">Laravel </a>, <a href="http://cakephp.org/">CakePHP</a>.
-              <br>Todo: <a href="http://pl.wikipedia.org/wiki/Test-driven_development">Test-driven development</a>
+          <li>PHP <span class="one-star-half"></span>
+            <p>Podstawowe zagadnienia, <a href="http://laravel.com/">Laravel </a>, <a href="http://cakephp.org">CakePHP</a>.
+              <br>Todo: <a href="http://pl.wikipedia.org/wiki/Test-driven_development">Test-driven development</a>.
+            </p>
+          </li>
+          <li>DB <span class="half-star"></span>
+            <p>Podstawowe zagadnienia, <a href="http://www.mysql.com/">MySQL</a>.
+              <br>Todo: <a href="http://www.sqlite.org/">SQLite</a>, <a href="http://www.postgresql.org">PostgreSQL</a>, <a href="http://redis.io">Redis</a>.
             </p>
           </li>
           <li>Apache <span class="two-star"></span>
             <p>Konfiguracja <a href="http://www.apachefriends.org/en/xampp.html">XAMPP</a>: <a href="http://httpd.apache.org/docs/2.2/vhosts/mass.html">Dynamic Virtual Hosts</a> + <a href="http://pl.wikipedia.org/wiki/Dnsmasq">Dnsmasq</a>, PHP, MySQL, cache, gzip.
-              <br>Todo: <a href="http://pl.wikipedia.org/wiki/Memcached">Memcached</a>, <a href="http://pl.wikipedia.org/wiki/Nginx">Nginx</a>
+              <br>Todo: <a href="http://pl.wikipedia.org/wiki/Memcached">Memcached</a>, <a href="http://pl.wikipedia.org/wiki/Nginx">Nginx</a>.
             </p>
           </li>
           <li>Narzędzia <span class="four-star"></span>
@@ -61,9 +66,8 @@
               <a href="http://www.photoshop.com/">Adobe Photoshop CS6</a>,
               <a href="http://www.gimp.org/">GIMP</a>,
               <a href="http://audacity.sourceforge.net/">Audacity</a>,
-              <a href="https://www.virtualbox.org/">VirtualBox.</a>
-
-              <br>Todo: <a href="http://en.wikipedia.org/wiki/Regular_expression">RegEx</a>
+              <a href="https://www.virtualbox.org/">VirtualBox</a>.
+              <br>Todo: <a href="http://en.wikipedia.org/wiki/Regular_expression">RegEx</a>.
             </p>
           </li>
           <li>Linux <span class="two-star"></span>
