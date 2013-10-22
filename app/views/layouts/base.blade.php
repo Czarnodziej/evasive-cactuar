@@ -70,20 +70,20 @@
   			</li>
   		</ul>
   		<div class="social">
-  			<a href="https://www.facebook.com/marcin.marcinowy.5">
+  			<a href="https://www.facebook.com/marcin.marcinowy.5" target="_blank">
   				<span class="fb"></span>
   			</a>
-  			<a href="https://twitter.com/Czarnodziej">
+  			<a href="https://twitter.com/Czarnodziej" target="_blank">
   				<span class="tw"></span>
   			</a>
   			<a href="{{ URL::route('kontakt') }}">
   				<span class="mail"></span>
   			</a>
-  			<a href="https://github.com/Czarnodziej">
+  			<a href="https://github.com/Czarnodziej" target="_blank">
   				<span class="gh"></span>
   			</a>
   			<p>
-  				<a href="http://laravel.com">
+  				<a href="http://laravel.com" target="_blank">
   					<img src="{{ asset('assets/img/laravel.png') }}" alt="laravel logo">
   				</a>
   			</p>
@@ -100,21 +100,21 @@
   	@section('footer')
   	<footer id="stopka-strony">
   		<div class="social">
-  			<a href="https://www.facebook.com/marcin.marcinowy.5">
+  			<a href="https://www.facebook.com/marcin.marcinowy.5" target="_blank">
   				<span class="fb"></span>
   			</a>
-  			<a href="https://twitter.com/Czarnodziej">
+  			<a href="https://twitter.com/Czarnodziej" target="_blank">
   				<span class="tw"></span>
   			</a>
   			<a href="{{ URL::route('kontakt') }}">
   				<span class="mail"></span>
   			</a>
-  			<a href="https://github.com/Czarnodziej">
+  			<a href="https://github.com/Czarnodziej" target="_blank">
   				<span class="gh"></span>
   			</a>
   		</div>
   		<p>©2013. Kopiowanie treści tekstów zawartych na stronie bez zgody autora jest czynem karygodnym.<br>
-  			<a href="//github.com/Czarnodziej/evasive-cactuar/commits/master">Ostatnia modyfikacja: {{daty::dateMod("l j f Y", daty::get_page_mod_time())}}</a></p>
+  			<a href="//github.com/Czarnodziej/evasive-cactuar/commits/master" target="_blank">Ostatnia modyfikacja: {{daty::dateMod("l j f Y", daty::get_page_mod_time())}}</a></p>
   		</footer>
   		@show
   	</div>
