@@ -12,7 +12,6 @@
 @section('main_content')
 <div>
   Instrukcje: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae necessitatibus eius assumenda fugiat recusandae ratione quae. Quaerat, asperiores, doloribus odio aspernatur magnam itaque suscipit accusamus dolore a quisquam praesentium nulla.
-
 </div>
 
 <div id="game">

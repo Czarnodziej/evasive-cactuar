@@ -85,7 +85,6 @@ container.appendChild(cancelBtn);
 
 
 
-
 var divTotal = document.createElement("div");
 	divTotal.id = "divTotal";
 	divTotal.className = "gameIndicatorDiv";
@@ -157,7 +156,7 @@ spanFail.innerHTML = failCounter;
 // variables
         var color = Math.floor(Math.random()*2), // one of 2 possible colors
 			counter = Math.floor(Math.random()*10)+1, // one of 10 possible cells (1-10)
-			c = document.getElementById(counter); // assign table cell to variable
+			randomCell = document.getElementById(counter); // assign table cell to variable
 
 
 // loop:
@@ -180,21 +179,40 @@ spanFail.innerHTML = failCounter;
 //
 
 
-   startBtn.onclick = function() {
-
- setTimeout(function() {
-
+// 1)
+function randomCellColor() {
         if (color === 1)
         {
-		c.className += ' gameCellRed';
+		randomCell.className += ' gameCellRed';
 		}
 		else
 		{
-		c.className += ' gameCellGreen';
+		randomCell.className += ' gameCellGreen';
 		}
 
- }, 1500);
+		randomCell.onclick = function() {
+			if (randomCell.className == ' gameCellRed')
+				failCounter -= 1;
+			else
+				totalCounter += 1;
+			randomCell.className = null;
+		};
+}
 
+// 2)
+
+
+   startBtn.onclick = function() {
+if(failCounter > 0){
+ setTimeout(function() {
+//main loop
+
+	randomCellColor();
+
+
+
+ }, 1500);
+}
     };
 
 
@@ -202,5 +220,6 @@ spanFail.innerHTML = failCounter;
 
 
     cancelBtn.onclick = function() {
-         alert("hiahia");
+		//stop the loop
+         alert("Liczba punktów = " + totalCounter);
      };

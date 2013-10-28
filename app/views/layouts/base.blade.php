@@ -6,8 +6,7 @@
 <html lang="pl">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0,
-	user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,	user-scalable=no">
 	<meta name="description" content="Wojaże związane z tworzeniem stron internetowych, źródłowo udokumentowane oraz zabawnie podane. Tego drugiego nie jestem pewien.">
 	<meta name="keywords" content="web design, web development, humor, portfolio, php, laravel, cakephp, jquery" />
 	<title>Wesoła wycieczka w treść - praktyczny Web Developing.</title>

@@ -1038,7 +1038,7 @@ label {
 /*---- Game ----*/
 
 #game table,
-#game th,
+#game tr,
 #game td
 {
   border: 1px solid black;
