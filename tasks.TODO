@@ -37,11 +37,15 @@ Views
  ✔ Research "Proffesional JavaScript for Web Developers", mainly basics + OOP + DOM manipulation @done (29.10.13 17:26)
    ☐ make js game
      ✔ draw DOM @done (29.10.13 17:24)
-     ☐ use OOP where it is suitable
      ✔ make it work @done (29.10.13 17:24)
-       ☐ make it work precisely as it should be
+       ☐ make it work precisely as it should be:
+         ☐ clicking other cell than green = fail
+         ☐ not clicking green within time window = fail
      ☐ make it DRY as possible
-     ☐ eliminate console errors
+     ☐ use OOP
+       ✔ and namespace - http://www.javascripttoolbox.com/bestpractices/#namespace @done (30.10.13 16:25)
+         ☐ clean and organize it
+     ✔ eliminate console errors @done (30.10.13 15:22)
 
 Logic
  ✔ routes n models small cleanup (and better understanding of them) @done (29.09.13 14:06)

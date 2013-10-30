@@ -1,90 +1,92 @@
 //  Super Simple Clicking Game
 
 // Super because it really is.
-// Simple because it's not meant to be scallable nor enormously optimized.
+// Simple because it's not meant to be enormously optimized.
 // Clicking because it involves said activity.
 // Game because games are fun.
 
+var MyGame = {};
+
 // draw a table
-var data = ["1", "2", "3", "4", "5", "6", "7", "8", "9" ],
-container = document.getElementById('game'),
-table = document.createElement("table"),
-i = 0;
-for (var r = 0; r < 3; r++) {
-	var row = table.insertRow(-1);
-	for (var c = 0; c < 3; c++) {
-		var cell = row.insertCell(-1);
-		cell.setAttribute("id", data[i++]);
+MyGame.data = ["1", "2", "3", "4", "5", "6", "7", "8", "9" ];
+MyGame.container = document.getElementById("game");
+MyGame.table = document.createElement("table");
+MyGame.i = 0;
+for (MyGame.r = 0; MyGame.r < 3; MyGame.r++) {
+	MyGame.row = MyGame.table.insertRow(-1);
+	for (MyGame.c = 0; MyGame.c < 3; MyGame.c++) {
+		MyGame.cell = MyGame.row.insertCell(-1);
+		MyGame.cell.setAttribute("id", MyGame.data[MyGame.i++]);
 	}
 }
-container.appendChild(table);
+MyGame.container.appendChild(MyGame.table);
 
 // draw buttons
 
-var startBtn = document.createElement("input");
-startBtn.type = "submit";
-startBtn.value = "Start";
+MyGame.startBtn = document.createElement("input");
+MyGame.startBtn.type = "submit";
+MyGame.startBtn.value = "Start";
 
-var cancelBtn = document.createElement("input");
-cancelBtn.type = "submit";
-cancelBtn.value = "Anuluj";
+MyGame.cancelBtn = document.createElement("input");
+MyGame.cancelBtn.type = "submit";
+MyGame.cancelBtn.value = "Anuluj";
 
 
-container.appendChild(startBtn);
-container.appendChild(cancelBtn);
+MyGame.container.appendChild(MyGame.startBtn);
+MyGame.container.appendChild(MyGame.cancelBtn);
 
 
 // draw indicators, todo: use object createIndicatorDiv
 // function createIndicatorDiv(name) {
 // }
 
-var divTotal = document.createElement("div");
-divTotal.id = "divTotal";
-divTotal.className = "gameIndicatorDiv";
-divTotal.innerHTML = "Punkty: ";
+MyGame.divTotal = document.createElement("div");
+MyGame.divTotal.id = "divTotal";
+MyGame.divTotal.className = "gameIndicatorDiv";
+MyGame.divTotal.innerHTML = "Punkty: ";
 
-var divSpeed = document.createElement("div");
-divSpeed.id = "divSpeed";
-divSpeed.className = "gameIndicatorDiv";
-divSpeed.innerHTML = "Prędkość: ";
+MyGame.divSpeed = document.createElement("div");
+MyGame.divSpeed.id = "divSpeed";
+MyGame.divSpeed.className = "gameIndicatorDiv";
+MyGame.divSpeed.innerHTML = "Prędkość: ";
 
-var divFail = document.createElement("div");
-divFail.id = "divFail";
-divFail.className = "gameIndicatorDiv";
-divFail.innerHTML = "Szanse: ";
+MyGame.divFail = document.createElement("div");
+MyGame.divFail.id = "divFail";
+MyGame.divFail.className = "gameIndicatorDiv";
+MyGame.divFail.innerHTML = "Szanse: ";
 
 
 // todo: use object createCounterSpan
 // function createCounterSpan(name) {
 // }
-var spanTotal = document.createElement("span");
-spanTotal.id = "Total";
-spanTotal.className = "gameSpan";
+MyGame.spanTotal = document.createElement("span");
+MyGame.spanTotal.id = "Total";
+MyGame.spanTotal.className = "gameSpan";
 
-var spanSpeed = document.createElement("span");
-spanSpeed.id = "Speed";
-spanSpeed.className = "gameSpan";
+MyGame.spanSpeed = document.createElement("span");
+MyGame.spanSpeed.id = "Speed";
+MyGame.spanSpeed.className = "gameSpan";
 
-var spanFail = document.createElement("span");
-spanFail.id = "Fail";
-spanFail.className = "gameSpan";
+MyGame.spanFail = document.createElement("span");
+MyGame.spanFail.id = "Fail";
+MyGame.spanFail.className = "gameSpan";
 
-container.appendChild(divTotal);
-container.appendChild(divSpeed);
-container.appendChild(divFail);
+MyGame.container.appendChild(MyGame.divTotal);
+MyGame.container.appendChild(MyGame.divSpeed);
+MyGame.container.appendChild(MyGame.divFail);
 
-divTotal.appendChild(spanTotal);
-divSpeed.appendChild(spanSpeed);
-divFail.appendChild(spanFail);
+MyGame.divTotal.appendChild(MyGame.spanTotal);
+MyGame.divSpeed.appendChild(MyGame.spanSpeed);
+MyGame.divFail.appendChild(MyGame.spanFail);
 
 //default values of indicators, todo: replace innerHTML with textNodes (use nodeValue)
-spanTotal.innerHTML = 0;
-spanSpeed.innerHTML = 1;
-spanFail.innerHTML = 5;
+MyGame.spanTotal.innerHTML = 0;
+MyGame.spanSpeed.innerHTML = 1;
+MyGame.spanFail.innerHTML = 5;
 
-var totalCounter = 0,
-speedCounter = 1,
-failCounter = 5;
+MyGame.totalCounter = 0;
+MyGame.speedCounter = 1;
+MyGame.failCounter = 5;
 
 // logic
 
@@ -93,100 +95,95 @@ failCounter = 5;
 // 2) display a color in a set time depending on speedCounter function
 // 3) add points for successful onclick event, reduce failCounter on unsuccessful onclick event + update the indicators
 
-function setSpeed() {
-	if (totalCounter > 15) {
-		cellShowSpeed = 400;
-		spanSpeed.innerHTML = 4;
-	}
-	else if (totalCounter > 10)
+MyGame.setSpeed = function() {
+	if (MyGame.totalCounter > 15)
 	{
-		cellShowSpeed = 600;
-		spanSpeed.innerHTML = 3;
+		MyGame.cellShowSpeed = 400;
+		MyGame.spanSpeed.innerHTML = 4;
 	}
-	else if (totalCounter > 5)
+	else if (MyGame.totalCounter > 10)
 	{
-		cellShowSpeed = 800;
-		spanSpeed.innerHTML = 2;
+		MyGame.cellShowSpeed = 600;
+		MyGame.spanSpeed.innerHTML = 3;
+	}
+	else if (MyGame.totalCounter > 5)
+	{
+		MyGame.cellShowSpeed = 800;
+		MyGame.spanSpeed.innerHTML = 2;
 	}
 	else
 	{
-		cellShowSpeed = 1000;
+		MyGame.cellShowSpeed = 1000;
 	}
-}
+};
 
-var cellShowSpeed = 1000;
-function randomCellColor(){
+MyGame.cellShowSpeed = 1000;
+MyGame.randomCellColor = function(){
 		// variables
         var color = Math.floor(Math.random()*2), // one of 2 possible colors
 			counter = Math.floor(Math.random()*10)+1, // one of 10 possible cells (1-10)
-			// cellWithoutClassWithinTable = todo
 			randomCell = document.getElementById(counter); // assign table cell to variable
 
-			if (color === 1)
-			{
-				randomCell.className += ' gameCellRed';
-				setTimeout(function(){randomCell.className = null;}, cellShowSpeed);
-			}
-			else
-			{
-				randomCell.className += ' gameCellGreen';
-				setTimeout(function(){randomCell.className = null;}, cellShowSpeed);
-			}
+			if (randomCell !== null) {
+				if (color === 1)
+				{
+					randomCell.className += ' gameCellRed';
+					setTimeout(function(){randomCell.className = null;}, MyGame.cellShowSpeed);
+				}
+				else
+				{
+					randomCell.className += ' gameCellGreen';
+					setTimeout(function(){
+					randomCell.className = null;
+					}, MyGame.cellShowSpeed);
+				}
 
-			randomCell.onclick = function() {
-				if (randomCell.className === ' gameCellRed'){
-					failCounter -= 1;
-					spanFail.innerHTML = failCounter;
+			randomCell.onclick = function() { //todo: rework it
+				if (randomCell.className === ' gameCellGreen')
+				{
+					MyGame.totalCounter += 1;
+					MyGame.spanTotal.innerHTML = MyGame.totalCounter;
+					MyGame.setSpeed();
 					randomCell.className = null;
 				}
-				else{
-					totalCounter += 1;
-					spanTotal.innerHTML = totalCounter;
-					setSpeed();
+				else
+				{
+					MyGame.failCounter -= 1;
+					MyGame.spanFail.innerHTML = MyGame.failCounter;
 					randomCell.className = null;
 				}
 			};
-
-// cellWithoutClassWithinTable.onclick = function() {
-// failCounter -= 1;
-// }
-//
-// unclickedGreenWithinDisplayTime = function(){
-// failCounter -= 1;
-// }
-//
-
-
 		}
+	};
 
 //click the "Start" button
-startBtn.onclick = function() {
+MyGame.startBtn.onclick = function() {
 //start the loop
-	spanTotal.innerHTML = 0;
-	spanSpeed.innerHTML = 1;
-	spanFail.innerHTML = 5;
+MyGame.spanTotal.innerHTML = 0;
+MyGame.spanSpeed.innerHTML = 1;
+MyGame.spanFail.innerHTML = 5;
 
-	var myTimer = setInterval(function(){
-		if(failCounter>0) {
-			randomCellColor();
-		}
+var myTimer = setInterval(function(){
+	if(MyGame.failCounter>0) {
+		MyGame.randomCellColor();
+	}
 
 		else{ //end the loop
-		clearInterval(myTimer);
-		alert("Liczba punktów = " + totalCounter);
-		totalCounter = 0;
-		failCounter = 5;
+			clearInterval(myTimer);
+			alert("Liczba punktów = " + MyGame.totalCounter);
+			MyGame.totalCounter = 0;
+			MyGame.failCounter = 5;
 		}
-		},1000);
+	},1000);
 
-	cancelBtn.onclick = function() {
+MyGame.cancelBtn.onclick = function() {
 		//end the loop
 		clearInterval(myTimer);
-		spanTotal.innerHTML = 0;
-		spanSpeed.innerHTML = 1;
-		spanFail.innerHTML = 5;
-		alert("Liczba punktów = " + totalCounter);
-		totalCounter = 0;
-		failCounter = 5;
+		MyGame.spanTotal.innerHTML = 0;
+		MyGame.spanSpeed.innerHTML = 1;
+		MyGame.spanFail.innerHTML = 5;
+		alert("Liczba punktów = " + MyGame.totalCounter);
+		MyGame.totalCounter = 0;
+		MyGame.failCounter = 5;
 	};
 };
