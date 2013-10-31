@@ -38,9 +38,10 @@ Views
    ☐ make js game
      ✔ draw DOM @done (29.10.13 17:24)
      ✔ make it work @done (29.10.13 17:24)
-       ☐ make it work precisely as it should be:
-         ☐ clicking other cell than green = fail
-         ☐ not clicking green within time window = fail
+       ✔ make it work precisely as it should be: @done (31.10.13 15:53)
+         ✔ clicking other cell than green = fail @done (31.10.13 15:53)
+         ✔ not clicking green within time window = fail @done (31.10.13 15:53)
+         ☐ test and debug it
      ☐ make it DRY as possible
      ☐ use OOP
        ✔ and namespace - http://www.javascripttoolbox.com/bestpractices/#namespace @done (30.10.13 16:25)

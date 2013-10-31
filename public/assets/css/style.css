@@ -1035,7 +1035,12 @@ label {
 
 
 
-/*---- Game ----*/
+/*---- Game.js ----*/
+
+#game table{
+  margin:10px;
+}
+
 
 #game table,
 #game tr,
@@ -1048,10 +1053,12 @@ label {
 }
 
 .gameCellRed {
+  background-image:url('img/game/red.png');
   background-color: red;
 }
 
 .gameCellGreen {
+  background-image:url('img/game/green.png');
   background-color: green;
 }
 

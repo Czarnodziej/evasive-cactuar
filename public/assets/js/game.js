@@ -56,9 +56,9 @@ MyGame.divFail.className = "gameIndicatorDiv";
 MyGame.divFail.innerHTML = "Szanse: ";
 
 
-// todo: use object createCounterSpan
-// function createCounterSpan(name) {
-// }
+// todo: use object createIndicatorSpan
+// function createCounterIndicator
+
 MyGame.spanTotal = document.createElement("span");
 MyGame.spanTotal.id = "Total";
 MyGame.spanTotal.className = "gameSpan";
@@ -133,15 +133,19 @@ MyGame.randomCellColor = function(){
 				else
 				{
 					randomCell.className += ' gameCellGreen';
-					setTimeout(function(){
+					setTimeout(function()
+					{
 					randomCell.className = null;
+					MyGame.failCounter -= 1;   //no onclick event = fail
+					MyGame.spanFail.innerHTML = MyGame.failCounter;
 					}, MyGame.cellShowSpeed);
 				}
 
-			randomCell.onclick = function() { //todo: rework it
+			MyGame.table.onclick = function() {
 				if (randomCell.className === ' gameCellGreen')
 				{
 					MyGame.totalCounter += 1;
+					MyGame.failCounter += 1; //to counteract "no onclick event = fail"
 					MyGame.spanTotal.innerHTML = MyGame.totalCounter;
 					MyGame.setSpeed();
 					randomCell.className = null;

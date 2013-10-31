@@ -109,7 +109,7 @@ public static function showTimeAgo($data_wejsciowa) {
 	        	case ($dni > 7 && $dni < 14): return "Ponad tydzień temu, ".date("d.m.Y", $timestamp); break;
 	        	case 14: return "Dwa tygodnie temu, ".date("d.m.Y", $timestamp); break;
 	        	case ($dni > 14 && $dni < 30): return "Ponad 2 tygodnie temu, ".date("d.m.Y", $timestamp); break;
-	        	case 30: case 31: return "Miesiąc temu".date("d.m.Y", $timestamp); break;
+	        	case 30: case 31: return "Miesiąc temu, ".date("d.m.Y", $timestamp); break;
 	        	case ($dni > 31): return date("d.m.Y", $timestamp); break;
 	        }
 	        return self::dateMod("l j f Y");
