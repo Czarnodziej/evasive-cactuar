@@ -43,10 +43,10 @@ Views
          ✔ not clicking green within time window = fail @done (31.10.13 15:53)
          ☐ test and debug it
      ☐ make it DRY as possible
-     ☐ use OOP
-       ✔ and namespace - http://www.javascripttoolbox.com/bestpractices/#namespace @done (30.10.13 16:25)
-         ☐ clean and organize it
+     ✔ use namespace - http://www.javascripttoolbox.com/bestpractices/#namespace @done (30.10.13 16:25) @done (01.11.13 17:03)
+         ✔ clean and organize it @done (01.11.13 17:03)
      ✔ eliminate console errors @done (30.10.13 15:22)
+     ☐ replace green/red with colored symbols [ :) or :( or sth like that]
 
 Logic
  ✔ routes n models small cleanup (and better understanding of them) @done (29.09.13 14:06)
