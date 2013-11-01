@@ -1,4 +1,4 @@
-//  Super Simple Clicking Game v0.9
+//  Super Simple Clicking Game v1.0
 
 // Super because it really is.
 // Simple because it's not meant to be enormously optimized.
@@ -17,6 +17,7 @@ for (MyGame.r = 0; MyGame.r < 3; MyGame.r++) {
 	for (MyGame.c = 0; MyGame.c < 3; MyGame.c++) {
 		MyGame.cell = MyGame.row.insertCell(-1);
 		MyGame.cell.setAttribute("id", MyGame.data[MyGame.i++]);
+		MyGame.cell.className = "";
 	}
 }
 MyGame.container.appendChild(MyGame.table);
@@ -120,6 +121,7 @@ MyGame.randomCellColor = function(){
         var color = Math.floor(Math.random()*2), // one of 2 possible colors
 			counter = Math.floor(Math.random()*10)+1, // one of 10 possible cells (1-10)
 			randomCell = document.getElementById(counter); // assign table cell to variable
+
 			if (randomCell !== null) {
 				if (color === 0)
 				{
@@ -139,16 +141,16 @@ MyGame.randomCellColor = function(){
 					}, MyGame.cellShowSpeed);
 				}
 
-			randomCell.onclick = function() { //change randomCell to any cell in the table
-				if (randomCell.className === ' gameCellGreen') // ^same
+			randomCell.onclick = function() {
+				if (randomCell.className === ' gameCellGreen')
 				{
 					MyGame.totalCounter += 1;
-					MyGame.failCounter += 1; //to counteract "no onclick event = fail"
+					MyGame.failCounter += 1;
 					MyGame.spanTotal.innerHTML = MyGame.totalCounter;
 					MyGame.setSpeed();
 					randomCell.className = "";
 				}
-				else //todo: red cell or white cell onclick = fail
+				else
 				{
 					MyGame.failCounter -= 1;
 					MyGame.spanFail.innerHTML = MyGame.failCounter;

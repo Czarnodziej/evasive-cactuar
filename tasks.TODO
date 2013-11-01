@@ -35,20 +35,22 @@ Views
     ✔ use fontawesome for prepending input fields @done (01.10.13 15:10)
  ✘ include day/night/weather cycle - a gimmick, not useful @cancelled (03.10.13 13:21)
  ✔ Research "Proffesional JavaScript for Web Developers", mainly basics + OOP + DOM manipulation @done (29.10.13 17:26)
-   ☐ make js game
+   ✔ make js game @done (01.11.13 21:29)
      ✔ draw DOM @done (29.10.13 17:24)
      ✔ make it work @done (29.10.13 17:24)
        ✔ make it work precisely as it should be: @done (31.10.13 15:53)
          ✔ clicking other cell than green = fail @done (31.10.13 15:53)
          ✔ not clicking green within time window = fail @done (31.10.13 15:53)
-         ☐ test and debug it
-     ☐ make it DRY as possible
+         ✔ test and debug it @done (01.11.13 21:29)
+     ✔ make it DRY as possible @done (01.11.13 21:29)
      ✔ use namespace - http://www.javascripttoolbox.com/bestpractices/#namespace @done (30.10.13 16:25) @done (01.11.13 17:03)
          ✔ clean and organize it @done (01.11.13 17:03)
      ✔ eliminate console errors @done (30.10.13 15:22)
-     ☐ replace green/red with colored symbols [ :) or :( or sth like that]
+     ✔ replace green/red with colored symbols [ :) or :( or sth like that] @done (01.11.13 21:29)
+     ☐ write rules in game.view
 
 Logic
+ ☐ Research "PHP Master: Write Cutting-Edge Code"
  ✔ routes n models small cleanup (and better understanding of them) @done (29.09.13 14:06)
  ☐ research Eloquent relations
  ✔ implement comments system in "article" views - make controllers n models @done (24.09.13 17:48)
