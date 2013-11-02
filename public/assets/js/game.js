@@ -1,4 +1,4 @@
-//  Super Simple Clicking Game v1.1
+//  Super Simple Clicking Game v1.2
 
 // Super because it really is.
 // Simple because it's not meant to be enormously optimized.
@@ -153,7 +153,7 @@ MyGame.randomCellColor = function(){
 					randomCell.className = "";
 
 				}
-				else
+				else if (randomCell.className === ' gameCellRed')
 				{
 					randomCell.className = "";
 					MyGame.failCounter -= 1;
