@@ -11,7 +11,7 @@
 @stop
 @section('main_content')
 <div>
-  Instrukcje: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae necessitatibus eius assumenda fugiat recusandae ratione quae. Quaerat, asperiores, doloribus odio aspernatur magnam itaque suscipit accusamus dolore a quisquam praesentium nulla.
+  Gra polega na klikaniu. Żeby zdobyć punkt należy klikać w zielone buźki. Brak kliknięcia w zieloną buźkę będzie oznaczał utracenie 1 z 5 szans. Kliknięcie na złośliwą czerwoną buźkę również będzie oznaczać utracenie szansy. Prędkość gry wzrasta co 5 punktów.
 </div>
 
 <div id="game">
@@ -24,5 +24,5 @@
   <script src="{{ asset('assets/js/vendor/respond.min.js') }}" type="text/javascript"></script>
   <![endif]-->
   <script src="{{ asset('assets/js/script.min.js') }}"></script>
-  <script src="{{ asset('assets/js/game.js') }}"></script>
+  <script src="{{ asset('assets/js/game.min.js') }}"></script>
 @stop

@@ -1,4 +1,4 @@
-//  Super Simple Clicking Game v1.0
+//  Super Simple Clicking Game v1.1
 
 // Super because it really is.
 // Simple because it's not meant to be enormously optimized.
@@ -130,15 +130,17 @@ MyGame.randomCellColor = function(){
 					randomCell.className = "";
 					MyGame.failCounter -= 1;
 					MyGame.spanFail.innerHTML = MyGame.failCounter;
+					randomCell = null;
 					}, MyGame.cellShowSpeed);
-
 				}
 				else
 				{
 					randomCell.className += ' gameCellRed';
 					setTimeout(function(){
 						randomCell.className = "";
+						randomCell = null;
 					}, MyGame.cellShowSpeed);
+
 				}
 
 			randomCell.onclick = function() {
@@ -149,15 +151,17 @@ MyGame.randomCellColor = function(){
 					MyGame.spanTotal.innerHTML = MyGame.totalCounter;
 					MyGame.setSpeed();
 					randomCell.className = "";
+
 				}
 				else
 				{
+					randomCell.className = "";
 					MyGame.failCounter -= 1;
 					MyGame.spanFail.innerHTML = MyGame.failCounter;
 					if (MyGame.spanFail.innerHTML <0) {
 						MyGame.spanFail.innerHTML = 0;
 					}
-					randomCell.className = "";
+
 				}
 			};
 		}
