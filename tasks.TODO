@@ -44,7 +44,7 @@ Views
          ✔ test and debug it @done (01.11.13 21:29)
      ✔ make it DRY as possible @done (01.11.13 21:29)
      ✔ use namespace - http://www.javascripttoolbox.com/bestpractices/#namespace @done (30.10.13 16:25) @done (01.11.13 17:03)
-         ☐ clean and organize it
+         ✔ clean and organize it @done (04.11.13 11:14)
      ✔ eliminate console errors @done (30.10.13 15:22)
      ✔ replace green/red with colored symbols [ :) or :( or sth like that] @done (01.11.13 21:29)
      ✔ write rules in game.view @done (02.11.13 11:17)

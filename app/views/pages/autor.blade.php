@@ -35,13 +35,13 @@
               <br>Todo: <a href="http://yeoman.io">Yeoman</a>, <a href="http://foundation.zurb.com/">Foundation 4</a>, preprocesory CSS.
             </p>
           </li>
-          <li>JavaScript <span class="one-star-half"></span>
-            <p>Podstawowa manipulacja DOM, funkcje, pętle, tablice, obiekty. Podstawowa obsługa <a href="http://jquery.com/">jQuery</a>. <a href="https://getfirebug.com/">Debugowanie</a>. Kod zgodny z <a href="http://www.jshint.com/">JShint.</a>
+          <li>JavaScript <span class="two-star"></span>
+            <p>Podstawowa manipulacja DOM, funkcje, pętle, OOP. Podstawowa obsługa <a href="http://jquery.com/">jQuery</a>. <a href="https://getfirebug.com/">Debugowanie</a>. Kod zgodny z <a href="http://www.jshint.com/">JShint.</a>
               <br>Todo: <a href="http://pl.wikipedia.org/wiki/AJAX">AJAX</a>, <a href="http://angularjs.org/">Angular.js</a>
             </p>
           </li>
           <li>PHP <span class="one-star-half"></span>
-            <p>Podstawowe zagadnienia, <a href="http://laravel.com/">Laravel </a>, <a href="http://cakephp.org">CakePHP</a>.
+            <p>Podstawowe zagadnienia, OOP, <a href="http://laravel.com/">Laravel </a>, <a href="http://cakephp.org">CakePHP</a>.
               <br>Todo: <a href="http://pl.wikipedia.org/wiki/Test-driven_development">Test-driven development</a>.
             </p>
           </li>

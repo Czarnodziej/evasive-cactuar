@@ -37,9 +37,7 @@ MyGame.container.appendChild(MyGame.startBtn);
 MyGame.container.appendChild(MyGame.cancelBtn);
 
 
-// draw indicators, todo: use object createIndicatorDiv
-// function createIndicatorDiv(name) {
-// }
+// draw indicators
 
 MyGame.divTotal = document.createElement("div");
 MyGame.divTotal.id = "divTotal";
@@ -53,9 +51,7 @@ MyGame.divFail = document.createElement("div");
 MyGame.divFail.id = "divFail";
 MyGame.divFail.innerHTML = "Szanse: ";
 
-
-// todo: use object createIndicatorSpan
-// function createCounterIndicator
+// set default indicator values
 
 MyGame.spanTotal = document.createElement("span");
 MyGame.spanTotal.id = "Total";
@@ -73,8 +69,6 @@ MyGame.container.appendChild(MyGame.divFail);
 MyGame.divTotal.appendChild(MyGame.spanTotal);
 MyGame.divSpeed.appendChild(MyGame.spanSpeed);
 MyGame.divFail.appendChild(MyGame.spanFail);
-
-//default values of indicators
 
 MyGame.totalCounter = 0;
 MyGame.speedCounter = 1;
