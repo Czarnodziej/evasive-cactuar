@@ -30,18 +30,18 @@
             <p><a href="http://en.wikipedia.org/wiki/Responsive_web_design">RWD</a>,
               <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a>,
               <a href="http://en.wikipedia.org/wiki/Sprite_%28computer_graphics%29#Sprites_by_CSS">CSS Sprite</a>,
-              <a href="http://caniuse.com/">Kompatybilność z przeglądarkami</a><br>
+              <abbr title="virtualbox IE6,7,8,9,10,11, safari, Chrome, Opera, Firefox"><a href="http://caniuse.com/">Kompatybilność z przeglądarkami</a></abbr><br>
               <a href="http://developers.google.com/speed/pagespeed/insights/?url=czarnodziej.sanfre.eu%2F">Optymalna prędkość</a>.
               <br>Todo: <a href="http://yeoman.io">Yeoman</a>, <a href="http://foundation.zurb.com/">Foundation 4</a>, preprocesory CSS.
             </p>
           </li>
-          <li>JavaScript <span class="two-star"></span>
-            <p>Podstawowa manipulacja DOM, funkcje, pętle, OOP. Podstawowa obsługa <a href="http://jquery.com/">jQuery</a>. <a href="https://getfirebug.com/">Debugowanie</a>. Kod zgodny z <a href="http://www.jshint.com/">JShint.</a>
+          <li>JavaScript <span class="three-star"></span>
+            <p><a href="{{ URL::route('game') }}">Podstawowa manipulacja DOM, funkcje, pętle, OOP.</a> Podstawowa obsługa <a href="{{ URL::route('javascript') }}">jQuery</a>. <a href="https://getfirebug.com/">Debugowanie</a>. Kod zgodny z <a href="http://www.jshint.com/">JShint.</a>
               <br>Todo: <a href="http://pl.wikipedia.org/wiki/AJAX">AJAX</a>, <a href="http://angularjs.org/">Angular.js</a>
             </p>
           </li>
-          <li>PHP <span class="one-star-half"></span>
-            <p>Podstawowe zagadnienia, OOP, <a href="http://laravel.com/">Laravel </a>, <a href="http://cakephp.org">CakePHP</a>.
+          <li>PHP <span class="two-star"></span>
+            <p>Podstawowe zagadnienia, <abbr title="Klasy, interfejsy, abstrakcja, enkapsulacja, polimorfizm, dziedziczenie, widoczność">OOP</abbr>, <a href="http://laravel.com/">Laravel </a>, <a href="http://cakephp.org">CakePHP</a>.
               <br>Todo: <a href="http://pl.wikipedia.org/wiki/Test-driven_development">Test-driven development</a>.
             </p>
           </li>
@@ -78,7 +78,7 @@
               <p>Windows 95, 98, XP, 7, 8. Zaawansowana konfiguracja, obsługa narzędzi administracyjnych, optymalizacja usług i działania, diagnostyka błędów.
               </p>
             </li>
-            <li>Sprzęt komputerowy <span class="four-star"></span>
+            <li>Sprzęt komputerowy <span class="four-star-half"></span>
               <p>Diagnostyka działania, instalacja podzespołów, zaawansowana konfiguracja, najnowsze trendy, <a href="http://valid.canardpc.com/2877857">zaawansowany overclocking.</a></p>
             </li>
             <li>Technologie mobilne<span class="two-star-half"></span>

@@ -4,16 +4,17 @@
 // Simple because it's not meant to be enormously optimized.
 // Clicking because it involves said activity.
 // Game because games are fun.
+// Praise and game industry awards can be sent straight to my email pagodemc@gmail.com.
 
-var MyGame = {};
+var MyGame = {}; //direct assignment namespace, a bit clumsy but it gets the job done
 
 // draw a table
-MyGame.data = ["1", "2", "3", "4", "5", "6", "7", "8", "9" ];
+MyGame.data = ["1", "2", "3", "4", "5", "6", "7", "8", "9" ]; //cell ID numbers
 MyGame.container = document.getElementById("game");
 MyGame.table = document.createElement("table");
 MyGame.i = 0;
 for (MyGame.r = 0; MyGame.r < 3; MyGame.r++) {
-	MyGame.row = MyGame.table.insertRow(-1);
+	MyGame.row = MyGame.table.insertRow(-1); // (-1) = IE whim
 	for (MyGame.c = 0; MyGame.c < 3; MyGame.c++) {
 		MyGame.cell = MyGame.row.insertCell(-1);
 		MyGame.cell.setAttribute("id", MyGame.data[MyGame.i++]);
@@ -116,7 +117,7 @@ MyGame.randomCellColor = function(){
 			counter = Math.floor(Math.random()*10)+1, // one of 10 possible cells (1-10)
 			randomCell = document.getElementById(counter); // assign table cell to variable
 
-			if (randomCell !== null) {
+			if (randomCell !== null) { //only after DOM is drawn, prevents console errors
 				if (color === 0)
 				{
 					randomCell.className += ' gameCellGreen';
