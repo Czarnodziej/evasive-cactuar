@@ -49,4 +49,5 @@
   </script>
   <script src="{{ asset('assets/js/vendor/jquery-placeholder/jquery.placeholder.min.js') }}"></script>
   <script src="{{ asset('assets/js/script.min.js') }}"></script>
+  <script src="{{ asset('assets/js/ajax.js') }}"></script>
 @stop

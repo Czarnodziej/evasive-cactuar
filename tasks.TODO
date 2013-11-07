@@ -58,7 +58,7 @@ Logic
     ✔ fix the comment redirect to point to current article @done (24.09.13 18:21)
     ✔ redo single article route and sort comments (desc, created_at) @done (25.09.13 16:23)
     ✔ move controller closures from routes to separate controllers @done (26.09.13 15:23)
- ☐ implement form validation + ajax (username)
+ ☐ implement comment submission with AJAX
  ✔ use "showTimeAgo"date format in "article" and "articles" view @done (25.09.13 16:23)
    ✔ make a library out of addon/date_mod.php (http://stackoverflow.com/questions/17088917/what-are-the-best-practices-and-best-places-for-laravel-4-helpers-or-basic-funct) @done (25.09.13 16:23)
  ☐ implement tagging of articles using 3 tables 'toxi' solution (http://stackoverflow.com/questions/20856/how-do-you-recommend-implementing-tags-or-tagging?rq=1)
