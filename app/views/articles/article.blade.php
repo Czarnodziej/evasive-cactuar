@@ -5,7 +5,7 @@
 <h4>Utworzony {{ Daty::showTimeAgo($entry->created_at) }}</h4>
 {{ $entry->body }}
 <hr>
-<div class="komentarze">
+<div id="komentarze">
     <p>Komentarze:</p>
 
     {{ Form::open(array('route' => 'comment')) }}
@@ -20,7 +20,7 @@
     </div>
 
     <div>
-        {{ Form::hidden('foreign_id', "$entry->id") }}
+        {{ Form::hidden('article_id', "$entry->id") }}
         {{ Form::hidden('slug', "$entry->slug") }}
         {{ Form::submit('Zapisz', array('class' => 'submitbutton')) }}
         {{ Notification::showAll() }}

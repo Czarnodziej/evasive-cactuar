@@ -99,7 +99,7 @@ if (typeof jQuery != 'undefined') {
         });
     }
 
-    //placeholder jQuery plugin
+    //"Form Placeholder element" jQuery plugin
     if(typeof jQuery.fn.placeholder != 'undefined'){
         jQuery('input, textarea').placeholder();
     }

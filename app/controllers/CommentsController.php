@@ -7,7 +7,7 @@ class CommentsController extends BaseController {
 	public function postComment()
 	{
 		$comment = new Comment();
-		$comment->foreign_id = Input::get('foreign_id');
+		$comment->article_id = Input::get('article_id');
 		$comment->name    = Input::get('author');
 		$comment->body    = Input::get('body');
 		$comment->save();
