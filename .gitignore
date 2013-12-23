@@ -7,7 +7,6 @@ app/config/database.php
 /vendor
 /nbproject
 composer.phar
-composer.lock
 .DS_Store
 Laraveil.sublime-project
 Laraveil.sublime-workspace
