@@ -1,0 +1,111 @@
+[2013-09-23 14:27:19] log.ERROR: exception 'ErrorException' with message 'include(D:\vhosts\laraveil/app/database/migrations/2013_09_14_152751_create_pages_table.php): failed to open stream: No such file or directory' in D:\vhosts\laraveil\vendor\composer\ClassLoader.php:185
+Stack trace:
+#0 D:\vhosts\laraveil\vendor\composer\ClassLoader.php(185): Illuminate\Exception\Handler->handleError(2, 'include(D:\vhos...', 'D:\vhosts\larav...', 185, Array)
+#1 D:\vhosts\laraveil\vendor\composer\ClassLoader.php(185): Composer\Autoload\ClassLoader->loadClass()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('CreatePagesTabl...')
+#3 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(301): spl_autoload_call('CreatePagesTabl...')
+#4 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(194): Illuminate\Database\Migrations\Migrator->resolve('2013_09_02_1634...')
+#5 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(174): Illuminate\Database\Migrations\Migrator->runDown(Object(stdClass), false)
+#6 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\RollbackCommand.php(54): Illuminate\Database\Migrations\Migrator->rollback(false)
+#7 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\Migrations\RollbackCommand->fire()
+#8 D:\vhosts\laraveil\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 D:\vhosts\laraveil\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 D:\vhosts\laraveil\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\RollbackCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 D:\vhosts\laraveil\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 D:\vhosts\laraveil\artisan(59): Symfony\Component\Console\Application->run()
+#14 {main} [] []
+[2013-09-23 17:37:04] log.ERROR: exception 'InvalidArgumentException' with message 'There are no commands defined in the "generate" namespace.' in D:\vhosts\laraveil\vendor\symfony\console\Symfony\Component\Console\Application.php:523
+Stack trace:
+#0 D:\vhosts\laraveil\vendor\symfony\console\Symfony\Component\Console\Application.php(561): Symfony\Component\Console\Application->findNamespace('generate')
+#1 D:\vhosts\laraveil\vendor\symfony\console\Symfony\Component\Console\Application.php(188): Symfony\Component\Console\Application->find('generate:migrat...')
+#2 D:\vhosts\laraveil\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 D:\vhosts\laraveil\artisan(59): Symfony\Component\Console\Application->run()
+#4 {main} [] []
+[2013-09-23 17:37:18] log.ERROR: exception 'InvalidArgumentException' with message 'There are no commands defined in the "generate" namespace.' in D:\vhosts\laraveil\vendor\symfony\console\Symfony\Component\Console\Application.php:523
+Stack trace:
+#0 D:\vhosts\laraveil\vendor\symfony\console\Symfony\Component\Console\Application.php(561): Symfony\Component\Console\Application->findNamespace('generate')
+#1 D:\vhosts\laraveil\vendor\symfony\console\Symfony\Component\Console\Application.php(188): Symfony\Component\Console\Application->find('generate:migrat...')
+#2 D:\vhosts\laraveil\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 D:\vhosts\laraveil\artisan(59): Symfony\Component\Console\Application->run()
+#4 {main} [] []
+[2013-09-23 17:37:44] log.ERROR: exception 'InvalidArgumentException' with message 'Command "generate" is not defined.
+
+Did you mean one of these?
+    key:generate
+    ide-helper:generate' in D:\vhosts\laraveil\vendor\symfony\console\Symfony\Component\Console\Application.php:617
+Stack trace:
+#0 D:\vhosts\laraveil\vendor\symfony\console\Symfony\Component\Console\Application.php(188): Symfony\Component\Console\Application->find('generate')
+#1 D:\vhosts\laraveil\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 D:\vhosts\laraveil\artisan(59): Symfony\Component\Console\Application->run()
+#3 {main} [] []
+[2013-09-23 17:40:44] log.ERROR: exception 'InvalidArgumentException' with message 'There are no commands defined in the "generate" namespace.' in D:\vhosts\laraveil\vendor\symfony\console\Symfony\Component\Console\Application.php:523
+Stack trace:
+#0 D:\vhosts\laraveil\vendor\symfony\console\Symfony\Component\Console\Application.php(561): Symfony\Component\Console\Application->findNamespace('generate')
+#1 D:\vhosts\laraveil\vendor\symfony\console\Symfony\Component\Console\Application.php(188): Symfony\Component\Console\Application->find('generate:migrat...')
+#2 D:\vhosts\laraveil\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 D:\vhosts\laraveil\artisan(59): Symfony\Component\Console\Application->run()
+#4 {main} [] []
+[2013-09-23 17:41:20] log.ERROR: exception 'InvalidArgumentException' with message 'There are no commands defined in the "generate" namespace.' in D:\vhosts\laraveil\vendor\symfony\console\Symfony\Component\Console\Application.php:523
+Stack trace:
+#0 D:\vhosts\laraveil\vendor\symfony\console\Symfony\Component\Console\Application.php(561): Symfony\Component\Console\Application->findNamespace('generate')
+#1 D:\vhosts\laraveil\vendor\symfony\console\Symfony\Component\Console\Application.php(188): Symfony\Component\Console\Application->find('generate:migrat...')
+#2 D:\vhosts\laraveil\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 D:\vhosts\laraveil\artisan(59): Symfony\Component\Console\Application->run()
+#4 {main} [] []
+[2013-09-23 17:45:52] log.ERROR: exception 'InvalidArgumentException' with message 'There are no commands defined in the "generate" namespace.' in D:\vhosts\laraveil\vendor\symfony\console\Symfony\Component\Console\Application.php:523
+Stack trace:
+#0 D:\vhosts\laraveil\vendor\symfony\console\Symfony\Component\Console\Application.php(561): Symfony\Component\Console\Application->findNamespace('generate')
+#1 D:\vhosts\laraveil\vendor\symfony\console\Symfony\Component\Console\Application.php(188): Symfony\Component\Console\Application->find('generate:migrat...')
+#2 D:\vhosts\laraveil\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 D:\vhosts\laraveil\artisan(59): Symfony\Component\Console\Application->run()
+#4 {main} [] []
+[2013-09-23 17:51:21] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'migrations' already exists' in D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Connection.php:330
+Stack trace:
+#0 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Connection.php(330): PDOStatement->execute(Array)
+#1 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Connection.php(520): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'create table `m...', Array)
+#2 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Connection.php(331): Illuminate\Database\Connection->run('create table `m...', Array, Object(Closure))
+#3 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Schema\Blueprint.php(63): Illuminate\Database\Connection->statement('create table `m...')
+#4 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Schema\Builder.php(148): Illuminate\Database\Schema\Blueprint->build(Object(Illuminate\Database\MySqlConnection), Object(Illuminate\Database\Schema\Grammars\MySqlGrammar))
+#5 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Schema\Builder.php(91): Illuminate\Database\Schema\Builder->build(Object(Illuminate\Database\Schema\Blueprint))
+#6 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Migrations\DatabaseMigrationRepository.php(126): Illuminate\Database\Schema\Builder->create('migrations', Object(Closure))
+#7 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\InstallCommand.php(52): Illuminate\Database\Migrations\DatabaseMigrationRepository->createRepository()
+#8 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\Migrations\InstallCommand->fire()
+#9 D:\vhosts\laraveil\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 D:\vhosts\laraveil\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 D:\vhosts\laraveil\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\InstallCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 D:\vhosts\laraveil\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 D:\vhosts\laraveil\artisan(59): Symfony\Component\Console\Application->run()
+#15 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'migrations' already exists (SQL: create table `migrations` (`migration` varchar(255) not null, `batch` int not null) default character set utf8 collate utf8_unicode_ci) (Bindings: array (
+))' in D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Connection.php:555
+Stack trace:
+#0 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Connection.php(528): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'create table `m...', Array)
+#1 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Connection.php(331): Illuminate\Database\Connection->run('create table `m...', Array, Object(Closure))
+#2 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Schema\Blueprint.php(63): Illuminate\Database\Connection->statement('create table `m...')
+#3 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Schema\Builder.php(148): Illuminate\Database\Schema\Blueprint->build(Object(Illuminate\Database\MySqlConnection), Object(Illuminate\Database\Schema\Grammars\MySqlGrammar))
+#4 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Schema\Builder.php(91): Illuminate\Database\Schema\Builder->build(Object(Illuminate\Database\Schema\Blueprint))
+#5 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Migrations\DatabaseMigrationRepository.php(126): Illuminate\Database\Schema\Builder->create('migrations', Object(Closure))
+#6 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\InstallCommand.php(52): Illuminate\Database\Migrations\DatabaseMigrationRepository->createRepository()
+#7 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\Migrations\InstallCommand->fire()
+#8 D:\vhosts\laraveil\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 D:\vhosts\laraveil\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 D:\vhosts\laraveil\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\InstallCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 D:\vhosts\laraveil\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 D:\vhosts\laraveil\artisan(59): Symfony\Component\Console\Application->run()
+#14 {main} [] []
+[2013-09-23 17:52:06] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'name' (T_STRING)' in D:\vhosts\laraveil\app\database\migrations\2013_09_23_175056_create_comments_table.php:17
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-09-23 17:55:18] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to undefined method Illuminate\Database\Schema\Blueprint::varchar()' in D:\vhosts\laraveil\app\database\migrations\2013_09_23_175056_create_comments_table.php:18
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-09-23 17:57:10] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to undefined method Illuminate\Database\Schema\Blueprint::body()' in D:\vhosts\laraveil\app\database\migrations\2013_09_23_175056_create_comments_table.php:20
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []

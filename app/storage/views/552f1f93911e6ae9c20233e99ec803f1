@@ -1,0 +1,31 @@
+<?php $__env->startSection('main_content'); ?>
+<div>
+		<?php echo Form::open(); ?>
+
+		<?php if ($errors->has('login')): ?>
+		<div><?php echo $errors->first('login', ':message'); ?></div>
+		<?php endif; ?>
+
+		<div>
+				<?php echo Form::label('email', 'Adres e-mail:'); ?>
+				<div>
+						<?php echo Form::text('email'); ?>
+				</div>
+		</div>
+
+		<div>
+				<?php echo Form::label('password', 'Hasło:'); ?>
+				<div>
+						<?php echo Form::password('password'); ?>
+				</div>
+		</div>
+
+		<div>
+				<?php echo Form::submit('Zaloguj'); ?>
+		</div>
+
+		<?php echo Form::close(); ?>
+</div>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.base', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

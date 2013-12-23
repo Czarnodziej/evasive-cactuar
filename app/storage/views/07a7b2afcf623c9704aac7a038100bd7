@@ -1,0 +1,10 @@
+<?php $__env->startSection('main_content'); ?>
+<h2>Treść artykułu:</h2>
+
+<hr>
+
+<h3><?php echo $article->title; ?></h3>
+<h5>@<?php echo $article->created_at; ?></h5>
+<?php echo $article->body; ?>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.base', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

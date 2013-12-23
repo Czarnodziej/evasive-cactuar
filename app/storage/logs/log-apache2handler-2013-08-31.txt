@@ -1,0 +1,8 @@
+[2013-08-31 12:24:18] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 D:\vhosts\laraveil\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []

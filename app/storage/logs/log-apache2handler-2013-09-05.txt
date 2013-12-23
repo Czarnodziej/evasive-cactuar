@@ -1,0 +1,19 @@
+[2013-09-05 16:31:31] log.ERROR: exception 'ErrorException' with message 'Undefined offset: 1' in D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Router.php:974
+Stack trace:
+#0 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Router.php(974): Illuminate\Exception\Handler->handleError(8, 'Undefined offse...', 'D:\vhosts\larav...', 974, Array)
+#1 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#2 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#3 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#4 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#5 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#6 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#7 D:\vhosts\laraveil\public\index.php(49): Illuminate\Foundation\Application->run()
+#8 {main} [] []
+[2013-09-05 16:31:37] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 D:\vhosts\laraveil\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []

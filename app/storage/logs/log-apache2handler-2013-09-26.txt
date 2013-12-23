@@ -1,0 +1,275 @@
+[2013-09-26 14:46:36] log.ERROR: exception 'ReflectionException' with message 'Class App\Controllers\Admin\KontaktController does not exist' in D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Container\Container.php:296
+Stack trace:
+#0 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Container\Container.php(296): ReflectionClass->__construct('App\Controllers...')
+#1 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Container\Container.php(238): Illuminate\Container\Container->build('App\Controllers...', Array)
+#2 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(434): Illuminate\Container\Container->make('App\Controllers...', Array)
+#3 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Router.php(983): Illuminate\Foundation\Application->make('App\Controllers...')
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#5 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#6 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#7 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 D:\vhosts\laraveil\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-09-26 14:47:01] log.ERROR: exception 'ReflectionException' with message 'Class App\Controllers\Admin\KontaktController does not exist' in D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Container\Container.php:296
+Stack trace:
+#0 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Container\Container.php(296): ReflectionClass->__construct('App\Controllers...')
+#1 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Container\Container.php(238): Illuminate\Container\Container->build('App\Controllers...', Array)
+#2 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(434): Illuminate\Container\Container->make('App\Controllers...', Array)
+#3 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Router.php(983): Illuminate\Foundation\Application->make('App\Controllers...')
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#5 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#6 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#7 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 D:\vhosts\laraveil\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-09-26 14:47:19] log.ERROR: exception 'ReflectionException' with message 'Class App\Controllers\Admin\KontaktController does not exist' in D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Container\Container.php:296
+Stack trace:
+#0 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Container\Container.php(296): ReflectionClass->__construct('App\Controllers...')
+#1 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Container\Container.php(238): Illuminate\Container\Container->build('App\Controllers...', Array)
+#2 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(434): Illuminate\Container\Container->make('App\Controllers...', Array)
+#3 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Router.php(983): Illuminate\Foundation\Application->make('App\Controllers...')
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#5 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#6 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#7 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 D:\vhosts\laraveil\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-09-26 14:48:00] log.ERROR: exception 'ReflectionException' with message 'Class App\Controllers\Admin\KontaktController does not exist' in D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Container\Container.php:296
+Stack trace:
+#0 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Container\Container.php(296): ReflectionClass->__construct('App\Controllers...')
+#1 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Container\Container.php(238): Illuminate\Container\Container->build('App\Controllers...', Array)
+#2 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(434): Illuminate\Container\Container->make('App\Controllers...', Array)
+#3 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Router.php(983): Illuminate\Foundation\Application->make('App\Controllers...')
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#5 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#6 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#7 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 D:\vhosts\laraveil\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-09-26 14:48:36] log.ERROR: exception 'ReflectionException' with message 'Class App\Controllers\Admin\KontaktController does not exist' in D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Container\Container.php:296
+Stack trace:
+#0 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Container\Container.php(296): ReflectionClass->__construct('App\Controllers...')
+#1 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Container\Container.php(238): Illuminate\Container\Container->build('App\Controllers...', Array)
+#2 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(434): Illuminate\Container\Container->make('App\Controllers...', Array)
+#3 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Router.php(983): Illuminate\Foundation\Application->make('App\Controllers...')
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#5 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#6 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#7 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 D:\vhosts\laraveil\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-09-26 14:48:58] log.ERROR: exception 'ReflectionException' with message 'Class App\Controllers\KontaktController does not exist' in D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Container\Container.php:296
+Stack trace:
+#0 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Container\Container.php(296): ReflectionClass->__construct('App\Controllers...')
+#1 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Container\Container.php(238): Illuminate\Container\Container->build('App\Controllers...', Array)
+#2 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(434): Illuminate\Container\Container->make('App\Controllers...', Array)
+#3 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Router.php(983): Illuminate\Foundation\Application->make('App\Controllers...')
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#5 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#6 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#7 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 D:\vhosts\laraveil\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-09-26 14:51:34] log.ERROR: exception 'ReflectionException' with message 'Class App\Controllers\KontaktController does not exist' in D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Container\Container.php:296
+Stack trace:
+#0 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Container\Container.php(296): ReflectionClass->__construct('App\Controllers...')
+#1 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Container\Container.php(238): Illuminate\Container\Container->build('App\Controllers...', Array)
+#2 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(434): Illuminate\Container\Container->make('App\Controllers...', Array)
+#3 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Router.php(983): Illuminate\Foundation\Application->make('App\Controllers...')
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#5 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#6 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#7 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 D:\vhosts\laraveil\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-09-26 14:51:57] log.ERROR: exception 'ReflectionException' with message 'Class App\Controllers\KontaktController does not exist' in D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Container\Container.php:296
+Stack trace:
+#0 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Container\Container.php(296): ReflectionClass->__construct('App\Controllers...')
+#1 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Container\Container.php(238): Illuminate\Container\Container->build('App\Controllers...', Array)
+#2 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(434): Illuminate\Container\Container->make('App\Controllers...', Array)
+#3 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Router.php(983): Illuminate\Foundation\Application->make('App\Controllers...')
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#5 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#6 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#7 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 D:\vhosts\laraveil\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-09-26 14:53:28] log.ERROR: exception 'ReflectionException' with message 'Class App\Controllers\KontaktController does not exist' in D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Container\Container.php:296
+Stack trace:
+#0 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Container\Container.php(296): ReflectionClass->__construct('App\Controllers...')
+#1 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Container\Container.php(238): Illuminate\Container\Container->build('App\Controllers...', Array)
+#2 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(434): Illuminate\Container\Container->make('App\Controllers...', Array)
+#3 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Router.php(983): Illuminate\Foundation\Application->make('App\Controllers...')
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#5 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#6 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#7 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 D:\vhosts\laraveil\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-09-26 14:55:36] log.ERROR: exception 'ReflectionException' with message 'Class App\controllers\KontaktController does not exist' in D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Container\Container.php:296
+Stack trace:
+#0 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Container\Container.php(296): ReflectionClass->__construct('App\controllers...')
+#1 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Container\Container.php(238): Illuminate\Container\Container->build('App\controllers...', Array)
+#2 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(434): Illuminate\Container\Container->make('App\controllers...', Array)
+#3 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Router.php(983): Illuminate\Foundation\Application->make('App\controllers...')
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#5 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#6 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#7 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 D:\vhosts\laraveil\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-09-26 14:55:44] log.ERROR: exception 'ReflectionException' with message 'Class App\controllers\KontaktController does not exist' in D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Container\Container.php:296
+Stack trace:
+#0 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Container\Container.php(296): ReflectionClass->__construct('App\controllers...')
+#1 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Container\Container.php(238): Illuminate\Container\Container->build('App\controllers...', Array)
+#2 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(434): Illuminate\Container\Container->make('App\controllers...', Array)
+#3 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Router.php(983): Illuminate\Foundation\Application->make('App\controllers...')
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#5 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#6 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#7 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 D:\vhosts\laraveil\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-09-26 14:55:56] log.ERROR: exception 'ReflectionException' with message 'Class App\controllers\KontaktController does not exist' in D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Container\Container.php:296
+Stack trace:
+#0 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Container\Container.php(296): ReflectionClass->__construct('App\controllers...')
+#1 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Container\Container.php(238): Illuminate\Container\Container->build('App\controllers...', Array)
+#2 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(434): Illuminate\Container\Container->make('App\controllers...', Array)
+#3 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Router.php(983): Illuminate\Foundation\Application->make('App\controllers...')
+#4 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#5 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#6 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#7 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#8 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#9 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#10 D:\vhosts\laraveil\public\index.php(49): Illuminate\Foundation\Application->run()
+#11 {main} [] []
+[2013-09-26 15:10:19] log.ERROR: exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'czarnodz_1'@'202-220-251-94.net.stream.pl' (using password: YES)' in D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:47
+Stack trace:
+#0 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php(47): PDO->__construct('mysql:host=185....', 'czarnodz_1', 'vSyJqZ1r', Array)
+#1 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Connectors\MySqlConnector.php(20): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=185....', Array, Array)
+#2 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Connectors\ConnectionFactory.php(41): Illuminate\Database\Connectors\MySqlConnector->connect(Array)
+#3 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(115): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(64): Illuminate\Database\DatabaseManager->makeConnection('mysql')
+#5 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2374): Illuminate\Database\DatabaseManager->connection(NULL)
+#6 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2340): Illuminate\Database\Eloquent\Model::resolveConnection(NULL)
+#7 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1443): Illuminate\Database\Eloquent\Model->getConnection()
+#8 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1377): Illuminate\Database\Eloquent\Model->newBaseQueryBuilder()
+#9 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2552): Illuminate\Database\Eloquent\Model->newQuery()
+#10 [internal function]: Illuminate\Database\Eloquent\Model->__call('orderBy', Array)
+#11 [internal function]: App\Models\Article->orderBy('created_at', 'desc')
+#12 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2568): call_user_func_array(Array, Array)
+#13 D:\vhosts\laraveil\app\routes.php(44): Illuminate\Database\Eloquent\Model::__callStatic('orderBy', Array)
+#14 D:\vhosts\laraveil\app\routes.php(44): App\Models\Article::orderBy('created_at', 'desc')
+#15 [internal function]: {closure}()
+#16 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#17 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#18 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#19 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#20 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#21 D:\vhosts\laraveil\public\index.php(49): Illuminate\Foundation\Application->run()
+#22 {main} [] []
+[2013-09-26 15:11:46] log.ERROR: exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'czarnodz_1'@'202-220-251-94.net.stream.pl' (using password: YES)' in D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:47
+Stack trace:
+#0 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php(47): PDO->__construct('mysql:host=185....', 'czarnodz_1', 'vSyJqZ1r', Array)
+#1 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Connectors\MySqlConnector.php(20): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=185....', Array, Array)
+#2 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Connectors\ConnectionFactory.php(41): Illuminate\Database\Connectors\MySqlConnector->connect(Array)
+#3 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(115): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(64): Illuminate\Database\DatabaseManager->makeConnection('mysql')
+#5 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2374): Illuminate\Database\DatabaseManager->connection(NULL)
+#6 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2340): Illuminate\Database\Eloquent\Model::resolveConnection(NULL)
+#7 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1443): Illuminate\Database\Eloquent\Model->getConnection()
+#8 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1377): Illuminate\Database\Eloquent\Model->newBaseQueryBuilder()
+#9 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2552): Illuminate\Database\Eloquent\Model->newQuery()
+#10 [internal function]: Illuminate\Database\Eloquent\Model->__call('orderBy', Array)
+#11 [internal function]: App\Models\Article->orderBy('created_at', 'desc')
+#12 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2568): call_user_func_array(Array, Array)
+#13 D:\vhosts\laraveil\app\routes.php(44): Illuminate\Database\Eloquent\Model::__callStatic('orderBy', Array)
+#14 D:\vhosts\laraveil\app\routes.php(44): App\Models\Article::orderBy('created_at', 'desc')
+#15 [internal function]: {closure}()
+#16 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#17 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#18 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#19 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#20 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#21 D:\vhosts\laraveil\public\index.php(49): Illuminate\Foundation\Application->run()
+#22 {main} [] []
+[2013-09-26 15:11:47] log.ERROR: exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'czarnodz_1'@'202-220-251-94.net.stream.pl' (using password: YES)' in D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:47
+Stack trace:
+#0 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php(47): PDO->__construct('mysql:host=185....', 'czarnodz_1', 'vSyJqZ1r', Array)
+#1 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Connectors\MySqlConnector.php(20): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=185....', Array, Array)
+#2 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Connectors\ConnectionFactory.php(41): Illuminate\Database\Connectors\MySqlConnector->connect(Array)
+#3 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(115): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(64): Illuminate\Database\DatabaseManager->makeConnection('mysql')
+#5 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2374): Illuminate\Database\DatabaseManager->connection(NULL)
+#6 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2340): Illuminate\Database\Eloquent\Model::resolveConnection(NULL)
+#7 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1443): Illuminate\Database\Eloquent\Model->getConnection()
+#8 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(1377): Illuminate\Database\Eloquent\Model->newBaseQueryBuilder()
+#9 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2552): Illuminate\Database\Eloquent\Model->newQuery()
+#10 [internal function]: Illuminate\Database\Eloquent\Model->__call('orderBy', Array)
+#11 [internal function]: App\Models\Article->orderBy('created_at', 'desc')
+#12 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(2568): call_user_func_array(Array, Array)
+#13 D:\vhosts\laraveil\app\routes.php(44): Illuminate\Database\Eloquent\Model::__callStatic('orderBy', Array)
+#14 D:\vhosts\laraveil\app\routes.php(44): App\Models\Article::orderBy('created_at', 'desc')
+#15 [internal function]: {closure}()
+#16 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#17 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#18 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#19 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(530): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#20 D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(506): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#21 D:\vhosts\laraveil\public\index.php(49): Illuminate\Foundation\Application->run()
+#22 {main} [] []
+[2013-09-26 15:12:15] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected end of file, expecting function (T_FUNCTION)' in D:\vhosts\laraveil\app\controllers\CommentController.php:21
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-09-26 15:12:40] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\Models\Comment' not found' in D:\vhosts\laraveil\app\controllers\CommentController.php:10
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-09-26 15:14:54] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\Models\Comment' not found' in D:\vhosts\laraveil\app\controllers\CommentController.php:10
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-09-26 15:18:47] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\Models\Eloquent' not found' in D:\vhosts\laraveil\app\models\Comment.php:3
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-09-26 15:19:50] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\Models\Eloquent' not found' in D:\vhosts\laraveil\app\models\Comment.php:3
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-09-26 15:20:03] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Comment' not found' in D:\vhosts\laraveil\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:575
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-09-26 15:20:36] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\Models\Comment' not found' in D:\vhosts\laraveil\app\controllers\CommentController.php:10
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-09-26 15:20:57] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'App\Models\Comment' not found' in D:\vhosts\laraveil\app\controllers\CommentController.php:10
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []

@@ -1,0 +1,37 @@
+<?php $__env->startSection('main_content'); ?>
+<h1>
+    Teksty
+</h1>
+<p><a href="<?php echo URL::route('admin.articles.create'); ?>"> Dodaj nowy tekst</a></p>
+
+<hr>
+
+<table>
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Tytuł</th>
+            <th>Data powstania</th>
+            <th>Ustawienia</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach ($articles as $article): ?>
+        <tr>
+            <td><?php echo $article->id; ?></td>
+            <td><a href="<?php echo URL::route('admin.articles.show', $article->id); ?>"><?php echo $article->title; ?></a></td>
+            <td><?php echo Daty::showTimeAgo($article->created_at); ?></td>
+            <td>
+                <span><a href="<?php echo URL::route('admin.articles.edit', $article->id); ?>">Edytuj</a>
+
+                <?php echo Form::open(array('route' => array('admin.articles.destroy', $article->id), 'method' => 'delete', 'data-confirm' => 'Na pewno?', 'onsubmit' => 'return confirm(\'Na pewno chcesz usunąć ten artykuł?\')')); ?>
+                <button type="submit" href="<?php echo URL::route('admin.articles.destroy', $article->id); ?>">Usuń</button>
+                    <?php echo Form::close(); ?></span>
+                </td>
+            </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.base', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

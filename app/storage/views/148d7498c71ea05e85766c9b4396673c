@@ -1,0 +1,21 @@
+<?php $__env->startSection('main_content'); ?>
+<h2>Artykuły</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Tytuł:</th>
+            <th>Utworzony:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach ($entries as $entry): ?>
+        <tr>
+            <td><a href="<?php echo route('article', $entry->slug); ?>"><?php echo $entry->title; ?></a></td>
+            <td><?php echo Daty::showTimeAgo($entry->created_at); ?></td>
+            </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.base', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

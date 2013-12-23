@@ -1,0 +1,52 @@
+<?php $__env->startSection('main_content'); ?>
+
+<h2><?php echo $entry->title; ?></h2>
+<h4>Utworzony <?php echo Daty::showTimeAgo($entry->created_at); ?></h4>
+<?php echo $entry->body; ?>
+<hr>
+<div id="komentarze">
+    <p>Komentarze:</p>
+
+    <?php echo Form::open(array('route' => 'comment', 'id' => 'form')); ?>
+
+    <div>
+        <span class="add-on hide-ie8"><i class="icon-user"></i></span>
+        <?php echo Form::text('author', null, array('class' => 'textinput', 'placeholder' => 'Nazwa użytkownika')); ?>
+    </div>
+
+    <div>
+        <?php echo Form::textarea('body', null, array('class' => 'textinput', 'id' => 'comment_content', 'placeholder' => 'Treść komentarza')); ?>
+    </div>
+
+    <div>
+        <?php echo Form::hidden('article_id', "$entry->id"); ?>
+        <?php echo Form::hidden('slug', "$entry->slug"); ?>
+        <?php echo Form::submit('Zapisz', array('class' => 'submitbutton', 'id' => 'submit')); ?>
+        <?php echo Notification::showAll(); ?>
+    </div>
+
+    <?php echo Form::close(); ?>
+</div>
+<hr>
+
+<?php foreach($entry->comments as $comment): ?>
+<div class="comment">
+    <p><?php echo $comment->name; ?>:<br>
+        <?php echo $comment->body; ?><br>
+        <span>Napisany <?php echo Daty::showTimeAgo($comment->created_at); ?></span>
+    </p>
+</div>
+<hr>
+<?php endforeach; ?>
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('bottom_scripts'); ?>
+<!--[if lt IE 9]>
+<script src="<?php echo asset('js/vendor/respond.min.js'); ?>" type="text/javascript"></script>
+<![endif]-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script> window.jQuery || document.write('<script src ="<?php echo asset('assets / js / vendor / jquery - 1.10.2.min.js'); ?>">\x3C/script>');</script>
+<script src="<?php echo asset('assets/js/vendor/jquery-placeholder/jquery.placeholder.min.js'); ?>"></script>
+<script src="<?php echo asset('assets/js/script.min.js'); ?>"></script>
+<script src="<?php echo asset('assets/js/ajax.js'); ?>"></script>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.base', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
