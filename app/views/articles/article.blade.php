@@ -29,16 +29,18 @@
     {{ Form::close() }}
 </div>
 <hr>
+<div id="comments">
+    @foreach($entry->comments as $comment)
+    <div class="comment">
+        <p>{{ $comment->name }}:<br>
+            {{ $comment->body }}<br>
+            <span>Napisany {{ Daty::showTimeAgo($comment->created_at) }}</span>
+        </p>
+    </div>
 
-@foreach($entry->comments as $comment)
-<div class="comment">
-    <p>{{ $comment->name }}:<br>
-        {{ $comment->body }}<br>
-        <span>Napisany {{ Daty::showTimeAgo($comment->created_at) }}</span>
-    </p>
+    <hr>
+    @endforeach
 </div>
-<hr>
-@endforeach
 @stop
 @section('bottom_scripts')
 <!--[if lt IE 9]>

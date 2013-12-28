@@ -28,16 +28,18 @@
     <?php echo Form::close(); ?>
 </div>
 <hr>
+<div id="comments">
+    <?php foreach($entry->comments as $comment): ?>
+    <div class="comment">
+        <p><?php echo $comment->name; ?>:<br>
+            <?php echo $comment->body; ?><br>
+            <span>Napisany <?php echo Daty::showTimeAgo($comment->created_at); ?></span>
+        </p>
+    </div>
 
-<?php foreach($entry->comments as $comment): ?>
-<div class="comment">
-    <p><?php echo $comment->name; ?>:<br>
-        <?php echo $comment->body; ?><br>
-        <span>Napisany <?php echo Daty::showTimeAgo($comment->created_at); ?></span>
-    </p>
+    <hr>
+    <?php endforeach; ?>
 </div>
-<hr>
-<?php endforeach; ?>
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('bottom_scripts'); ?>
 <!--[if lt IE 9]>

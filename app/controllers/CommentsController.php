@@ -13,12 +13,17 @@ class CommentsController extends BaseController
 
         $slug = Input::get('slug');
 
-//        Notification::success('Komentarz został zapisany!');
-//        return Redirect::route('article', array('slug' => $slug)); // change to current article view
-
-
-        $article = Article::where('slug', $slug)->with('comments')->first();
-
-        return View::make('articles.article')->with('entry', $article);
+        if (Request::ajax()) {
+            echo('<div class="comment">
+                  <p>' . $comment->name . ':<br>
+                    ' . $comment->body . '<br>
+                  <span>Napisany przed chwilą</span>
+                  </p>
+                  </div>
+                  <hr>');
+        } else {
+            Notification::success('Komentarz został zapisany!');
+            return Redirect::route('article', array('slug' => $slug)); // change to current article view
+        }
     }
 }

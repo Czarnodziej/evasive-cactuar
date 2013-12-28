@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    'use strict';
     var form = $('#form'),
             submit = $('#submit');
 //            postURL = "{{ URL::route('comment') }}";
@@ -16,10 +17,10 @@ $(document).ready(function() {
                 submit.val('Wysyłanie...').attr('disabled', 'disabled');
             },
             success: function(data) {
-                console.log(data);
+
                 // Append with fadeIn see http://stackoverflow.com/a/978731
                 var item = $(data).hide().fadeIn(800);
-                $('.comment').append(item);
+                $('#comments').prepend(item);
                 // reset form and button
                 form.trigger('reset');
                 submit.val('Zapisz').removeAttr('disabled');
