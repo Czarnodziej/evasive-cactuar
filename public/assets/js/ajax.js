@@ -1,8 +1,31 @@
 $(document).ready(function() {
     'use strict';
+
+
+
     var form = $('#form'),
-            submit = $('#submit');
-//            postURL = "{{ URL::route('comment') }}";
+        submit = $('#submit');
+
+    $(form).validate({
+        rules: {
+            author: {
+                required: true
+            },
+            body: {
+                required: true
+            }
+        },
+        messages: {
+            author: "Wpisz swoje imię",
+            body: "Wpisz treść komentarza"
+        },
+        errorElement: "div",
+        errorPlacement: function(error, element) {
+            element.before(error);
+        }
+
+    });
+
     form.on('submit', function(e) {
         // prevent default action
         e.preventDefault();

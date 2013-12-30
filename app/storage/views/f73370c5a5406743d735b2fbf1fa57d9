@@ -11,7 +11,8 @@
     <tbody>
         <?php foreach ($entries as $entry): ?>
         <tr>
-            <td><a href="<?php echo route('article', $entry->slug); ?>"><?php echo $entry->title; ?></a></td>
+            <td><a href="<?php echo route('article', $entry->slug); ?>">
+                    <?php echo $entry->title; ?></a></td>
             <td><?php echo Daty::showTimeAgo($entry->created_at); ?></td>
             </tr>
             <?php endforeach; ?>
