@@ -12,17 +12,20 @@
 
     <div>
         <span class="add-on hide-ie8"><i class="icon-user"></i></span>
-        {{ Form::text('author', null, array('class' => 'textinput', 'placeholder' => 'Nazwa użytkownika')) }}
+        {{ Form::text('author', null, array('class' => 'textinput',
+        'placeholder' => 'Nazwa użytkownika')) }}
     </div>
 
     <div>
-        {{ Form::textarea('body', null, array('class' => 'textinput', 'id' => 'comment_content', 'placeholder' => 'Treść komentarza')) }}
+        {{ Form::textarea('body', null, array('class' => 'textinput',
+        'id' => 'comment_content', 'placeholder' => 'Treść komentarza')) }}
     </div>
 
     <div>
         {{ Form::hidden('article_id', "$entry->id") }}
         {{ Form::hidden('slug', "$entry->slug") }}
-        {{ Form::submit('Zapisz', array('class' => 'submitbutton', 'id' => 'submit')) }}
+        {{ Form::submit('Zapisz', array('class' => 'submitbutton',
+        'id' => 'submit')) }}
         {{ Notification::showAll() }}
     </div>
 

@@ -12,7 +12,8 @@
     <tbody>
         @foreach ($entries as $entry)
         <tr>
-            <td><a href="{{ route('article', $entry->slug) }}">{{ $entry->title }}</a></td>
+            <td><a href="{{ route('article', $entry->slug) }}">
+                    {{ $entry->title }}</a></td>
             <td>{{ Daty::showTimeAgo($entry->created_at) }}</td>
             </tr>
             @endforeach

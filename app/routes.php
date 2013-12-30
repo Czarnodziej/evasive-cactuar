@@ -11,9 +11,12 @@
  */
 
 // Admin Section
-Route::get('admin/logout', array('as' => 'admin.logout', 'uses' => 'App\Controllers\Admin\AuthController@getLogout'));
-Route::get('admin/login', array('as' => 'admin.login', 'uses' => 'App\Controllers\Admin\AuthController@getLogin'));
-Route::post('admin/login', array('as' => 'admin.login.post', 'uses' => 'App\Controllers\Admin\AuthController@postLogin'));
+Route::get('admin/logout', array('as' => 'admin.logout', 'uses' =>
+    'App\Controllers\Admin\AuthController@getLogout'));
+Route::get('admin/login', array('as' => 'admin.login', 'uses' =>
+    'App\Controllers\Admin\AuthController@getLogin'));
+Route::post('admin/login', array('as' => 'admin.login.post', 'uses' =>
+    'App\Controllers\Admin\AuthController@postLogin'));
 
 Route::group(array('prefix' => 'admin', 'before' => 'auth.admin'), function() {
     Route::any('/', 'App\Controllers\Admin\ArticlesController@index');
@@ -39,7 +42,8 @@ return View::make('pages.game');
 
 // Article list
 Route::get('teksty', array('as' => 'article.list', function() {
-return View::make('articles.index')->with('entries', Article::orderBy('created_at', 'desc')->get());
+return View::make('articles.index')->with('entries',
+        Article::orderBy('created_at', 'desc')->get());
 }));
 
 // Single article
@@ -53,7 +57,8 @@ return View::make('articles.article')->with('entry', $article);
 }));
 
 //Post comments
-Route::post('teksty/comment', array('as' => 'comment', 'uses' => 'CommentsController@postComment'));
+Route::post('teksty/comment', array('as' => 'comment',
+    'uses' => 'CommentsController@postComment'));
 
 // 404 Page
 App::missing(function($exception) {

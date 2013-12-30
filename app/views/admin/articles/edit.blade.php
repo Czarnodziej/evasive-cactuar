@@ -2,7 +2,8 @@
 @section('main_content')
 <h2>Edycja artykułu</h2>
 {{ Notification::showAll() }}
-{{ Form::model($article, array('method' => 'put', 'route' => array('admin.articles.update', $article->id))) }}
+{{ Form::model($article, array('method' => 'put', 'route' =>
+array('admin.articles.update', $article->id))) }}
 
 <div>
     {{ Form::label('title', 'Tytuł') }}
@@ -38,7 +39,9 @@
         "searchreplace visualblocks code fullscreen emmet",
         "insertdatetime media table contextmenu paste"
     ],
-    toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image"
+    toolbar: "insertfile undo redo | styleselect | bold italic |\n\
+ alignleft aligncenter alignright alignjustify | bullist numlist\n\
+ outdent indent | link image"
 });
 </script>
 @stop

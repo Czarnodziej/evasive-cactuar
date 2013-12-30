@@ -23,7 +23,7 @@ class CommentsController extends BaseController
                   <hr>');
         } else {
             Notification::success('Komentarz został zapisany!');
-            return Redirect::route('article', array('slug' => $slug)); // change to current article view
+            return Redirect::route('article', array('slug' => $slug));
         }
     }
 }

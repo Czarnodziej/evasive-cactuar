@@ -13,7 +13,7 @@
     a docelowo będzie więcej. Dodatkowo znaczy to też, że do świetnego
     wyświetlania strony niezbędna jest aktualna przeglądarka internetowa.
 </p>
-Plany w kolejności chronologicznej:
+Planowana aktywność:
 <ul class="icons-ul">
     <li><i class="icon-li icon-screenshot icon-large"></i>Kilka artykułów nt.
         technologii internetowo-komputerowych z naciskiem na dostępność dla

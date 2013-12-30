@@ -20,13 +20,19 @@
         @foreach ($articles as $article)
         <tr>
             <td>{{ $article->id }}</td>
-            <td><a href="{{ URL::route('admin.articles.show', $article->id) }}">{{ $article->title }}</a></td>
+            <td><a href="{{ URL::route('admin.articles.show',
+                   $article->id) }}">{{ $article->title }}</a></td>
             <td>{{ Daty::showTimeAgo($article->created_at) }}</td>
             <td>
-                <span><a href="{{ URL::route('admin.articles.edit', $article->id) }}">Edytuj</a>
+                <span><a href="{{ URL::route('admin.articles.edit',
+                         $article->id) }}">Edytuj</a>
 
-                {{ Form::open(array('route' => array('admin.articles.destroy', $article->id), 'method' => 'delete', 'data-confirm' => 'Na pewno?', 'onsubmit' => 'return confirm(\'Na pewno chcesz usunąć ten artykuł?\')'))}}
-                <button type="submit" href="{{ URL::route('admin.articles.destroy', $article->id) }}">Usuń</button>
+                {{ Form::open(array('route' => array('admin.articles.destroy',
+                $article->id), 'method' => 'delete', 'data-confirm' =>
+                'Na pewno?', 'onsubmit' =>
+                'return confirm(\'Na pewno chcesz usunąć ten artykuł?\')'))}}
+                <button type="submit" href="{{ URL::route(
+                        'admin.articles.destroy', $article->id) }}">Usuń</button>
                     {{ Form::close() }}</span>
                 </td>
             </tr>
