@@ -6,6 +6,7 @@
 /bootstrap/compiled.php
 /vendor
 /nbproject
+/.idea
 composer.phar
 .DS_Store
 Laraveil.sublime-project
