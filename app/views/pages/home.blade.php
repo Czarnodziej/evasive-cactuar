@@ -26,7 +26,7 @@ Planowana aktywność:
         (<i class="icon-food icon-large"></i> + <i class="icon-cogs icon-large">
         </i>
         = <i class="icon-smile icon-large"></i>)</span>. A tych nie brakuje.</p>
-<p>
+<div>
     Przyszłe projekty:
 <ul class="icons-ul">
     <li><i class="icon-li icon-screenshot icon-large"></i>Agregator newsów</li>
@@ -35,7 +35,8 @@ Planowana aktywność:
     <li><i class="icon-li icon-screenshot icon-large"></i>Aplikacja z dziedziny
         social media</li>
 </ul>
-</p>
+    </div>
+ <div>
 Główne założenia projektów:
 <ul class="icons-ul">
     <li><i class="icon-li icon-screenshot icon-large"></i>Prosta idea</li>
@@ -43,8 +44,8 @@ Główne założenia projektów:
     </li>
     <li><i class="icon-li icon-screenshot icon-large"></i>Responsywność</li>
 </ul>
-</p>
-<p>
+ </div>
+<div>
     Wersje strony:
 <ul>
     <li><a href="//czarnodziej.sanfre.eu/">Laravel 4 (obecnie rozwijana wersja)
@@ -52,5 +53,5 @@ Główne założenia projektów:
     <li><a href="//www.cake.czarnodziej.sanfre.eu">CakePHP</a></li>
     <li><a href="//old.czarnodziej.sanfre.eu">HTML</a></li>
 </ul>
-</p>
+</div>
 @stop

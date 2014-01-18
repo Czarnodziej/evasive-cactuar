@@ -51,7 +51,7 @@ Views
 ☐ add tooltips to content
 
 Logic
- ☐ Research "PHP Master: Write Cutting-Edge Code"
+ ✔ Research "PHP Master: Write Cutting-Edge Code" @done (08.01.14 18:50)
  ✔ routes n models small cleanup (and better understanding of them) @done (29.09.13 14:06)
  ☐ research Eloquent relations
  ✔ implement comments system in "article" views - make controllers n models @done (24.09.13 17:48)

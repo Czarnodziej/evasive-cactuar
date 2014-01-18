@@ -46,14 +46,14 @@
         <li>HTML5/CSS3 <span class="four-star"></span>
             <p><a href="http://en.wikipedia.org/wiki/Responsive_web_design">RWD</a>,
                 <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a>,
-                <a href="http://en.wikipedia.org/wiki/
-                   Sprite_%28computer_graphics%29#Sprites_by_CSS">CSS Sprite</a>,
+                <a href="http://en.wikipedia.org/wiki/Sprite_%28computer_graphics%29#Sprites_by_CSS">
+                    CSS Sprite</a>,
                 <abbr title="virtualbox IE6, 7, 8, 9, 10, 11,
                       Chrome, Firefox, Safari, Opera">
                     <a href="http://caniuse.com/">
                         Kompatybilność z przeglądarkami</a></abbr><br>
-                <a href="http://developers.google.com/speed/pagespeed/
-                   insights/?url=czarnodziej.sanfre.eu%2F">Optymalna prędkość</a>.
+                <a href="http://developers.google.com/speed/pagespeed/insights/?url=czarnodziej.sanfre.eu%2F">
+                    Optymalna prędkość</a>.
                 <br>Todo: <a href="http://yeoman.io">Yeoman</a>,
                 <a href="http://foundation.zurb.com/">Foundation 4</a>,
                 preprocesory CSS.
