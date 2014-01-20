@@ -48,10 +48,10 @@ Główne założenia projektów:
 <div>
     Wersje strony:
 <ul>
-    <li><a href="//czarnodziej.sanfre.eu/">Laravel 4 (obecnie rozwijana wersja)
+    <li><a href="http://czarnodziej.sanfre.eu/">Laravel 4 (obecnie rozwijana wersja)
         </a></li>
-    <li><a href="//www.cake.czarnodziej.sanfre.eu">CakePHP</a></li>
-    <li><a href="//old.czarnodziej.sanfre.eu">HTML</a></li>
+    <li><a href="http://www.cake.czarnodziej.sanfre.eu">CakePHP</a></li>
+    <li><a href="http://old.czarnodziej.sanfre.eu">HTML</a></li>
 </ul>
 </div>
 @stop

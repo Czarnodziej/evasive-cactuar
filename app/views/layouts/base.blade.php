@@ -161,7 +161,7 @@
 <!--[if lt IE 9]>
 <script src="{{ asset('assets/js/vendor/respond.min.js') }}"></script>
 <![endif]-->
-<script src="{{ asset('assets/js/script.min.js') }}"></script>
+<script async src="{{ asset('assets/js/script.min.js') }}"></script>
 @show
 </body>
 </html>

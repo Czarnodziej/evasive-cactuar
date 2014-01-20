@@ -71,26 +71,27 @@
         <li>PHP <span class="two-star"></span>
             <p>Podstawowe zagadnienia,
                 <abbr title="Klasy, interfejsy, abstrakcja, enkapsulacja,
-                      polimorfizm, dziedziczenie, widoczność">OOP</abbr>,
+                      polimorfizm, dziedziczenie, widoczność, magiczne metody, PDO, SPL">OOP</abbr>,
                 <a href="http://laravel.com/">Laravel </a>,
                 <a href="http://cakephp.org">CakePHP</a>,
                 <a href="http://ellislab.com/codeigniter">CodeIgniter</a>,
-                <a href="https://www.pyrocms.com/">PyroCMS</a>
+                <a href="https://www.pyrocms.com/">PyroCMS</a>,
+                <a href="http://getcomposer.org/">Composer</a>.
                 <br>Todo:
                 <a href="http://pl.wikipedia.org/wiki/Test-driven_development">
                     Test-driven development</a>.
             </p>
         </li>
-        <li>DB <span class="one-star"></span>
+        <li>DB <span class="two-star"></span>
             <p>Podstawowe zagadnienia, <a href="http://www.mysql.com/">MySQL</a>.
                 <br>Todo: <a href="http://www.sqlite.org/">SQLite</a>,
                 <a href="http://www.postgresql.org">PostgreSQL</a>,
                 <a href="http://redis.io">Redis</a>.
             </p>
         </li>
-        <li>Apache <span class="two-star"></span>
+        <li>Apache <span class="three-star"></span>
             <p>Konfiguracja <a href="http://www.apachefriends.org/en/xampp.html">
-                    XAMPP</a>:
+                    XAMPP</a>, <a href="https://wiki.debian.org/LaMp">LAMP</a>
                 <a href="http://httpd.apache.org/docs/2.2/vhosts/mass.html">
                     Dynamic Virtual Hosts</a> +
                 <a href="http://pl.wikipedia.org/wiki/Dnsmasq">
@@ -103,6 +104,7 @@
         <li>Narzędzia <span class="four-star"></span>
             <p>
                 <a href="http://netbeans.org/features/index.html">Netbeans IDE</a>,
+                <a href="http://www.jetbrains.com/phpstorm/">PhpStorm</a>,
                 <a href="http://www.geany.org/">Geany</a>,
                 <a href="http://git-scm.com/">Git</a>,
                 <a href="http://dbeaver.jkiss.org/">DBeaver</a>,
@@ -113,14 +115,16 @@
                 <a href="http://www.photoshop.com/">Adobe Photoshop CS6</a>,
                 <a href="http://www.gimp.org/">GIMP</a>,
                 <a href="http://audacity.sourceforge.net/">Audacity</a>,
-                <a href="https://www.virtualbox.org/">VirtualBox</a>.
+                <a href="https://www.virtualbox.org/">VirtualBox</a>,
+                <a href="http://www.samba.org/">Samba</a>,
+                <a href="http://www.9bis.net/kitty/">SSH</a>.
                 <br>Todo:
                 <a href="http://en.wikipedia.org/wiki/Regular_expression">RegEx</a>.
             </p>
         </li>
-        <li>Linux <span class="two-star"></span>
-            <p><a href="http://www.linuxmint.com/">Linux Mint</a>: administracja,
-                obsługa konsoli.
+        <li>Linux <span class="two-star-half"></span>
+            <p><a href="http://www.linuxmint.com/">Linux Mint Debian Edition</a>: administracja
+                lokalna oraz poprzez ssh.
         </li>
         <li>Windows <span class="four-star"></span>
             <p>Windows 95, 98, XP, 7, 8. Zaawansowana konfiguracja, obsługa
@@ -134,7 +138,7 @@
                 <a href="http://valid.canardpc.com/2877857">zaawansowany
                     overclocking.</a></p>
         </li>
-        <li>Technologie mobilne<span class="two-star-half"></span>
+        <li>Technologie mobilne <span class="two-star-half"></span>
             <p>Android: Diagnostyka działania, zaawansowana konfiguracja,
                 najnowsze trendy, kompilacja źródeł.</p>
         </li>
@@ -155,8 +159,16 @@
             <p>Nieustanna i ściśle współgrająca ze sprytem.</p>
         </li>
         <li>Poczucie humoru <span class="three-star-half"></span>
-            <p>Co zero powiedziało do ósemki?
+
+            <p>
+                <br>
+                Co zero powiedziało do ósemki?
                 <br>"Fajny masz pasek."
+                <br>
+                <br>
+                Jak nazywa się bumerang, który nie wraca po rzucie?
+                <br>Patyk.
+                <br>
                 <br>Todo: Coś śmieszniejszego.</p>
         </li>
     </ul>
