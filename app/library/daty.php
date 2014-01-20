@@ -6,7 +6,6 @@
 * @param string   $minut
 */
 
-
 class Daty {
 
 	public static function dateMod($format, $timestamp = null) {

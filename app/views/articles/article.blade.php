@@ -15,7 +15,7 @@
         {{ Form::text('author', null, array('class' => 'textinput',
         'placeholder' => 'Nazwa użytkownika')) }}
     </div>
-    
+
     <div>
         {{ Form::textarea('body', null, array('class' => 'textinput',
         'id' => 'comment_content', 'placeholder' => 'Treść komentarza')) }}
