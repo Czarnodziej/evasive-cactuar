@@ -24,20 +24,23 @@
                    $article->id) }}">{{ $article->title }}</a></td>
             <td>{{ Daty::showTimeAgo($article->created_at) }}</td>
             <td>
-                <span><button><a href="{{ URL::route('admin.articles.edit',
-                         $article->id) }}">Edytuj</a></button>
+                <span>
+                    <form action="{{ URL::route('admin.articles.edit',
+                         $article->id) }}">
+                        <input type="submit" value="Edytuj">
+                    </form>
 
-                {{ Form::open(array('route' => array('admin.articles.destroy',
+                    {{ Form::open(array('route' => array('admin.articles.destroy',
                 $article->id), 'method' => 'delete', 'data-confirm' =>
                 'Na pewno?', 'onsubmit' =>
                 'return confirm(\'Na pewno chcesz usunąć ten artykuł?\')'))}}
-                <button type="submit" href="{{ URL::route(
+                    <button type="submit" href="{{ URL::route(
                         'admin.articles.destroy', $article->id) }}">Usuń</button>
                     {{ Form::close() }}</span>
-                </td>
-            </tr>
-            @endforeach
-        </tbody>
-    </table>
+            </td>
+        </tr>
+        @endforeach
+    </tbody>
+</table>
 
 @stop
