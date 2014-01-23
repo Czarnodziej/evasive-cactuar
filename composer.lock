@@ -2226,12 +2226,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Translation.git",
-                "reference": "7a945876a9f7f5615e4600d1e25fa6138eea44bb"
+                "reference": "bf37f4f0ee40b9e56ab2b94f8143d0e1236b3168"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Translation/zipball/7a945876a9f7f5615e4600d1e25fa6138eea44bb",
-                "reference": "7a945876a9f7f5615e4600d1e25fa6138eea44bb",
+                "url": "https://api.github.com/repos/symfony/Translation/zipball/bf37f4f0ee40b9e56ab2b94f8143d0e1236b3168",
+                "reference": "bf37f4f0ee40b9e56ab2b94f8143d0e1236b3168",
                 "shasum": ""
             },
             "require": {
@@ -2272,7 +2272,7 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "http://symfony.com",
-            "time": "2014-01-07 13:19:25"
+            "time": "2014-01-21 05:04:52"
         },
         {
             "name": "way/generators",

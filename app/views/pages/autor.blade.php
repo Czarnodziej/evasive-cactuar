@@ -8,7 +8,7 @@
     / dlaczego tak / jak to zmienię to co się stanie?". Dodatkową przyczyną była
     chęć podzielenia się ze światem swym własnym punktem widzenia, którego forma
     tekstowa ilością znaków przekraczała standardową objętość wiadomości na forum
-    czy jakże ciekawego wpisu na fb czy twitterze. Dlatego umieszczam tutaj tylko
+    czy jakże ciekawego wpisu na fb lub twitterze. Dlatego umieszczam tutaj tylko
     najciekawsze treści.
     Żadne inne.</p>
 <p>Główne założenia techniczne:</p>
@@ -49,7 +49,7 @@
                 <a href="http://en.wikipedia.org/wiki/Sprite_%28computer_graphics%29#Sprites_by_CSS">
                     CSS Sprite</a>,
                 <abbr title="virtualbox IE6, 7, 8, 9, 10, 11,
-                      Chrome, Firefox, Safari, Opera">
+Chrome, Firefox, Safari, Opera">
                     <a href="http://caniuse.com/">
                         Kompatybilność z przeglądarkami</a></abbr><br>
                 <a href="http://developers.google.com/speed/pagespeed/insights/?url=czarnodziej.sanfre.eu%2F">
@@ -60,9 +60,8 @@
             </p>
         </li>
         <li>JavaScript <span class="two-star-half"></span>
-            <p><a href="{{ URL::route('game') }}">Podstawowa manipulacja DOM,
-                    funkcje, pętle, OOP.</a> Podstawowa obsługa
-                <a href="{{ URL::route('javascript') }}">jQuery</a>.
+            <p><a href="{{ URL::route('game') }}">Podstawowa manipulacja DOM, OOP.</a>
+                Podstawowa obsługa <a href="{{ URL::route('javascript') }}">jQuery</a>.
                 <a href="https://getfirebug.com/">Debugowanie</a>,
                 AJAX. Kod zgodny z <a href="http://www.jshint.com/">JShint.</a>
                 <br>Todo: JavaScript MVC Frameworks
@@ -71,7 +70,7 @@
         <li>PHP <span class="two-star"></span>
             <p>Podstawowe zagadnienia,
                 <abbr title="Klasy, interfejsy, abstrakcja, enkapsulacja,
-                      polimorfizm, dziedziczenie, widoczność, magiczne metody, PDO, SPL">OOP</abbr>,
+polimorfizm, dziedziczenie, widoczność">OOP</abbr>,
                 <a href="http://laravel.com/">Laravel </a>,
                 <a href="http://cakephp.org">CakePHP</a>,
                 <a href="http://ellislab.com/codeigniter">CodeIgniter</a>,
@@ -122,8 +121,8 @@
                 <a href="http://en.wikipedia.org/wiki/Regular_expression">RegEx</a>.
             </p>
         </li>
-        <li>Linux <span class="two-star-half"></span>
-            <p><a href="http://www.linuxmint.com/">Linux Mint Debian Edition</a>: administracja
+        <li>Linux <span class="three-star"></span>
+            <p><a href="http://www.debian.org/">Debian</a>: administracja
                 lokalna oraz poprzez ssh.
         </li>
         <li>Windows <span class="four-star"></span>

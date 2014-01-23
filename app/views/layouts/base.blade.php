@@ -53,16 +53,18 @@
 @section('topbar_nav')
 <div id="gora-kontener">
     <nav id="topbar">
-                <span id="logo">
+                    @if (Sentry::check())
+                                    <span id="logo">
+                    <a href="{{ URL::route('home') }}"><i class="icon-fixed-width
+                                                          icon-home"></i></a>
+                    <span>
+                        <a href="{{ URL::route('admin.articles.index') }}"><i class="icon-edit"></i></a>
+                        <a href="{{ URL::route('admin.logout') }}"><i class="icon-off"></i></a>
+                    </span>
+                    @else
+                                    <span id="logo">
                     <a href="{{ URL::route('home') }}"><i class="icon-fixed-width
                                                           icon-home"></i>SuperLogo</a>
-                    @if (Sentry::check())
-                    <span>
-                        <a href="{{ URL::route('admin.articles.index') }}"><i></i>
-                            Artykuły</a>
-                        <a href="{{ URL::route('admin.logout') }}"><i></i>
-                            Wyloguj</a>
-                    </span>
                     @endif
                 </span>
         <a href="{{ URL::route('article.list') }}">Teksty</a>

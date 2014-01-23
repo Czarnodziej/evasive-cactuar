@@ -13,7 +13,7 @@
             <th>#</th>
             <th>Tytuł</th>
             <th>Data powstania</th>
-            <th>Ustawienia</th>
+            <th>Akcje</th>
         </tr>
     </thead>
     <tbody>
@@ -24,8 +24,8 @@
                    $article->id) }}">{{ $article->title }}</a></td>
             <td>{{ Daty::showTimeAgo($article->created_at) }}</td>
             <td>
-                <span><a href="{{ URL::route('admin.articles.edit',
-                         $article->id) }}">Edytuj</a>
+                <span><button><a href="{{ URL::route('admin.articles.edit',
+                         $article->id) }}">Edytuj</a></button>
 
                 {{ Form::open(array('route' => array('admin.articles.destroy',
                 $article->id), 'method' => 'delete', 'data-confirm' =>

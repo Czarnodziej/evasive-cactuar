@@ -6,6 +6,7 @@
 /bootstrap/compiled.php
 /vendor
 /nbproject
+/public/files/*
 /.idea
 composer.phar
 .DS_Store
