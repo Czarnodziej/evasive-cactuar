@@ -1,0 +1,8 @@
+.el-rte.el-fullscreen {
+    top: 20px;
+    width: 100%;
+}
+div[role=dialog] {
+    top: 20px !important;
+    //because setting it in the elRte js files is less desirable
+}

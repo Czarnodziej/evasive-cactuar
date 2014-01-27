@@ -78,6 +78,7 @@
     </div>
 </div>
 <p><a href="{{ URL::route('game') }}">Gra JavaScript</a></p>
+<p><a href="{{ URL::route('impress') }}">Autorska prezentacja</a></p>
 @stop
 
 @section('bottom_scripts')

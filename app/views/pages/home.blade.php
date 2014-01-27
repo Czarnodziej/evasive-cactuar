@@ -1,14 +1,9 @@
 @extends('layouts.base')
 @section('main_content')
 <header>
-    <h1>Wspaniały tytuł strony.</h1>
+    <h1>Wspaniały tytuł.</h1>
 </header>
-<p>
-    <a href="#">
-        <img class="obrazek" src="{{ asset('assets/img/1min.png') }}"
-             alt="randomowy obrazek kunsztownie wykonany w paincie">
-    </a>
-</p>
+
 <p>Strona ma charakter rozwojowy. Co oznacza tyle, że jest tu mało zawartości,
     a docelowo będzie więcej. Dodatkowo znaczy to też, że do świetnego
     wyświetlania strony niezbędna jest aktualna przeglądarka internetowa.
@@ -36,6 +31,7 @@ Planowana aktywność:
         social media</li>
 </ul>
     </div>
+<br>
  <div>
 Główne założenia projektów:
 <ul class="icons-ul">
@@ -45,6 +41,7 @@ Główne założenia projektów:
     <li><i class="icon-li icon-screenshot icon-large"></i>Responsywność</li>
 </ul>
  </div>
+<br>
 <div>
     Wersje strony:
 <ul>

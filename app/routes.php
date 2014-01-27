@@ -40,6 +40,10 @@ Route::get('game', array('as' => 'game', function() {
 return View::make('pages.game');
 }));
 
+Route::get('impress', array('as' => 'impress', function() {
+return View::make('pages.impress');
+}));
+
 // Article list
 Route::get('teksty', array('as' => 'article.list', function() {
 return View::make('articles.index')->with('entries',
