@@ -46,9 +46,8 @@ return View::make('pages.impress');
 
 // Article list
 Route::get('teksty', array('as' => 'article.list', function() {
-    $articlesPaged = Article::paginate(10);
-return View::make('articles.index')->with('entries', $articlesPaged,
-        Article::orderBy('created_at', 'desc')->get());
+return View::make('articles.index')->with('entries',
+        Article::orderBy('created_at', 'desc')->paginate(10));
 }));
 
 // Single article
