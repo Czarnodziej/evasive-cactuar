@@ -43,4 +43,6 @@
     </tbody>
 </table>
 
+{{ $articles->links() }}
+
 @stop

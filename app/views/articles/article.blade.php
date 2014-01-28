@@ -1,8 +1,19 @@
 @extends('layouts.base')
 @section('main_content')
-
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pl_PL/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <h2>{{ $entry->title }}</h2>
 <h4>Utworzony {{ Daty::showTimeAgo($entry->created_at) }}</h4>
+<div class="fb-like" data-href="{{ route('article', $entry->slug) }}"
+     data-layout="standard" data-action="like" data-show-faces="true"
+     data-share="true"></div>
+<br>
 {{ $entry->body }}
 <hr>
 <div id="komentarze">
@@ -43,6 +54,7 @@
 
     <hr>
     @endforeach
+    
 </div>
 @stop
 @section('bottom_scripts')

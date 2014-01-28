@@ -2,7 +2,7 @@
 
 class Comment extends Eloquent {
 
-	public function article()
+	public function comment()
 	{
 		return $this->belongsTo('Article');
 	}

@@ -19,4 +19,6 @@
             @endforeach
         </tbody>
     </table>
+
+{{ $entries->links() }}
 @stop

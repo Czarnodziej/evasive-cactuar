@@ -2,18 +2,19 @@
 
 use App\Models\Article;
 use App\Services\Validators\ArticleValidator;
-use Input, Notification, Redirect, Sentry, Str;
+use Input, Notification, Redirect, Sentry;
 
 class ArticlesController extends \BaseController {
 
 	public function index()
 	{
-		return \View::make('admin.articles.index')->with('articles', Article::all());
-	}
+        $articlesPaged = Article::paginate(10);
+        return \View::make('admin.articles.index')->with('articles', $articlesPaged);
+        }
 
-	public function show($id)
+    public function show($id)
 	{
-		return \View::make('admin.articles.show')->with('article',Article::find($id));
+		return \View::make('admin.articles.show')->with('article', Article::find($id));
 	}
 
 	public function create()
@@ -29,7 +30,7 @@ class ArticlesController extends \BaseController {
 		{
 			$article = new Article;
 			$article->title   = Input::get('title');
-			$article->slug    = Str::slug(Input::get('title'));
+			$article->slug    = Input::get('slug');
 			$article->body    = Input::get('body');
 			$article->user_id = Sentry::getUser()->id;
 			$article->save();
@@ -55,7 +56,7 @@ class ArticlesController extends \BaseController {
 		{
 			$article = Article::find($id);
 			$article->title   = Input::get('title');
-			$article->slug    = Str::slug(Input::get('title'));
+			$article->slug    = Input::get('slug');
 			$article->body    = Input::get('body');
 			$article->user_id = Sentry::getUser()->id;
 			$article->save();

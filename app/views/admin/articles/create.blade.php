@@ -23,7 +23,11 @@
 <div>
     {{ Form::label('title', 'Tytuł') }}
     <div>
-        {{ Form::text('title') }}
+        {{ Form::text('title', null, array('id' => 'title')) }}
+    </div>
+    {{ Form::label('slug', 'Slug') }}
+    <div>
+        {{ Form::text('slug', null, array('id' => 'slug')) }}
     </div>
 </div>
 
@@ -33,7 +37,7 @@
         {{ HTML::decode(Form::textarea('body', null, array('class' => 'nomargin'))) }}
     </div>
 </div>
-
+<br>
 <div>
     {{ Form::submit('Zapisz') }}
     <a href="{{ URL::route('admin.articles.index') }}">Anuluj</a>
@@ -47,13 +51,14 @@
 <!--[if lt IE 9]>
 <script src="{{ asset('assets/js/vendor/respond.min.js') }}" type="text/javascript"></script>
 <![endif]-->
-<script src="{{ asset('assets/js/jquery-1.6.1.min.js') }}"></script>
-<script src="{{ asset('assets/js/jquery-ui-1.8.13.custom.min.js') }}"></script>
+<script src="{{ asset('assets/js/vendor/jquery-1.6.1.min.js') }}"></script>
+<script src="{{ asset('assets/js/vendor/jquery-ui-1.8.13.custom.min.js') }}"></script>
 <script src="{{ asset('assets/js/script.min.js') }}"></script>
-<script src="{{ asset('assets/js/elrte.min.js') }}"></script>
-<script src="{{ asset('assets/js/elfinder.min.js') }}"></script>
-<script src="{{ asset('assets/js/i18n/elrte.pl.js') }}"></script>
-<script src="{{ asset('assets/js/i18n/elfinder.pl.js') }}"></script>
+<script src="{{ asset('assets/js/vendor/elrte.min.js') }}"></script>
+<script src="{{ asset('assets/js/vendor/elfinder.min.js') }}"></script>
+<script src="{{ asset('assets/js/vendor/i18n/elrte.pl.js') }}"></script>
+<script src="{{ asset('assets/js/vendor/i18n/elfinder.pl.js') }}"></script>
+<script src="{{ asset('assets/js/vendor/jquery.slugify.js') }}"></script>
 <script type="text/javascript">
 $().ready(function() {
     var opts = {
@@ -77,6 +82,7 @@ $().ready(function() {
     };
     // create editor
     $('#body').elrte(opts);
+    $('#slug').slugify('#title');
 });
 </script>
 @stop

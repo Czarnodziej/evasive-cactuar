@@ -87,7 +87,7 @@ if ("ontouchstart" in document.documentElement) {
     document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
 }
 </script>
-<script src="{{ asset('assets/js/impress.min.js') }}"></script>
+<script src="{{ asset('assets/js/vendor/impress.min.js') }}"></script>
 <script>impress().init();</script>
 
 </body>

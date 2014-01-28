@@ -4,7 +4,6 @@ use App\Services\Validators\CommentValidator;
 
 class CommentsController extends BaseController
 {
-
     public function postComment()
     {
         $validation = new CommentValidator;
