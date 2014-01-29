@@ -810,11 +810,6 @@ textarea, .textinput, .add-on {
     transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;
 }
 
-/* elrte fix */
-.nomargin {
-    margin: 0;
-}
-
 textarea:focus,
 .textinput:focus,
 .submitbutton:hover,

@@ -21,6 +21,9 @@ Route::post('admin/login', array('as' => 'admin.login.post', 'uses' =>
 Route::group(array('prefix' => 'admin', 'before' => 'auth.admin'), function() {
     Route::any('/', 'App\Controllers\Admin\ArticlesController@index');
     Route::resource('articles', 'App\Controllers\Admin\ArticlesController');
+    Route::get('elfinder', array('as' => 'elfinder', function() {
+    return View::make('admin.elfinder');
+    }));
 });
 
 // Single pages

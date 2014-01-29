@@ -1,9 +1,6 @@
 @extends('layouts.base')
 @section('head')
 <link rel="stylesheet" href="{{ asset('assets/css/style.min.css') }}">
-<link rel="stylesheet" href="{{ asset('assets/css/smoothness/jquery-ui-1.8.13.custom.css') }}">
-<link rel="stylesheet" href="{{ asset('assets/css/elrte.min.css') }}">
-<link rel="stylesheet" href="{{ asset('assets/css/elfinder.min.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/style-edit-fix.css') }}">
 <!--[if lt IE 8]>
 <link rel="stylesheet" href="{{ asset('assets/css/font-awesome-ie7.min.css') }}">
@@ -50,38 +47,45 @@ array('admin.articles.update', $article->id))) }}
 <!--[if lt IE 9]>
 <script src="{{ asset('assets/js/vendor/respond.min.js') }}" type="text/javascript"></script>
 <![endif]-->
-<script src="{{ asset('assets/js/vendor/jquery-1.6.1.min.js') }}"></script>
-<script src="{{ asset('assets/js/vendor/jquery-ui-1.8.13.custom.min.js') }}"></script>
+<script src="{{ asset('assets/js/vendor/jquery-2.0.2.min.js') }}"></script>
 <script src="{{ asset('assets/js/script.min.js') }}"></script>
-<script src="{{ asset('assets/js/vendor/elrte.min.js') }}"></script>
-<script src="{{ asset('assets/js/vendor/elfinder.min.js') }}"></script>
-<script src="{{ asset('assets/js/vendor/i18n/elrte.pl.js') }}"></script>
-<script src="{{ asset('assets/js/vendor/i18n/elfinder.pl.js') }}"></script>
-<script src="{{ asset('assets/js/vendor/jquery.slugify.js') }}"></script>
+<script src="{{ asset('assets/js/vendor/tinymce/tinymce.min.js') }}"></script>
+<script src="{{ asset('assets/js/vendor/jquery.slugit.js') }}"></script>
 <script type="text/javascript">
-$().ready(function() {
-    var opts = {
-        lang: 'pl', // set your language
-        styleWithCSS: false,
-        height: 400,
-        toolbar: 'maxi',
-        allowSource: true,
-        fmOpen: function(callback) {
-            $('<div />').dialogelfinder({
-                url: '../../../php/connector.php',
-                lang: 'pl',
-                commandsOptions: {
-                    getfile: {
-                        oncomplete: 'destroy' // destroy elFinder after file selection
-                    }
-                },
-                getFileCallback: callback // pass callback to file manager
-            });
-        }
+
+    $().ready(function() {
+    tinymce.init({
+    selector: "textarea",
+    file_browser_callback : elFinderBrowser,
+    height: 400,
+    language: 'pl',
+    gecko_spellcheck : true,
+    plugins: [
+         "advlist autolink link image lists charmap print preview hr anchor pagebreak",
+         "searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking",
+         "save table emoticons paste textcolor"
+   ],
+   content_css: "css/content.css",
+   toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter\n\
+ alignright alignjustify | bullist numlist outdent indent | link image | print preview\n\
+ media fullpage | forecolor backcolor emoticons"
+    });
+    function elFinderBrowser (field_name, url, type, win) {
+    tinymce.activeEditor.windowManager.open({
+    file: '{{ URL::route('elfinder') }}',
+            title: 'elFinder 2.0',
+            width: 900,
+            height: 450,
+            resizable: 'yes'
+    }, {
+    setUrl: function (url) {
+    win.document.getElementById(field_name).value = url;
+    }
+    });
+            return false;
     };
-    // create editor
-    $('#body').elrte(opts);
-    $('#slug').slugify('#title');
+$('#title').slugIt();
 });
+
 </script>
 @stop

@@ -21,7 +21,7 @@
         href='//fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext'
         rel='stylesheet'>
     @section('head')
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.min.css') }}">
     <!--[if lt IE 9]>
     <link rel="stylesheet" href="{{ asset('assets/css/style-ie8.css') }}">
     <![endif]-->
