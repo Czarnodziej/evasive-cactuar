@@ -15,13 +15,13 @@ $().ready(function() {
         language: 'pl',
         gecko_spellcheck : true,
         plugins: [
-            "advlist autolink link image lists charmap print preview hr anchor pagebreak",
+            "advlist autolink link image lists charmap preview hr anchor pagebreak",
             "searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking",
             "save table emoticons paste textcolor"
         ],
         content_css: "css/content.css",
         toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter\n\
- alignright alignjustify | bullist numlist outdent indent | link image | print preview\n\
+ alignright alignjustify | bullist numlist outdent indent | link image | preview\n\
  media fullpage | forecolor backcolor emoticons"
     });
         function elFinderBrowser (field_name, url, type, win) {

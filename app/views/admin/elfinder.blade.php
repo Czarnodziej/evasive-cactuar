@@ -26,7 +26,7 @@
                     $().ready(function() {
             var elf = $('#elfinder').elfinder({
             lang: 'pl',
-                    url: 'http://laraveil.dev/php/connector.php', // connector URL
+                    url: '../../php/connector.php', // connector URL
                     getFileCallback: function(file) { // editor callback
                     // actually file.url - doesnt work for me, but file does. (elfinder 2.0-rc1)
                     FileBrowserDialogue.mySubmit(file); // pass selected file path to TinyMCE 
