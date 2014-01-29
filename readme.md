@@ -1,5 +1,6 @@
 evasive-cactuar
 ===============
+![](http://i.imgur.com/u9huyrW.png)
 
 Simple Laravel blog CMS
 
