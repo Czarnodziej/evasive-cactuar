@@ -10,6 +10,9 @@
   |
  */
 
+//Pagination parameter override in order for it to be shown in Polish language
+Paginator::setPageName('strona');
+
 // Admin Section
 Route::get('admin/logout', array('as' => 'admin.logout', 'uses' =>
     'App\Controllers\Admin\AuthController@getLogout'));

@@ -13,12 +13,12 @@ return array(
 	|
 	*/
 
-	"password" => "Passwords must be at least six characters and match the confirmation.",
+	"password" => "Hasło musi mieć minimum 6 znaków oraz być zgodne z potwierdzeniem.",
 
-        "user" => "We can't find a user with that e-mail address.",
+        "user" => "Brak użytkownika posiadającego podany adres e-mail.",
 
-        "token" => "This password reset token is invalid.",
+        "token" => "Token resetu hasła jest nieprawidłowy.",
 
-        "sent" => "Password reminder sent!",
+        "sent" => "Przypomnienie hasła zostało wysłane.",
 
 );
