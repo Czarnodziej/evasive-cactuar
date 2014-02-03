@@ -54,8 +54,7 @@ Chrome, Firefox, Safari, Opera">
                         Kompatybilność z przeglądarkami</a></abbr><br>
                 <a href="http://developers.google.com/speed/pagespeed/insights/?url=czarnodziej.sanfre.eu%2F">
                     Optymalna prędkość</a>.
-                <br>Todo: <a href="http://yeoman.io">Yeoman</a>,
-                <a href="http://foundation.zurb.com/">Foundation 4</a>,
+                <br>Todo: <a href="http://getbootstrap.com/">Bootstrap 3</a>,
                 preprocesory CSS.
             </p>
         </li>

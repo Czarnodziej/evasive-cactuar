@@ -1,14 +1,4 @@
 @extends('layouts.base')
-@section('head')
-<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
-<!--[if lt IE 8]>
-<link rel="stylesheet" href="{{ asset('assets/css/font-awesome-ie7.min.css') }}">
-<link rel="stylesheet" href="{{ asset('assets/css/style-ie7.css') }}">
-<link rel="stylesheet" href="{{ asset('assets/css/style-ie6.css') }}">
-<![endif]-->
-<link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
-<script src="{{ asset('assets/js/vendor/modernizr-2.6.2.min.js') }}"></script>
-@stop
 @section('main_content')
 <div>
     Gra polega na klikaniu. Żeby zdobyć punkt należy klikać w zielone buźki.

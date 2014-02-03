@@ -1,15 +1,8 @@
 @extends('layouts.base')
 @section('head')
-<link rel="stylesheet" href="{{ asset('assets/css/style.min.css') }}">
+@parent
 <link rel="stylesheet"
       href="{{ asset('assets/css/smoothness/jquery-ui-1.10.3.custom.min.css') }}">
-<!--[if lt IE 8]>
-<link rel="stylesheet" href="{{ asset('assets/css/font-awesome-ie7.min.css') }}">
-<link rel="stylesheet" href="{{ asset('assets/css/style-ie7.css') }}">
-<link rel="stylesheet" href="{{ asset('assets/css/style-ie6.css') }}">
-<![endif]-->
-<link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
-<script src="{{ asset('assets/js/vendor/modernizr-2.6.2.min.js') }}"></script>
 @stop
 @section('main_content')
 <header>
