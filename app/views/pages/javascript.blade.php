@@ -75,10 +75,8 @@
 @stop
 
 @section('bottom_scripts')
-<!--[if lt IE 9]>
-<script src="{{ asset('assets/js/vendor/respond.min.js') }}" type="text/javascript"></script>
-<![endif]-->
+@parent
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script> window.jQuery || document.write('<script src ="{{ asset('assets/js/vendor/jquery-1.10.2.min.js') }}">\x3C/script>');</script>
 <script src="{{ asset('assets/js/vendor/jquery-ui-1.10.3.custom.min.js') }}"></script>
-<script src="{{ asset('assets/js/script.min.js') }}"></script>
 @stop

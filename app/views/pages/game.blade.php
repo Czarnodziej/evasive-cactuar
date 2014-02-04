@@ -13,10 +13,6 @@
 @stop
 
 @section('bottom_scripts')
-<!--[if lt IE 9]>
-<script src="{{ asset('assets/js/vendor/respond.min.js') }}"
-type="text/javascript"></script>
-<![endif]-->
-<script src="{{ asset('assets/js/script.min.js') }}"></script>
+@parent
 <script src="{{ asset('assets/js/game.min.js') }}"></script>
 @stop
