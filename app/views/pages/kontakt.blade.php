@@ -31,8 +31,6 @@
 @stop
 @section('bottom_scripts')
 @parent
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
-</script>
 <script src="{{ asset('assets/js/vendor/jquery-placeholder/
 jquery.placeholder.min.js') }}"></script>
 @stop

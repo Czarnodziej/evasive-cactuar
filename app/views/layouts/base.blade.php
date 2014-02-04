@@ -17,9 +17,6 @@
         <meta name="keywords" content="web design, web development, humor,
               portfolio, php, laravel, cakephp, jquery, javascript, js"/>
         <title>Wesoła wycieczka w treść - praktyczny Web Developing.</title>
-        <link
-            href='//fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext'
-            rel='stylesheet'>
         @section('head')
         <link rel="stylesheet" href="{{ asset('assets/css/style.min.css') }}">
         <!--[if lt IE 9]>
@@ -160,10 +157,28 @@
         </div>
         @section('bottom_scripts')
         <!--[if lt IE 9]>
-        <script src="{{ asset('assets/js/vendor/respond.min.js') }}"></script>
+        <script async src="{{ asset('assets/js/vendor/respond.min.js') }}"></script>
         <![endif]-->
-        <script
+        <script async
         src="{{ asset('assets/js/vendor/modernizr-2.6.2.min.js') }}"></script>
+        <script async src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script> window.jQuery || document.write('<script async src="{{ asset('assets / js / vendor / jquery - 1.10.2.min.js') }}">\x3C/script>');</script>
+        <script>
+                $(document).ready(function(){
+            $.ajax({
+            url: fontFile,
+                beforeSend: function (xhr) {
+                xhr.overrideMimeType("application/octet-stream");
+                },
+                success: function(data) {
+                $("<link />", {
+                'rel': 'stylesheet'
+                    'href': '//fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext'
+                }).appendTo('head');
+                }
+            });
+            });
+        </script>
         <script async src="{{ asset('assets/js/script.min.js') }}"></script>
         @show
     </body>

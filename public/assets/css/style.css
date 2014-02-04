@@ -739,6 +739,10 @@ article ul, article ol {
     margin: 10px auto;
 }
 
+li > a {
+    line-height: 45px
+}
+
 /*---- Tables ----*/
 
 table {
@@ -991,6 +995,8 @@ textarea:focus,
     color: #222;
     text-decoration: none;
     white-space: nowrap;
+    line-height: 35px;
+    padding: 20px 0 20px 20px;
 }
 
 /*---- jq datepicker ----*/
