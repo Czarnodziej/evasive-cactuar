@@ -162,20 +162,11 @@
         <script async
         src="{{ asset('assets/js/vendor/modernizr-2.6.2.min.js') }}"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>
-                $(document).ready(function(){
-            $.ajax({
-                beforeSend: function (xhr) {
-                xhr.overrideMimeType("application/octet-stream");
-                },
-                success: function(data) {
-                $("<link />", {
-                'rel': 'stylesheet',
-                    'href': '//fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext'
-                }).appendTo('head');
-                }
-            });
-            });
+        <script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+        <script type="text/javascript">
+                WebFontConfig = {
+                google: { families: [ 'Open+Sans:400,700:latin-ext' ] }
+                };
         </script>
         <script async src="{{ asset('assets/js/script.min.js') }}"></script>
         @show
