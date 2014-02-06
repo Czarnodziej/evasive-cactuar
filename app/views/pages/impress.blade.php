@@ -66,7 +66,7 @@ uwielbiam <strong>web developing</strong> <br>oraz kontakt z nowymi rozwiązania
     <div id="zrodlo" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
         <p>Efekt prezentuję na stronie:</p>
 
-        <q><a href="http://czarnodziej.sanfre.eu">czarnodziej.sanfre.eu</a></q>
+        <q><a href="http://insanet.pl/">insaNet.pl</a></q>
     </div>
 
     <div id="dodatkowo" class="step" data-x="6000" data-y="4000" data-scale="2">
