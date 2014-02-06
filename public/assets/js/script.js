@@ -13,7 +13,7 @@
 var mobilBGAttachFix; //fixes backgroundAttachment=fixed in mobile web browsers (esp. android)
 mobilBGAttachFix = function() {
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|Opera Mini|IEMobile/i.test(navigator.userAgent)) {
-        document.body.style.backgroundAttachment = "scroll"; //user agent sniffing is bad, todo: better solution
+        document.body.style.backgroundAttachment = "scroll";
     }
 };
 mobilBGAttachFix();
@@ -36,12 +36,12 @@ if (document.getElementById('skills') !== null) {
     przycisk();
 }
 
-if (typeof jQuery != 'undefined') {
+if (typeof jQuery !== 'undefined') {
 
     //jQuery functions
 
     //datepicker and tabs
-    if (typeof datepicker != 'undefined') {
+    if (typeof datepicker !== 'undefined') {
         $(function() {
              //   Polish initialisation for the jQuery UI date picker plugin.
              //   Written by Jacek Wysocki (jacek.wysocki@gmail.com).
@@ -100,7 +100,7 @@ if (typeof jQuery != 'undefined') {
     }
 
     //"Form Placeholder element" jQuery plugin
-    if(typeof jQuery.fn.placeholder != 'undefined'){
+    if(typeof jQuery.fn.placeholder !== 'undefined'){
         jQuery('input, textarea').placeholder();
     }
 }
