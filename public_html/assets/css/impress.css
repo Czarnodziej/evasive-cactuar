@@ -282,7 +282,7 @@ a:focus {
 }
 
 #wyobraznia {
-    width: 700px;
+    width: 720px;
 }
 
 #wyobraznia  .wyobraznia {
@@ -419,7 +419,7 @@ a:focus {
     position: fixed;
     bottom: -10px;
     left: 5px;
-    z-index: 200; //hint div click override (320px window width)
+   z-index: 200; /* hint div click override (320px window width) */
 }
 
 .fb, .tw, .mail, .gh {
@@ -447,5 +447,5 @@ a:focus {
     background-position: -32px 0;
 }
 
-/*.impress-enabled          { pointer-events: none }
+/*.impress-enabled { pointer-events: none }
 .impress-enabled #impress { pointer-events: auto }*/

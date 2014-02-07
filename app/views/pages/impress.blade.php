@@ -8,8 +8,7 @@
             href='//fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext'
             rel='stylesheet'>
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-        <link href="{{ asset('assets/css/impress.css') }}" rel="stylesheet" />
-        <!--<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">-->
+        <link href="{{ asset('assets/css/impress.min.css') }}" rel="stylesheet" />
         <link rel="shortcut icon" href="{{ asset('favicon.ico') }}"
               type="image/x-icon">
     </head>
