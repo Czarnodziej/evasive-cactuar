@@ -8,6 +8,8 @@
 /nbproject
 /public/files/*
 /.idea
+.htpasswd/
+awstats/
 composer.phar
 .DS_Store
 Laraveil.sublime-project
