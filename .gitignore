@@ -6,10 +6,12 @@
 /bootstrap/compiled.php
 /vendor
 /nbproject
-/public/files/*
+/public_html/files/*
+/public_html/old
+/public_html/cake
 /.idea
-.htpasswd/
-awstats/
+/.htpasswd
+/awstats
 composer.phar
 .DS_Store
 Laraveil.sublime-project

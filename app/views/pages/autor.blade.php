@@ -45,7 +45,6 @@
     <ul id="skills">
         <li>HTML5/CSS3 <span class="four-star"></span>
             <p><a href="http://en.wikipedia.org/wiki/Responsive_web_design">RWD</a>,
-                <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a>,
                 <a href="http://en.wikipedia.org/wiki/Sprite_%28computer_graphics%29#Sprites_by_CSS">
                     CSS Sprite</a>,
                 <abbr title="virtualbox IE6, 7, 8, 9, 10, 11,
@@ -117,7 +116,8 @@ polimorfizm, dziedziczenie, widoczność">OOP</abbr>,
                 <a href="http://www.samba.org/">Samba</a>,
                 <a href="http://www.9bis.net/kitty/">SSH</a>.
                 <br>Todo:
-                <a href="http://en.wikipedia.org/wiki/Regular_expression">RegEx</a>.
+                <a href="http://en.wikipedia.org/wiki/Regular_expression">RegEx</a>,
+                <a href="http://www.vim.org/">VIM</a>
             </p>
         </li>
         <li>Linux <span class="three-star"></span>
