@@ -53,7 +53,7 @@ Chrome, Firefox, Safari, Opera">
                     <a href="http://caniuse.com/">
                         Kompatybilność z przeglądarkami</a></abbr><br>
                 <a href="http://developers.google.com/speed/pagespeed/insights/?url={{ URL::to('/') }}%2F">
-                    Optymalna prędkość</a>.
+                    Google PageSpeed 100/100</a>.
                 <br>Todo: <a href="http://getbootstrap.com/">Bootstrap 3</a>,
                 preprocesory CSS.
             </p>
