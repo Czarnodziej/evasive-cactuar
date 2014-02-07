@@ -1,7 +1,5 @@
 <?php
 
-use Input, Redirect, Mail, Session;
-
 class KontaktController extends BaseController {
 
 	public function sendMail()
@@ -15,7 +13,7 @@ class KontaktController extends BaseController {
 		   Mail::send('emails.default', $data, function($message) use ($data)
 		   {
 		    $message->to('pagodemc@gmail.com');
-		    $message->subject('laraveil@czarnodziej.sanfree.eu');
+		    $message->subject('insanet.pl');
 		});
 
 		   Session::flash('success', true);

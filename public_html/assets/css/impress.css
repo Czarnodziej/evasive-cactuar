@@ -1,4 +1,4 @@
-h/*
+/*
 Based on https://github.com/bartaz/impress.js
 */
 
@@ -53,35 +53,36 @@ body {
     font-family: 'PT Sans', sans-serif;
     min-height: 740px;
 
-    background: rgb(215, 215, 215);
-    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
-    background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:    -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:     -ms-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:      -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:         radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background: #d0e4f7; /* Old browsers */
+    background: -moz-linear-gradient(top, #d0e4f7 0%, #73b1e7 2%, #0a77d5 8%, #539fe1 67%, #87bcea 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d0e4f7), color-stop(2%,#73b1e7), color-stop(8%,#0a77d5), color-stop(67%,#539fe1), color-stop(100%,#87bcea)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #d0e4f7 0%,#73b1e7 2%,#0a77d5 8%,#539fe1 67%,#87bcea 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #d0e4f7 0%,#73b1e7 2%,#0a77d5 8%,#539fe1 67%,#87bcea 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #d0e4f7 0%,#73b1e7 2%,#0a77d5 8%,#539fe1 67%,#87bcea 100%); /* IE10+ */
+    background-attachment: fixed;
 }
 
 b, strong { font-weight: bold }
 i, em { font-style: italic }
 
 a {
-    color: inherit;
+    color: navy;
     text-decoration: none;
     padding: 0 0.1em;
     background: rgba(255,255,255,0.5);
     text-shadow: -1px -1px 2px rgba(100,100,100,0.9);
     border-radius: 0.2em;
 
-    -webkit-transition: 0.5s;
-    -moz-transition:    0.5s;
-    -ms-transition:     0.5s;
-    -o-transition:      0.5s;
-    transition:         0.5s;
+    -webkit-transition: 1s;
+    -moz-transition:    1s;
+    -ms-transition:     1s;
+    -o-transition:      1s;
+    transition:         1s;
 }
 
 a:hover,
 a:focus {
+    color: red;
     background: rgba(255,255,255,1);
     text-shadow: -1px -1px 2px rgba(100,100,100,0.5);
 }
@@ -147,22 +148,20 @@ a:focus {
 .slide {
     display: block;
 
-    width: 900px;
-    height: 700px;
-    padding: 40px 60px;
+    width: 800px;
+    height: 600px;
+    padding: 50px 70px;
 
+    border: 2px solid gray;
+    border: 3px solid rgba(0,0,0,.2);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
     background-color: white;
-    border: 1px solid rgba(0, 0, 0, .3);
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
-
-    color: rgb(102, 102, 102);
-    text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
-
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 30px;
-    line-height: 36px;
-    letter-spacing: -1px;
+    -webkit-box-shadow: black 1px 1px 1px 1px;
+    -moz-box-shadow: black 1px 1px 1px 1px;
+    box-shadow: black 1px 1px 1px 1px;
+    text-align: left;
 }
 
 .slide q {
@@ -217,7 +216,7 @@ a:focus {
 
 #duze b {
     display: block;
-    font-size: 250px;
+    font-size: 220px;
     line-height: 250px;
 }
 
@@ -283,11 +282,16 @@ a:focus {
 }
 
 #wyobraznia {
-    width: 600px;
+    width: 700px;
 }
 
 #wyobraznia  .wyobraznia {
     font-size: 78px;
+}
+
+#zrodlo {
+    width: 600px;
+    text-align: center;
 }
 
 #zrodlo q {
@@ -409,5 +413,39 @@ a:focus {
     transition:         opacity 1s 5s,         transform 0.5s 4.5s;
 }
 
-.impress-enabled          { pointer-events: none }
-.impress-enabled #impress { pointer-events: auto }
+#social {
+    width: 180px;
+    height: 64px;
+    position: fixed;
+    bottom: -10px;
+    left: 5px;
+    z-index: 200; //hint div click override (320px window width)
+}
+
+.fb, .tw, .mail, .gh {
+    display: inline-block;
+    margin-right: 0;
+    width: 32px;
+    height: 32px;
+    background: url("../img/social_sprite.png") no-repeat;
+    padding: 0
+}
+
+#social .fb {
+    background-position: 0 0;
+}
+
+#social .tw {
+    background-position: -96px 0;
+}
+
+#social .mail {
+    background-position: -64px 0;
+}
+
+#social .gh {
+    background-position: -32px 0;
+}
+
+/*.impress-enabled          { pointer-events: none }
+.impress-enabled #impress { pointer-events: auto }*/
