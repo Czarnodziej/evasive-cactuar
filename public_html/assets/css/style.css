@@ -581,7 +581,7 @@ a:hover {
 
 #topbar a {
     display: inline;
-    padding: 0 3px;
+    padding: 0 4px;
     border: 0 solid black;
     border-left-width: 2px;
 }
