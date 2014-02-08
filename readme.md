@@ -4,7 +4,7 @@ evasive-cactuar
 
 Simple Laravel blog CMS
 
-[Frontend Demo](http://czarnodziej.sanfre.eu/)
+[Frontend Demo](http://insanet.pl/)
 
 Technologies utilized:
 
