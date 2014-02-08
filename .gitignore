@@ -12,6 +12,8 @@
 /.idea
 /.htpasswd
 /awstats
+/logs
+/stats
 composer.phar
 .DS_Store
 Laraveil.sublime-project
