@@ -87,12 +87,8 @@ polimorfizm, dziedziczenie, widoczność">OOP</abbr>,
             </p>
         </li>
         <li>Apache <span class="three-star"></span>
-            <p>Konfiguracja <a href="http://www.apachefriends.org/en/xampp.html">
-                    XAMPP</a>, <a href="https://wiki.debian.org/LaMp">LAMP</a>
-                <a href="http://httpd.apache.org/docs/2.2/vhosts/mass.html">
-                    Dynamic Virtual Hosts</a> +
-                <a href="http://pl.wikipedia.org/wiki/Dnsmasq">
-                    Dnsmasq</a>, PHP, MySQL, cache, gzip.
+            <p>Konfiguracja i administracja <a href="http://www.apachefriends.org/en/xampp.html">
+                    XAMPP</a>, <a href="https://wiki.debian.org/LaMp">LAMP</a>.
                 <br>Todo: <a href="http://pl.wikipedia.org/wiki/Memcached">
                     Memcached</a>, <a href="http://pl.wikipedia.org/wiki/Nginx">
                     Nginx</a>.
