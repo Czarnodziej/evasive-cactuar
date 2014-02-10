@@ -100,7 +100,6 @@ polimorfizm, dziedziczenie, widoczność">OOP</abbr>,
                 <a href="http://www.jetbrains.com/phpstorm/">PhpStorm</a>,
                 <a href="http://www.geany.org/">Geany</a>,
                 <a href="http://git-scm.com/">Git</a>,
-                <a href="http://dbeaver.jkiss.org/">DBeaver</a>,
                 <a href="http://www.sublimetext.com/">Sublime Text 3</a>,
                 <a href="http://notepad-plus-plus.org/">Notepad++</a>,
                 <a href="http://pl.libreoffice.org/">Libre Office</a>,
@@ -110,10 +109,10 @@ polimorfizm, dziedziczenie, widoczność">OOP</abbr>,
                 <a href="http://audacity.sourceforge.net/">Audacity</a>,
                 <a href="https://www.virtualbox.org/">VirtualBox</a>,
                 <a href="http://www.samba.org/">Samba</a>,
-                <a href="http://www.9bis.net/kitty/">SSH</a>.
-                <br>Todo:
+                <a href="http://www.9bis.net/kitty/">SSH</a>,
+		<a href="http://www.vim.org">VIM</a>.
+		<br>Todo:
                 <a href="http://en.wikipedia.org/wiki/Regular_expression">RegEx</a>,
-                <a href="http://www.vim.org/">VIM</a>
             </p>
         </li>
         <li>Linux <span class="three-star"></span>
