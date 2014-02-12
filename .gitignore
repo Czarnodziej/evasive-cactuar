@@ -13,6 +13,7 @@
 /.htpasswd
 /awstats
 /logs
+/.swp
 /stats
 composer.phar
 .DS_Store
