@@ -65,7 +65,7 @@ Chrome, Firefox, Safari, Opera">
                 <br>Todo: JavaScript MVC Frameworks
             </p>
         </li>
-        <li>PHP <span class="two-star"></span>
+        <li>PHP <span class="two-star-half"></span>
             <p>Podstawowe zagadnienia,
                 <abbr title="Klasy, interfejsy, abstrakcja, enkapsulacja,
 polimorfizm, dziedziczenie, widoczność">OOP</abbr>,
@@ -79,9 +79,10 @@ polimorfizm, dziedziczenie, widoczność">OOP</abbr>,
                     Test-driven development</a>.
             </p>
         </li>
-        <li>DB <span class="two-star"></span>
-            <p>Podstawowe zagadnienia, <a href="http://www.mysql.com/">MySQL</a>.
-                <br>Todo: <a href="http://www.sqlite.org/">SQLite</a>,
+        <li>DB <span class="two-star-half"></span>
+            <p>Podstawowe zagadnienia, <a href="http://www.mysql.com/">MySQL</a>,
+                <a href="http://www.sqlite.org/">SQLite</a>.
+                <br>Todo:
                 <a href="http://www.postgresql.org">PostgreSQL</a>,
                 <a href="http://redis.io">Redis</a>.
             </p>
