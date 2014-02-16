@@ -35,7 +35,7 @@
     <div>
         {{ Form::hidden('article_id', "$entry->id") }}
         {{ Form::hidden('slug', "$entry->slug") }}
-        {{ Form::submit('Zapisz', array('class' => 'submitbutton',
+        {{ Form::submit('Skomentuj', array('class' => 'submitbutton',
         'id' => 'submit')) }}
         {{ Notification::showAll() }}
     </div>
