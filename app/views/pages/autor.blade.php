@@ -84,14 +84,15 @@ polimorfizm, dziedziczenie, widoczność">OOP</abbr>,
                 <a href="http://www.sqlite.org/">SQLite</a>.
                 <br>Todo:
                 <a href="http://www.postgresql.org">PostgreSQL</a>,
-                <a href="http://redis.io">Redis</a>.
+                <a href="http://en.wikipedia.org/wiki/NoSQL">NoSQL</a>.
             </p>
         </li>
-        <li>Apache <span class="three-star"></span>
+        <li>Apache <span class="three-star-half"></span>
             <p>Konfiguracja i administracja <a href="http://www.apachefriends.org/en/xampp.html">
-                    XAMPP</a>, <a href="https://wiki.debian.org/LaMp">LAMP</a>.
-                <br>Todo: <a href="http://pl.wikipedia.org/wiki/Memcached">
-                    Memcached</a>, <a href="http://pl.wikipedia.org/wiki/Nginx">
+                    XAMPP</a>, <a href="https://wiki.debian.org/LaMp">LAMP</a>,
+                    <a href="http://pl.wikipedia.org/wiki/Memcached">
+                    Memcached</a>.
+                <br>Todo: <a href="http://pl.wikipedia.org/wiki/Nginx">
                     Nginx</a>.
             </p>
         </li>
@@ -112,8 +113,6 @@ polimorfizm, dziedziczenie, widoczność">OOP</abbr>,
                 <a href="http://www.samba.org/">Samba</a>,
                 <a href="http://www.9bis.net/kitty/">SSH</a>,
 		<a href="http://www.vim.org">VIM</a>.
-		<br>Todo:
-                <a href="http://en.wikipedia.org/wiki/Regular_expression">RegEx</a>,
             </p>
         </li>
         <li>Linux <span class="three-star"></span>
