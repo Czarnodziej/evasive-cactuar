@@ -165,8 +165,8 @@
         <![endif]-->
         <script async
         src="{{ asset('assets/js/vendor/modernizr-2.6.2.min.js') }}"></script>
-        <script defer async src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script defer async src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
         <script type="text/javascript">
                 WebFontConfig = {
                 google: { families: [ 'Open+Sans:400,700:latin-ext' ] }
