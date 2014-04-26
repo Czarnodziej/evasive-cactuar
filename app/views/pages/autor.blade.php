@@ -48,7 +48,7 @@
                 <a href="http://en.wikipedia.org/wiki/Sprite_%28computer_graphics%29#Sprites_by_CSS">
                     CSS Sprite</a>,
                 <abbr title="virtualbox IE6, 7, 8, 9, 10, 11,
-Chrome, Firefox, Safari, Opera">
+                      Chrome, Firefox, Safari, Opera">
                     <a href="http://caniuse.com/">
                         Kompatybilność z przeglądarkami</a></abbr><br>
                 <a href="http://developers.google.com/speed/pagespeed/insights/?url={{ URL::to('/') }}%2F">
@@ -57,19 +57,20 @@ Chrome, Firefox, Safari, Opera">
                 preprocesory CSS.
             </p>
         </li>
-        <li>JavaScript <span class="two-star-half"></span>
-            <p><a href="{{ URL::route('game') }}">Podstawowa manipulacja DOM, OOP.</a>
-                Podstawowa obsługa <a href="{{ URL::route('javascript') }}">jQuery</a>.
+        <li>JavaScript <span class="three-star-half"></span>
+            <p><a href="{{ URL::route('game') }}">Manipulacja DOM, OOP.</a>
+                <a href="{{ URL::route('javascript') }}">jQuery</a>.
                 <a href="https://getfirebug.com/">Debugowanie</a>,
                 AJAX. Kod zgodny z <a href="http://www.jshint.com/">JShint.</a>
                 <br>Todo: JavaScript MVC Frameworks
             </p>
         </li>
-        <li>PHP <span class="two-star-half"></span>
+        <li>PHP <span class="three-star"></span>
             <p>Podstawowe zagadnienia,
                 <abbr title="Klasy, interfejsy, abstrakcja, enkapsulacja,
-polimorfizm, dziedziczenie, widoczność">OOP</abbr>,
-                <a href="http://laravel.com/">Laravel </a>,
+                      polimorfizm, dziedziczenie, widoczność">OOP</abbr>,
+                <a href="http://symfony.com/">Symfony 2</a>,
+                <a href="http://laravel.com/">Laravel</a>,
                 <a href="http://cakephp.org">CakePHP</a>,
                 <a href="http://ellislab.com/codeigniter">CodeIgniter</a>,
                 <a href="https://www.pyrocms.com/">PyroCMS</a>,
@@ -79,7 +80,7 @@ polimorfizm, dziedziczenie, widoczność">OOP</abbr>,
                     Test-driven development</a>.
             </p>
         </li>
-        <li>DB <span class="two-star-half"></span>
+        <li>DB <span class="three-star-half"></span>
             <p>Podstawowe zagadnienia, <a href="http://www.mysql.com/">MySQL</a>,
                 <a href="http://www.sqlite.org/">SQLite</a>.
                 <br>Todo:
@@ -90,7 +91,7 @@ polimorfizm, dziedziczenie, widoczność">OOP</abbr>,
         <li>Apache <span class="three-star-half"></span>
             <p>Konfiguracja i administracja <a href="http://www.apachefriends.org/en/xampp.html">
                     XAMPP</a>, <a href="https://wiki.debian.org/LaMp">LAMP</a>,
-                    <a href="http://pl.wikipedia.org/wiki/Memcached">
+                <a href="http://pl.wikipedia.org/wiki/Memcached">
                     Memcached</a>.
                 <br>Todo: <a href="http://pl.wikipedia.org/wiki/Nginx">
                     Nginx</a>.
@@ -112,10 +113,10 @@ polimorfizm, dziedziczenie, widoczność">OOP</abbr>,
                 <a href="https://www.virtualbox.org/">VirtualBox</a>,
                 <a href="http://www.samba.org/">Samba</a>,
                 <a href="http://www.9bis.net/kitty/">SSH</a>,
-		<a href="http://www.vim.org">VIM</a>.
+                <a href="http://www.vim.org">VIM</a>.
             </p>
         </li>
-        <li>Linux <span class="three-star"></span>
+        <li>Linux <span class="four-star"></span>
             <p><a href="http://www.debian.org/">Debian</a>: administracja
                 lokalna oraz poprzez ssh.
         </li>
