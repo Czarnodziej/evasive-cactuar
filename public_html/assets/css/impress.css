@@ -234,10 +234,7 @@ a:focus {
     font-size: 0.6em
 }
 
-#atuty {
-    width: 500px;
-    padding: 10px;
-}
+#atuty { width: 500px }
 
 #atuty b {
     display: inline-block;
@@ -422,7 +419,7 @@ a:focus {
     position: fixed;
     bottom: -10px;
     left: 5px;
-    z-index: 200; /* hint div click override (320px window width) */
+   z-index: 200; /* hint div click override (320px window width) */
 }
 
 .fb, .tw, .mail, .gh {
