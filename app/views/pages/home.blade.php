@@ -24,9 +24,6 @@ Planowana aktywność:
 <div>
     Przyszłe projekty:
 <ul class="icons-ul">
-    <li><i class="icon-li icon-screenshot icon-large"></i>Agregator newsów</li>
-    <li><i class="icon-li icon-screenshot icon-large"></i>Wrapper Youtube</li>
-    <li><i class="icon-li icon-screenshot icon-large"></i>Wrapper Twitch.tv</li>
     <li><i class="icon-li icon-screenshot icon-large"></i>Aplikacja z dziedziny
         social media</li>
 </ul>
