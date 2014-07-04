@@ -42,7 +42,8 @@ Główne założenia projektów:
 <div>
     Wersje strony:
 <ul>
-    <li><a href="http://insanet.pl">Laravel 4 (obecnie rozwijana wersja)
+	<li><a href="//insanet.pl/">Symfony2 + Angular.js </a></li>
+    <li><a href="http://laravel.insanet.pl">Laravel 4 (obecnie rozwijana wersja)
         </a></li>
     <li><a href="http://cake.insanet.pl">CakePHP</a></li>
     <li><a href="http://old.insanet.pl">HTML</a></li>
