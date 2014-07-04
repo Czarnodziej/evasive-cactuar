@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2b0bc859bd0c4af1f24929f5d18a8e54",
+    "hash": "b6cbd1e78bfaa53928af93cb129cca80",
     "packages": [
         {
             "name": "barryvdh/laravel-ide-helper",
@@ -1959,54 +1959,6 @@
             "description": "Symfony Translation Component",
             "homepage": "http://symfony.com",
             "time": "2014-05-22 13:46:01"
-        },
-        {
-            "name": "way/generators",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/JeffreyWay/Laravel-4-Generators.git",
-                "reference": "53d2f84e6d75856c2ab72d49aeee9731de1a0af3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/JeffreyWay/Laravel-4-Generators/zipball/53d2f84e6d75856c2ab72d49aeee9731de1a0af3",
-                "reference": "53d2f84e6d75856c2ab72d49aeee9731de1a0af3",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/support": "~4.0",
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "behat/behat": "~2.5.1",
-                "behat/mink": "~1.5.0",
-                "behat/mink-extension": "~1.2.0",
-                "behat/mink-goutte-driver": "~1.0.9",
-                "behat/mink-selenium2-driver": "~1.1.1",
-                "phpspec/phpspec": "~2.0",
-                "phpunit/phpunit": "~3.7"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Way\\Generators": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jeffrey Way",
-                    "email": "jeffrey@jeffrey-way.com",
-                    "homepage": "http://jeffrye-way.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Rapidly generate resources, migrations, models, and much more.",
-            "time": "2014-06-27 00:26:58"
         }
     ],
     "packages-dev": [
@@ -2016,9 +1968,9 @@
 
     ],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "way/generators": 20
-    },
+    "stability-flags": [
+
+    ],
     "platform": [
 
     ],

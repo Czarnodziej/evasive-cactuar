@@ -6,8 +6,7 @@
     "laravel/framework": "4.1.*",
     "barryvdh/laravel-ide-helper": "1.*",
     "cartalyst/sentry": "2.0.*",
-    "edvinaskrucas/notification": "1.*",
-    "way/generators": "dev-master"
+    "edvinaskrucas/notification": "1.*"
   },
   "autoload": {
     "classmap": [
