@@ -1,4 +1,0 @@
-/* TinyMCE fullscreen fix */
-div.mce-fullscreen {
-   top: 20px !important; //because it's better than hacking source files
-}
