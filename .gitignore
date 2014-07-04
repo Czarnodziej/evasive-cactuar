@@ -6,9 +6,7 @@
 /bootstrap/compiled.php
 /vendor
 /nbproject
-/public_html/files/*
-/public_html/old
-/public_html/cake
+/files/*
 /.idea
 /.htpasswd
 /awstats
