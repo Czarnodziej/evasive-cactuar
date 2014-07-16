@@ -52,35 +52,35 @@
 
             <div id="niewielkie" class="step" data-x="2825" data-y="2325"
                  data-z="-3000" data-rotate="300" data-scale="1">
-                <p><b>niewielkie</b> doświadczenie zawodowe</p>
+                <p>za swój <b>niepodważalny</b> atut</p>
             </div>
 
             <div id="duze" class="step" data-x="3500" data-y="2100"
                  data-rotate="180" data-scale="6">
-                <p>rekompensuję <b>wielkim</b> <span class="thoughts">entuzjazmem</span></p>
+                <p>uważam <b>wielki</b> <span class="thoughts">entuzjazm</span></p>
             </div>
 
             <div id="atuty" class="step" data-x="3500" data-y="-850"
                  data-rotate="270" data-scale="6">
-                <p>niepohamowanym <b class="positioning">głodem wiedzy
+                <p>niepohamowany <b class="positioning">głód wiedzy
                         <i class="fa fa-cutlery"></i></b><br>
-                    <b class="rotating">inteligencją
+                    <b class="rotating">inteligencję
                         <i class="fa fa-cogs"></i></b><br>
-                    <b class="scaling">organizacją pracy
+                    <b class="scaling">organizację pracy
                         <i class="fa fa-pencil-square-o"></i></b></p>
             </div>
 
             <div id="wyobraznia" class="step" data-x="6700" data-y="-300"
                  data-scale="6">
-                <p>brakiem <b>złych nawyków <i class="fa fa-code"></i></b>
-                    oraz <b class="wyobraznia">wyobraźnią <i class="fa fa-magic"></i></b></p>
+                <p>brak <b>złych nawyków <i class="fa fa-code"></i></b>
+                    oraz <b class="wyobraznia">wyobraźnię <i class="fa fa-magic"></i></b></p>
             </div>
 
             <div id="zrodlo" class="step" data-x="6300" data-y="2000"
                  data-rotate="20" data-scale="4">
                 <p>Efekt prezentuję w:</p>
 
-                <q><a href="http://insanet.pl/">insaNet.pl</a></q>
+                <q><a href="http://insanet.pl/">insanet.pl</a></q>
             </div>
 
             <div id="dodatkowo" class="step" data-x="6000" data-y="4000" data-scale="2">
