@@ -44,9 +44,7 @@
         <p class="chromeframe">Używasz <strong>prehistorycznej</strong> przeglądarki,
             co stwarza <strong>realne zagrożenie dla Ciebie </strong> i wszystkich
             informacji jakie zamieszczasz w sieci.
-            Ochoczo zalecam <a href="http://browsehappy.com/">aktualizację</a>
-            lub <a href="http://www.google.com/chromeframe/?redirect=true">aktywację
-                Google Chrome Frame</a>.
+            Ochoczo zalecam <a href="http://browsehappy.com/">aktualizację.</a>
             Aktualna przeglądarka to podstawa prawidłowego wyświetlania stron i
             bezpiecznego korzystania z internetu.</p>
         <![endif]-->
@@ -171,20 +169,6 @@
                 WebFontConfig = {
                 google: { families: [ 'Open+Sans:400,700:latin-ext' ] }
                 };</script>
-        <!-- Piwik -->
-        <script type="text/javascript">
-                var _paq = _paq || [];
-                _paq.push(['trackPageView']);
-                _paq.push(['enableLinkTracking']);
-                (function() {
-                var u = (("https:" == document.location.protocol) ? "https" : "http") + "://piwik.linuxpl.com//";
-                    _paq.push(['setTrackerUrl', u + 'piwik.php']);
-                    _paq.push(['setSiteId', 7086]);
-                    var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0]; g.type = 'text/javascript';
-                    g.defer = true; g.async = true; g.src = u + '/js/'; s.parentNode.insertBefore(g, s);
-                })();</script>
-        <noscript><p><img src="http://piwik.linuxpl.com/piwik.php?idsite=7086" style="border:0" alt="" /></p></noscript>
-        <!-- End Piwik Code -->
         <script async src="{{ asset('assets/js/script.min.js') }}"></script>
         @show
     </body>
